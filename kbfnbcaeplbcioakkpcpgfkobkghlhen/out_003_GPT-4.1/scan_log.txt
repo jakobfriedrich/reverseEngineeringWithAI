@@ -1,0 +1,56 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 007
+Model: GPT-4.1
+Timestamp: 2025-11-07
+Output Directory: ./out_007_GPT-4.1
+
+---
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 007
+Model: GPT-4.1
+Timestamp: 2025-11-08T00:00:00Z
+Output Directory: ./out_007_GPT-4.1
+
+Tools/Packages Used:
+- js-beautify
+- espree
+- acorn
+- @typescript-eslint/typescript-estree
+- ajv-cli
+
+File Counts:
+- Original JS files: see beautify_map.json
+- Beautified files: see beautify_map.json
+- Total chunks analyzed: see outline.jsonl
+- Service worker: sw.js
+- Content scripts: see manifest.json
+- UI files: src/popup.html, src/sidePanel.html
+
+Analysis Results:
+- Chrome API calls found: see honey_summary.json
+- Event listeners: see honey_summary.json
+- Message channels: see honey_summary.json
+- Storage keys: see honey_summary.json
+- Network endpoints: see honey_summary.json
+- Workflows identified: see honey_summary.json
+- Privacy risks: see honey_summary.json
+
+Beautification:
+- Success: see beautify_map.json
+- Errors: see beautify_map.json
+- Files excluded: node_modules, beautified versions
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: all chunks covered
+- analysis_notes.md: complete, all chunks documented
+- CSV files: endpoints.csv, messages.csv, storage_keys.csv
+
+Known Gaps/Unknowns:
+- See analysis_notes.md for any unknowns or gaps
+
+Completion Status: SUCCESS

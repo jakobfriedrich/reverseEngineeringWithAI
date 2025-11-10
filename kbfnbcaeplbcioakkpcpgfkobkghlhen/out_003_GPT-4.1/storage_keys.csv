@@ -1,0 +1,14 @@
+key,type,purpose,file,line_start,line_end
+
+assistantOnboarding_*,local,Assistant onboarding state,src/js/Grammarly-bg.js,50001,52000
+user,local,User profile and settings,src/js/Grammarly-bg.js,60001,62000
+extensionSettings,local,Extension configuration,src/js/Grammarly-bg.js,60001,62000
+duration_service_availability_metrics_db_v1,indexeddb,Service availability metrics,src/js/Grammarly-bg.js,56001,58000
+blocklistConfigMetadata,local,Store blocklist config metadata,src/js/Grammarly-bg.js,80001,82000
+oauth.tokens,session,OAuth token storage,src/js/Grammarly-check.js,12001,14000
+extensionDictionaryEvent,local,Dictionary event tracking,src/js/Grammarly-check.js,12001,14000
+oauth.tokens,session,OAuth token storage,src/js/Grammarly-check.js,14001,14264
+extensionDictionaryEvent,local,Dictionary event tracking,src/js/Grammarly-check.js,14001,14264
+gdocs_peak_collabs_dismissed,local,UI state for Google Docs,src/js/Grammarly.js,40001,42000
+gr-oauth-key,local,OAuth token storage,src/js/Grammarly-gDocs.js,102001,104000
+oauth.tokens,local,OAuth token storage,src/js/Grammarly-gDocs.js,102001,104000

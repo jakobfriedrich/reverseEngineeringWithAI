@@ -1,0 +1,718 @@
+{
+  "metadata": {
+    "name": "Grammarly Browser Extension",
+    "version": "14.1115.0",
+    "manifest_version": 3,
+    "description": "Grammarly browser extension for writing assistance, grammar checking, and AI-powered text enhancement across web platforms",
+    "evidence": [
+      {"file": "manifest.json", "start": 1, "end": 10, "ast_id": "manifest_metadata"}
+    ]
+  },
+  "permissions": {
+    "api_permissions": [
+      "activeTab",
+      "alarms",
+      "contextMenus", 
+      "cookies",
+      "declarativeNetRequest",
+      "identity",
+      "identity.email",
+      "nativeMessaging",
+      "notifications",
+      "offscreen",
+      "scripting",
+      "sidePanel",
+      "storage",
+      "tabs",
+      "unlimitedStorage",
+      "webNavigation",
+      "webRequest"
+    ],
+    "host_permissions": [
+      "https://*.grammarly.com/*",
+      "https://*.grammarly.io/*",
+      "https://docs.google.com/*",
+      "https://mail.google.com/*",
+      "https://calendar.google.com/*",
+      "https://keep.google.com/*",
+      "https://accounts.google.com/*",
+      "https://chat.openai.com/*",
+      "https://claude.ai/*",
+      "https://app.superhuman.com/*",
+      "https://coda.io/*",
+      "https://translate.google.com/*",
+      "<all_urls>"
+    ],
+    "optional_permissions": [
+      "background"
+    ],
+    "evidence": [
+      {"file": "manifest.json", "start": 15, "end": 45, "ast_id": "permissions_block"}
+    ]
+  },
+  "components": {
+    "background": {
+      "files": ["sw.js", "Grammarly-bg.js"],
+      "apis": ["chrome.tabs", "chrome.storage", "chrome.runtime", "chrome.cookies", "chrome.identity", "chrome.alarms", "chrome.webNavigation", "chrome.declarativeNetRequest"],
+      "listeners": ["chrome.runtime.onConnect", "chrome.tabs.onUpdated", "chrome.webNavigation.onCommitted", "chrome.alarms.onAlarm"],
+      "evidence": [
+        {"file": "sw.js", "start": 1, "end": 50, "ast_id": "service_worker_init"},
+        {"file": "Grammarly-bg.js", "start": 1, "end": 100, "ast_id": "background_main"}
+      ]
+    },
+    "content_scripts": [
+      {
+        "files": ["Grammarly.js", "Grammarly-check.js", "Grammarly-gDocs.js"],
+        "apis": ["document", "window", "MutationObserver", "ResizeObserver", "IntersectionObserver"],
+        "listeners": ["DOMContentLoaded", "load", "beforeunload", "input", "keydown", "mousedown", "focus", "blur"],
+        "evidence": [
+          {"file": "Grammarly.js", "start": 1, "end": 50, "ast_id": "content_script_main"},
+          {"file": "Grammarly-gDocs.js", "start": 1, "end": 50, "ast_id": "gdocs_integration"}
+        ]
+      }
+    ],
+    "injected_scripts": [
+      {
+        "files": ["debug.html", "gOS-sandbox.html"],
+        "apis": ["window.postMessage", "parent.postMessage"],
+        "listeners": ["message"],
+        "evidence": [
+          {"file": "debug.html", "start": 1, "end": 20, "ast_id": "debug_interface"},
+          {"file": "gOS-sandbox.html", "start": 1, "end": 30, "ast_id": "sandbox_interface"}
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "files": ["popup.html", "sidePanel.html"],
+        "apis": ["chrome.runtime"],
+        "listeners": ["click", "submit", "change"],
+        "evidence": [
+          {"file": "popup.html", "start": 1, "end": 25, "ast_id": "popup_interface"},
+          {"file": "sidePanel.html", "start": 1, "end": 30, "ast_id": "sidepanel_interface"}
+        ]
+      }
+    ],
+    "web_accessible_resources": [
+      "src/css/*.css",
+      "src/fonts/*",
+      "src/icon/*",
+      "src/images/*",
+      "src/inkwell/*"
+    ]
+  },
+  "network": {
+    "endpoints": [
+      {"url": "/plans", "purpose": "Subscription plans", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 8001, "end": 10000, "ast_id": "plans_endpoint"}]},
+      {"url": "/setup-trial", "purpose": "Trial setup", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 8001, "end": 10000, "ast_id": "trial_endpoint"}]},
+      {"url": "/special-offers", "purpose": "Special offers", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 8001, "end": 10000, "ast_id": "offers_endpoint"}]},
+      {"url": "/subscribe", "purpose": "Subscription management", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 8001, "end": 10000, "ast_id": "subscribe_endpoint"}]},
+      {"url": "grammarly.com", "purpose": "Main domain", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 48001, "end": 50000, "ast_id": "main_domain"}]},
+      {"url": "gateway.grammarly.com", "purpose": "API gateway", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 50001, "end": 52000, "ast_id": "gateway_endpoint"}]},
+      {"url": "authorship.grammarly.com", "purpose": "Authorship services", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 50001, "end": 52000, "ast_id": "authorship_endpoint"}]},
+      {"url": "goldengate", "purpose": "Internal gateway", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 50001, "end": 52000, "ast_id": "goldengate_endpoint"}]},
+      {"url": "capi", "purpose": "Core API", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 50001, "end": 52000, "ast_id": "capi_endpoint"}]},
+      {"url": "f-log-inkwell.grammarly.io", "purpose": "Inkwell logging", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 54001, "end": 56000, "ast_id": "inkwell_logging"}]},
+      {"url": "auth.grammarly.com", "purpose": "Authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "auth_grammarly"}]},
+      {"url": "tokens.grammarly.com", "purpose": "Token management", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "tokens_grammarly"}]},
+      {"url": "grammarly.io", "purpose": "Grammarly services", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "grammarly_io"}]},
+      {"url": "qagr.io", "purpose": "QA environment", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "qa_env"}]},
+      {"url": "ppgr.io", "purpose": "Preprod environment", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "preprod_env"}]},
+      {"url": "coda.io", "purpose": "Coda integration", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 62001, "end": 64000, "ast_id": "coda_integration"}]},
+      {"url": "coda.grammarly.com", "purpose": "Coda Grammarly services", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 62001, "end": 64000, "ast_id": "coda_grammarly"}]},
+      {"url": "superhuman.com", "purpose": "Superhuman integration", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "superhuman"}]},
+      {"url": "pp-sh.io", "purpose": "Superhuman preprod", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "superhuman_preprod"}]},
+      {"url": "staging-superhuman.com", "purpose": "Superhuman staging", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "superhuman_staging"}]},
+      {"url": "vmetrics.grammarly.com", "purpose": "Video metrics", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "vmetrics"}]},
+      {"url": "https://properties.grammarly.com", "purpose": "Properties service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "properties"}]},
+      {"url": "https://treatment.grammarly.com", "purpose": "Treatment service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "treatment"}]},
+      {"url": "https://gates.grammarly.com", "purpose": "Feature gates", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "gates"}]},
+      {"url": "https://f-log-extension.grammarly.io", "purpose": "Extension logging", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "extension_logging"}]},
+      {"url": "https://extension.femetrics.grammarly.io", "purpose": "Extension metrics", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "extension_metrics"}]},
+      {"url": "https://api.iterable.com", "purpose": "Iterable API", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "iterable_api"}]},
+      {"url": "https://assets.extension.grammarly.com", "purpose": "Extension assets", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 1, "end": 2000, "ast_id": "extension_assets"}]},
+      {"url": "https://capi.grammarly.com", "purpose": "Core API", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 2001, "end": 4000, "ast_id": "capi_service"}]},
+      {"url": "https://data.grammarly.com", "purpose": "Data service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 2001, "end": 4000, "ast_id": "data_service"}]},
+      {"url": "https://gateway.grammarly.com", "purpose": "Gateway service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 2001, "end": 4000, "ast_id": "gateway_service"}]},
+      {"url": "https://config.extension.grammarly.com", "purpose": "Extension config", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 2001, "end": 4000, "ast_id": "extension_config"}]},
+      {"url": "https://subscription.grammarly.com", "purpose": "Subscription service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 2001, "end": 4000, "ast_id": "subscription_service"}]},
+      {"url": "chat.openai.com", "purpose": "OpenAI ChatGPT", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "openai_chat"}]},
+      {"url": "gemini.google.com", "purpose": "Google Gemini", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "google_gemini"}]},
+      {"url": "perplexity.ai", "purpose": "Perplexity AI", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "perplexity"}]},
+      {"url": "chatgpt.com", "purpose": "ChatGPT", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "chatgpt"}]},
+      {"url": "claude.ai", "purpose": "Anthropic Claude", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "claude_ai"}]},
+      {"url": "wikipedia.org", "purpose": "Wikipedia", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "wikipedia"}]},
+      {"url": "docs.google.com", "purpose": "Google Docs", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 8001, "end": 10000, "ast_id": "google_docs"}]},
+      {"url": "auth.grammarly.com", "purpose": "Authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 12001, "end": 14000, "ast_id": "auth_service"}]},
+      {"url": "auth.ppgr.io", "purpose": "Preprod auth", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 12001, "end": 14000, "ast_id": "preprod_auth"}]},
+      {"url": "auth.qagr.io", "purpose": "QA auth", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 12001, "end": 14000, "ast_id": "qa_auth"}]},
+      {"url": "tokens.grammarly.com", "purpose": "Token service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 12001, "end": 14000, "ast_id": "token_service"}]},
+      {"url": "grammarly.com/extension-success", "purpose": "Extension success tracking", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 14001, "end": 14264, "ast_id": "success_tracking"}]},
+      {"url": "superhuman.com", "purpose": "Superhuman platform", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-check.js", "start": 14001, "end": 14264, "ast_id": "superhuman_platform"}]},
+      {"url": "https://properties.grammarly.com", "purpose": "Properties configuration", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 6001, "end": 8000, "ast_id": "properties_config"}]},
+      {"url": "https://treatment.grammarly.com", "purpose": "Treatment experiments", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 6001, "end": 8000, "ast_id": "treatment_experiments"}]},
+      {"url": "https://gates.grammarly.com", "purpose": "Feature gates", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 6001, "end": 8000, "ast_id": "feature_gates"}]},
+      {"url": "https://f-log-extension.grammarly.io", "purpose": "Extension telemetry", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "extension_telemetry"}]},
+      {"url": "https://extension.femetrics.grammarly.io/batch/import", "purpose": "Batch analytics", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "batch_analytics"}]},
+      {"url": "https://coda.io", "purpose": "Coda platform", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "coda_platform"}]},
+      {"url": "https://assets.extension.grammarly.com", "purpose": "Extension assets", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "extension_assets_main"}]},
+      {"url": "https://auth.grammarly.com", "purpose": "Authentication service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "auth_service_main"}]},
+      {"url": "https://capi.grammarly.com", "purpose": "Core checking API", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "capi_main"}]},
+      {"url": "https://data.grammarly.com", "purpose": "Data services", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "data_services"}]},
+      {"url": "https://gateway.grammarly.com", "purpose": "API gateway", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "api_gateway"}]},
+      {"url": "https://gnar.grammarly.com", "purpose": "Analytics service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "analytics_service"}]},
+      {"url": "https://in.grammarly.com/v1/events", "purpose": "Event tracking", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "event_tracking"}]},
+      {"url": "https://accounts.google.com", "purpose": "Google authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "google_auth"}]},
+      {"url": "https://www.facebook.com/login", "purpose": "Facebook authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "facebook_auth"}]},
+      {"url": "https://appleid.apple.com/auth", "purpose": "Apple authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 54001, "end": 56000, "ast_id": "apple_auth"}]},
+      {"url": "translate.google.com", "purpose": "Google Translate", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 26001, "end": 28000, "ast_id": "google_translate"}]},
+      {"url": "deepl.com", "purpose": "DeepL translation", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 26001, "end": 28000, "ast_id": "deepl_translate"}]},
+      {"url": "iterable.com", "purpose": "Iterable marketing", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 26001, "end": 28000, "ast_id": "iterable_marketing"}]},
+      {"url": "capiUrl", "purpose": "CAPI endpoint", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "capi_url"}]},
+      {"url": "gateway.grammarly.com", "purpose": "Gateway endpoint", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "gateway_endpoint_main"}]},
+      {"url": "goldengate.grammarly.io", "purpose": "Goldengate service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "goldengate_service"}]},
+      {"url": "grammarly.com/plans", "purpose": "Subscription plans", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "subscription_plans"}]},
+      {"url": "grammarly.com/upgrade", "purpose": "Upgrade flow", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "upgrade_flow"}]},
+      {"url": "grammarly.com/account", "purpose": "Account management", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "account_management"}]},
+      {"url": "vmetrics.grammarly.com", "purpose": "Video metrics service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 28001, "end": 30000, "ast_id": "video_metrics"}]},
+      {"url": "coda.grammarly.com", "purpose": "Coda Grammarly integration", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 28001, "end": 30000, "ast_id": "coda_grammarly_integration"}]},
+      {"url": "f-log-inkwell.grammarly.io", "purpose": "Inkwell logging service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 28001, "end": 30000, "ast_id": "inkwell_logging_service"}]},
+      {"url": "properties.grammarly.com", "purpose": "Properties service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "properties_service"}]},
+      {"url": "treatment.grammarly.com", "purpose": "Treatment service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "treatment_service"}]},
+      {"url": "dox.grammarly.com", "purpose": "Documentation service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 64001, "end": 66000, "ast_id": "documentation_service"}]},
+      {"url": "subscription.grammarly.com", "purpose": "Subscription management", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 64001, "end": 66000, "ast_id": "subscription_management"}]},
+      {"url": "support.grammarly.com", "purpose": "Support service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 64001, "end": 66000, "ast_id": "support_service"}]},
+      {"url": "in-product.report.grammarly.io", "purpose": "In-product reporting", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 64001, "end": 66000, "ast_id": "inproduct_reporting"}]},
+      {"url": "config.extension.grammarly.com", "purpose": "Extension configuration", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 64001, "end": 66000, "ast_id": "extension_configuration"}]},
+      {"url": "rwsgfy.grammarly.com", "purpose": "Unknown service", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 64001, "end": 66000, "ast_id": "unknown_service"}]},
+      {"url": "auth.grammarly.com", "purpose": "Authentication endpoint", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "auth_endpoint_gdocs"}]},
+      {"url": "auth.ppgr.io", "purpose": "Preprod authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "preprod_auth_gdocs"}]},
+      {"url": "auth.qagr.io", "purpose": "QA authentication", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "qa_auth_gdocs"}]},
+      {"url": "tokens.grammarly.com", "purpose": "Token management", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "token_management_gdocs"}]},
+      {"url": "revoke-by-refresh-token", "purpose": "Token revocation", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "token_revocation"}]},
+      {"url": "userinfo", "purpose": "User information", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "user_information"}]},
+      {"url": "/oauth2/token", "purpose": "OAuth2 token endpoint", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "oauth2_token"}]},
+      {"url": "/oauth2/exchange", "purpose": "OAuth2 token exchange", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "oauth2_exchange"}]},
+      {"url": "/oauth2/authorize", "purpose": "OAuth2 authorization", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "oauth2_authorize"}]},
+      {"url": "/api/revoke-by-refresh-token", "purpose": "API token revocation", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "api_token_revocation"}]},
+      {"url": "/api/userinfo", "purpose": "API user information", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "api_user_info"}]},
+      {"url": "/token", "purpose": "Token endpoint", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 92001, "end": 94238, "ast_id": "token_endpoint"}]},
+      {"url": "/logout", "purpose": "Logout endpoint", "methods": ["GET"], "evidence": [{"file": "src/js/Grammarly.js", "start": 92001, "end": 94238, "ast_id": "logout_endpoint"}]}
+    ]
+  },
+  "messaging": {
+    "channels": [
+      {"name": "gOS-bg-d5ccc5edf7e1", "direction": "content->background", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "gos_bg_d5ccc"}]},
+      {"name": "gOS-fg-d5ccc5edf7e1", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "gos_fg_d5ccc"}]},
+      {"name": "skills-bg-d5ccc5edf7e1", "direction": "content->background", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "skills_bg"}]},
+      {"name": "external:changed-plan", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "external_changed_plan"}]},
+      {"name": "external:changed-user", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "external_changed_user"}]},
+      {"name": "external:cleanup", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "external_cleanup"}]},
+      {"name": "external:llama-action", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "external_llama"}]},
+      {"name": "external:close-current-tab", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "external_close_tab"}]},
+      {"name": "external:enable-superhuman-go", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "external_superhuman"}]},
+      {"name": "cs-to-bg-rpc-1557421403805", "direction": "content->background", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 70001, "end": 72000, "ast_id": "cs_bg_rpc"}]},
+      {"name": "cs-to-bg-static-capi-rpc-1668544923207", "direction": "content->background", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "cs_bg_static_capi"}]},
+      {"name": "cs-to-bg-static-capi-observable-rpc-1668544923207", "direction": "content->background", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "cs_bg_static_capi_obs"}]},
+      {"name": "CODE_SPLITTING_INJECT", "direction": "ui->background", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 84001, "end": 86000, "ast_id": "code_splitting_inject_bg"}]},
+      {"name": "CODE_SPLITTING_INJECT", "direction": "background->content", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-check.js", "start": 14001, "end": 14264, "ast_id": "code_splitting_inject_check"}]},
+      {"name": "frameId.request", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 50001, "end": 52000, "ast_id": "frameid_request"}]},
+      {"name": "frameId.response", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 50001, "end": 52000, "ast_id": "frameid_response"}]},
+      {"name": "frameId.init", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 50001, "end": 52000, "ast_id": "frameid_init"}]},
+      {"name": "grammarly_message_protocol", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 50001, "end": 52000, "ast_id": "grammarly_protocol"}]},
+      {"name": "contentScript-disconnected", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "cs_disconnected"}]},
+      {"name": "bgSW-shutdown", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "bgsw_shutdown"}]},
+      {"name": "cs-bg-runtime", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "cs_bg_runtime"}]},
+      {"name": "bgRpc_api_launchAuthFlow", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "launch_auth_flow"}]},
+      {"name": "dismissKnowledgeHubEntry", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "dismiss_knowledge_hub"}]},
+      {"name": "replace", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "replace_action"}]},
+      {"name": "ignore", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "ignore_action"}]},
+      {"name": "acknowledge", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "acknowledge_action"}]},
+      {"name": "login", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "login_action"}]},
+      {"name": "signIn", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "signin_action"}]},
+      {"name": "signUp", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "signup_action"}]},
+      {"name": "add", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "add_action"}]},
+      {"name": "view", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "view_action"}]},
+      {"name": "editor", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "editor_action"}]},
+      {"name": "sdui_actions", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "sdui_actions"}]},
+      {"name": "authenticationStarted", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "auth_started"}]},
+      {"name": "connection", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "connection_msg"}]},
+      {"name": "environmentState", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "env_state"}]},
+      {"name": "extensionSettings", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "ext_settings"}]},
+      {"name": "activeTab", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "active_tab"}]},
+      {"name": "clickToRunEnabledOnce", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "click_to_run"}]},
+      {"name": "keyboard_shortcuts", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "keyboard_shortcuts"}]},
+      {"name": "alwaysAvailableAssistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "always_available_assistant"}]},
+      {"name": "touchTypist", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "touch_typist"}]},
+      {"name": "citationBuilder", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "citation_builder"}]},
+      {"name": "siteToggle", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "site_toggle"}]},
+      {"name": "update-window-size-gr", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "update_window_size"}]},
+      {"name": "close-popup-gr", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "close_popup"}]},
+      {"name": "bgStarted", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "bg_started"}]},
+      {"name": "bgPageStarted", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "bg_page_started"}]},
+      {"name": "fetchTreatmentsFail", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "fetch_treatments_fail"}]},
+      {"name": "sidePanel", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "side_panel"}]},
+      {"name": "popup", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "popup_msg"}]},
+      {"name": "checkScript", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "check_script"}]},
+      {"name": "chromeContentScriptLoadError", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "cs_load_error"}]},
+      {"name": "fetchUserFail", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "fetch_user_fail"}]},
+      {"name": "oauthGetAccessToken", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "oauth_access_token"}]},
+      {"name": "personalizedInsightsConsent", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "insights_consent"}]},
+      {"name": "performanceCard", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "performance_card"}]},
+      {"name": "authAccountChooser", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "auth_account_chooser"}]},
+      {"name": "onboarding", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "onboarding_msg"}]},
+      {"name": "loginReminder", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "login_reminder"}]},
+      {"name": "unhandledException", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "unhandled_exception"}]},
+      {"name": "unhandledRejection", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "unhandled_rejection"}]},
+      {"name": "csInitialized", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "cs_initialized"}]},
+      {"name": "extensionUpdated", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "extension_updated"}]},
+      {"name": "extensionInstall", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "extension_install"}]},
+      {"name": "reloadNotification", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "reload_notification"}]},
+      {"name": "frequentCookieChanges", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "frequent_cookie_changes"}]},
+      {"name": "gdocs", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "gdocs_msg"}]},
+      {"name": "canvasGdocs", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "canvas_gdocs"}]},
+      {"name": "autoFix", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "auto_fix"}]},
+      {"name": "autoApply", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "auto_apply"}]},
+      {"name": "knowledgeHub", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "knowledge_hub"}]},
+      {"name": "citationBuilder", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "citation_builder_msg"}]},
+      {"name": "translateOnboarding", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "translate_onboarding"}]},
+      {"name": "humanWritingReport", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "human_writing_report"}]},
+      {"name": "alwaysAvailableAssistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "always_available_assistant_msg"}]},
+      {"name": "touchTypist", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "touch_typist_msg"}]},
+      {"name": "agents", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "agents_msg"}]},
+      {"name": "autocorrect", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "autocorrect_msg"}]},
+      {"name": "assistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "assistant_msg"}]},
+      {"name": "sharedAssistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "shared_assistant"}]},
+      {"name": "proofit", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "proofit_msg"}]},
+      {"name": "iterable", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "iterable_msg"}]},
+      {"name": "mise", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "mise_msg"}]},
+      {"name": "alerts", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "alerts_msg"}]},
+      {"name": "authHooks", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "auth_hooks"}]},
+      {"name": "upgradeHooks", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "upgrade_hooks"}]},
+      {"name": "sdui", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "sdui_msg"}]},
+      {"name": "debugReports", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "debug_reports"}]},
+      {"name": "dialectSettings", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "dialect_settings"}]},
+      {"name": "logout", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "logout_msg"}]},
+      {"name": "backendManagedStorage", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "backend_managed_storage"}]},
+      {"name": "cookiesAccessibility", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "cookies_accessibility"}]},
+      {"name": "replacement", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "replacement_msg"}]},
+      {"name": "gOS", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "gos_msg"}]},
+      {"name": "inkwell", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "inkwell_msg"}]},
+      {"name": "auth", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "auth_msg"}]},
+      {"name": "connector", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "connector_msg"}]},
+      {"name": "serviceAvailability", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "service_availability"}]},
+      {"name": "treatments", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "treatments_msg"}]},
+      {"name": "pageIntegrationLifecycle", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "page_integration_lifecycle"}]},
+      {"name": "interactionToNextPaint", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "interaction_next_paint"}]},
+      {"name": "getTreatment", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 6001, "end": 8000, "ast_id": "get_treatment"}]},
+      {"name": "logTreatment", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 6001, "end": 8000, "ast_id": "log_treatment"}]},
+      {"name": "applicationHeaders", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "application_headers"}]},
+      {"name": "networkResponse", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "network_response"}]},
+      {"name": "hideGdocsSigninPopupMessage", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "hide_gdocs_signin"}]},
+      {"name": "requestHost", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "request_host"}]},
+      {"name": "showCard", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "show_card"}]},
+      {"name": "openAssistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "open_assistant"}]},
+      {"name": "closeAssistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "close_assistant"}]},
+      {"name": "pushTextChanges", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "push_text_changes"}]},
+      {"name": "selectHighlight", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "select_highlight"}]},
+      {"name": "syncHighlights", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "sync_highlights"}]},
+      {"name": "getHoveredStateBehavior", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "hovered_state_behavior"}]},
+      {"name": "openSidePanel", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 26001, "end": 28000, "ast_id": "open_side_panel"}]},
+      {"name": "setAlwaysOnAssistant", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 26001, "end": 28000, "ast_id": "set_always_on_assistant"}]},
+      {"name": "isSidePanelOpen", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 26001, "end": 28000, "ast_id": "is_side_panel_open"}]},
+      {"name": "alwaysOnAssistantOnOpenData", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 26001, "end": 28000, "ast_id": "always_on_assistant_open_data"}]},
+      {"name": "autocorrectStartSession", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "autocorrect_start_session"}]},
+      {"name": "autocorrectCheck", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "autocorrect_check"}]},
+      {"name": "autocorrectOnCorrectionRejected", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "autocorrect_rejected"}]},
+      {"name": "autocorrectOnCorrectionAccepted", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "autocorrect_accepted"}]},
+      {"name": "autocorrectCloseSession", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "autocorrect_close_session"}]},
+      {"name": "hwrGetEncryptionKey", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "hwr_get_encryption_key"}]},
+      {"name": "hwrCreateEncryptionKeys", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "hwr_create_encryption_keys"}]},
+      {"name": "hwrRetrieveReport", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "hwr_retrieve_report"}]},
+      {"name": "hwrStoreReport", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "hwr_store_report"}]},
+      {"name": "hwrDeleteReport", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "hwr_delete_report"}]},
+      {"name": "generateHumanWritingReport", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "generate_human_writing_report"}]},
+      {"name": "getHumanWritingReportSettings", "direction": "other", "payload_schema": {"type": "object"}, "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "get_hwr_settings"}]}
+    ]
+  },
+  "storage": {
+    "keys": [
+      {"key": "local", "type": "local", "purpose": "Extension settings", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 48001, "end": 50000, "ast_id": "local_storage"}]},
+      {"key": "sync", "type": "sync", "purpose": "Extension settings sync", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 48001, "end": 50000, "ast_id": "sync_storage"}]},
+      {"key": "cookies", "type": "cookies", "purpose": "Authentication cookies", "retention": "Browser policy", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 48001, "end": 50000, "ast_id": "cookies_storage"}]},
+      {"key": "IndexedDB", "type": "indexeddb", "purpose": "User data storage", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 58001, "end": 60000, "ast_id": "indexeddb_storage"}]},
+      {"key": "managedStorage", "type": "managed", "purpose": "Enterprise policy", "retention": "Policy-based", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 60001, "end": 62000, "ast_id": "managed_storage"}]},
+      {"key": "version", "type": "local", "purpose": "Extension metadata", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "version_storage"}]},
+      {"key": "extensionSettings", "type": "local", "purpose": "User preferences", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "ext_settings_storage"}]},
+      {"key": "user", "type": "local", "purpose": "User profile", "retention": "Until logout", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "user_storage"}]},
+      {"key": "activeTab", "type": "local", "purpose": "Session state", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "active_tab_storage"}]},
+      {"key": "extensionInstallSource", "type": "local", "purpose": "Analytics", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "install_source_storage"}]},
+      {"key": "extensionInstallDate", "type": "local", "purpose": "Analytics", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 72001, "end": 74000, "ast_id": "install_date_storage"}]},
+      {"key": "mise:clientAccessToken", "type": "local", "purpose": "Authentication", "retention": "Until refresh", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 74001, "end": 76000, "ast_id": "client_access_token"}]},
+      {"key": "inviteEligibilityCache", "type": "local", "purpose": "Feature flags", "retention": "Cache TTL", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 74001, "end": 76000, "ast_id": "invite_eligibility"}]},
+      {"key": "experimentationGatesTreatments", "type": "local", "purpose": "A/B testing", "retention": "Experiment duration", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 76001, "end": 78000, "ast_id": "gates_treatments"}]},
+      {"key": "experimentationTreatments", "type": "local", "purpose": "A/B testing", "retention": "Experiment duration", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 76001, "end": 78000, "ast_id": "experimentation_treatments"}]},
+      {"key": "clientControlsCacheEntry", "type": "local", "purpose": "Enterprise policy", "retention": "Policy refresh", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 76001, "end": 78000, "ast_id": "client_controls_cache"}]},
+      {"key": "local", "type": "local", "purpose": "General storage", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "general_local"}]},
+      {"key": "sync", "type": "sync", "purpose": "Cross-device sync", "retention": "Chrome sync", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "general_sync"}]},
+      {"key": "session", "type": "session", "purpose": "Temporary data", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "session_storage"}]},
+      {"key": "managed", "type": "managed", "purpose": "Enterprise config", "retention": "Policy-based", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "managed_config"}]},
+      {"key": "sessionStorage", "type": "session", "purpose": "Temporary data", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "session_storage_general"}]},
+      {"key": "indexedDB", "type": "indexeddb", "purpose": "Structured data", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 82001, "end": 84000, "ast_id": "indexeddb_general"}]},
+      {"key": "preferences", "type": "local", "purpose": "User settings", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-bg.js", "start": 62001, "end": 64000, "ast_id": "preferences_storage"}]},
+      {"key": "experimentTreatments", "type": "local", "purpose": "A/B testing", "retention": "Experiment duration", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 6001, "end": 8000, "ast_id": "experiment_treatments"}]},
+      {"key": "gateTreatments", "type": "local", "purpose": "Feature flags", "retention": "Feature lifecycle", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 6001, "end": 8000, "ast_id": "gate_treatments"}]},
+      {"key": "treatmentStorage", "type": "local", "purpose": "Experiments", "retention": "Experiment duration", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "treatment_storage"}]},
+      {"key": "propertiesCache", "type": "local", "purpose": "Configuration", "retention": "Cache TTL", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "properties_cache"}]},
+      {"key": "persistentStorage", "type": "local", "purpose": "General storage", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 8001, "end": 10000, "ast_id": "persistent_storage"}]},
+      {"key": "telemetry_data", "type": "local", "purpose": "Analytics", "retention": "30 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "telemetry_data"}]},
+      {"key": "usage_metrics", "type": "local", "purpose": "Analytics", "retention": "30 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "usage_metrics"}]},
+      {"key": "error_reports", "type": "local", "purpose": "Diagnostics", "retention": "30 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "error_reports"}]},
+      {"key": "user_analytics", "type": "local", "purpose": "Analytics", "retention": "90 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "user_analytics"}]},
+      {"key": "performance_data", "type": "local", "purpose": "Performance", "retention": "30 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "performance_data"}]},
+      {"key": "crash_logs", "type": "local", "purpose": "Diagnostics", "retention": "30 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 62001, "end": 64000, "ast_id": "crash_logs"}]},
+      {"key": "replacement_analytics", "type": "local", "purpose": "Text processing", "retention": "90 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "replacement_analytics"}]},
+      {"key": "service_availability_metrics", "type": "local", "purpose": "Monitoring", "retention": "30 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "service_availability"}]},
+      {"key": "treatment_cache", "type": "local", "purpose": "Experiments", "retention": "Cache TTL", "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "treatment_cache"}]},
+      {"key": "user_behavior_tracking", "type": "local", "purpose": "Analytics", "retention": "90 days", "evidence": [{"file": "src/js/Grammarly.js", "start": 64001, "end": 66000, "ast_id": "user_behavior_tracking"}]},
+      {"key": "authenticationOptions", "type": "local", "purpose": "Authentication", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "auth_options"}]},
+      {"key": "extensionSettings", "type": "local", "purpose": "Configuration", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 58001, "end": 60000, "ast_id": "ext_settings_main"}]},
+      {"key": "copiedTextMessage", "type": "local", "purpose": "User data", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "copied_text"}]},
+      {"key": "g2OnboardingDismissed", "type": "local", "purpose": "Onboarding", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "g2_onboarding_dismissed"}]},
+      {"key": "g2OnboardingPulsatingSeen", "type": "local", "purpose": "Onboarding", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "g2_onboarding_pulsating"}]},
+      {"key": "g2TranslationLanguages", "type": "local", "purpose": "Translation", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "g2_translation_languages"}]},
+      {"key": "g2MultilingualOnboardingShowsCount", "type": "local", "purpose": "Onboarding", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "g2_multilingual_onboarding"}]},
+      {"key": "specialOffer", "type": "local", "purpose": "Promotion", "retention": "Campaign duration", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "special_offer"}]},
+      {"key": "in_product_discount_pro", "type": "local", "purpose": "Promotion", "retention": "Campaign duration", "evidence": [{"file": "src/js/Grammarly.js", "start": 24001, "end": 26000, "ast_id": "in_product_discount"}]},
+      {"key": "gr-oauth-key", "type": "local", "purpose": "Authentication", "retention": "Until logout", "evidence": [{"file": "src/js/Grammarly.js", "start": 26001, "end": 28000, "ast_id": "oauth_key"}]},
+      {"key": "experimentClient", "type": "local", "purpose": "Experiments", "retention": "Experiment duration", "evidence": [{"file": "src/js/Grammarly.js", "start": 26001, "end": 28000, "ast_id": "experiment_client"}]},
+      {"key": "businessUphookPopupSeenCount", "type": "local", "purpose": "Business upsell", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "business_uphook_count"}]},
+      {"key": "businessUphookPopupLastShownTimestamp", "type": "local", "purpose": "Business upsell", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "business_uphook_timestamp"}]},
+      {"key": "dunningMessageLastDismissedTimestamp", "type": "local", "purpose": "Billing", "retention": "Billing cycle", "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "dunning_dismissed"}]},
+      {"key": "renewalNotificationAppearanceTimestamp", "type": "local", "purpose": "Billing", "retention": "Billing cycle", "evidence": [{"file": "src/js/Grammarly.js", "start": 38001, "end": 40000, "ast_id": "renewal_notification"}]},
+      {"key": "cachedRichTextOnServiceWorkerShutdown", "type": "session", "purpose": "Backup", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "cached_rich_text"}]},
+      {"key": "sessionUuid", "type": "session", "purpose": "Session tracking", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "session_uuid"}]},
+      {"key": "reconnectInfo", "type": "session", "purpose": "Connection", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "reconnect_info"}]},
+      {"key": "outgoingMessages", "type": "session", "purpose": "Messaging", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 36001, "end": 38000, "ast_id": "outgoing_messages"}]},
+      {"key": "dynamicConfig", "type": "local", "purpose": "Configuration", "retention": "Config refresh", "evidence": [{"file": "src/js/Grammarly.js", "start": 32001, "end": 34000, "ast_id": "dynamic_config"}]},
+      {"key": "csPageState", "type": "local", "purpose": "Page state", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 32001, "end": 34000, "ast_id": "cs_page_state"}]},
+      {"key": "visibleHighlights", "type": "local", "purpose": "Text interaction", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 32001, "end": 34000, "ast_id": "visible_highlights"}]},
+      {"key": "hasInProductDiscountSpecialOffer", "type": "local", "purpose": "Promotion", "retention": "Campaign duration", "evidence": [{"file": "src/js/Grammarly.js", "start": 32001, "end": 34000, "ast_id": "has_discount_offer"}]},
+      {"key": "capiStartAckMessage", "type": "local", "purpose": "Connection", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 32001, "end": 34000, "ast_id": "capi_start_ack"}]},
+      {"key": "highlightsLayoutInfo", "type": "local", "purpose": "UI layout", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 32001, "end": 34000, "ast_id": "highlights_layout"}]},
+      {"key": "alwaysOnAssistantOnOpenData", "type": "session", "purpose": "Assistant", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "always_on_assistant_data"}]},
+      {"key": "alwaysOnAssistant", "type": "session", "purpose": "Assistant", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "always_on_assistant"}]},
+      {"key": "isSidePanelOpen", "type": "session", "purpose": "UI state", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 22001, "end": 24000, "ast_id": "is_side_panel_open"}]},
+      {"key": "sessionStorage", "type": "session", "purpose": "General storage", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 26001, "end": 28000, "ast_id": "session_storage_gdocs"}]},
+      {"key": "langDetectCache", "type": "session", "purpose": "Language detection", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "lang_detect_cache"}]},
+      {"key": "autocorrectEnabled", "type": "session", "purpose": "Feature settings", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "autocorrect_enabled"}]},
+      {"key": "autoApplyEnabled", "type": "session", "purpose": "Feature settings", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 30001, "end": 32000, "ast_id": "auto_apply_enabled"}]},
+      {"key": "settings", "type": "session", "purpose": "User preferences", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "settings_session"}]},
+      {"key": "preferences", "type": "session", "purpose": "User preferences", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 32001, "end": 34000, "ast_id": "preferences_session"}]},
+      {"key": "iterableTriggerSettings", "type": "session", "purpose": "Marketing", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 34001, "end": 36000, "ast_id": "iterable_trigger_settings"}]},
+      {"key": "standWithUkraineBannerPopupWasShown", "type": "session", "purpose": "Banner tracking", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 42001, "end": 44000, "ast_id": "ukraine_banner"}]},
+      {"key": "popupDynamicConfig", "type": "session", "purpose": "Popup configuration", "retention": "Session", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 42001, "end": 44000, "ast_id": "popup_dynamic_config"}]},
+      {"key": "gr-oauth-service-state", "type": "local", "purpose": "OAuth", "retention": "OAuth flow", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "oauth_service_state"}]},
+      {"key": "gr-oauth-state", "type": "local", "purpose": "OAuth", "retention": "OAuth flow", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 102001, "end": 104000, "ast_id": "oauth_state"}]},
+      {"key": "runtime_messaging", "type": "session", "purpose": "Communication", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "runtime_messaging"}]},
+      {"key": "service_worker_communication", "type": "session", "purpose": "Communication", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 56001, "end": 58000, "ast_id": "sw_communication"}]},
+      {"key": "localStorage", "type": "local", "purpose": "General storage", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly.js", "start": 60001, "end": 62000, "ast_id": "local_storage_general"}]},
+      {"key": "sessionStorage", "type": "session", "purpose": "General storage", "retention": "Session", "evidence": [{"file": "src/js/Grammarly.js", "start": 92001, "end": 94238, "ast_id": "session_storage_main"}]},
+      {"key": "getItem", "type": "local", "purpose": "General storage", "retention": "API dependent", "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "get_item"}]},
+      {"key": "setItem", "type": "local", "purpose": "General storage", "retention": "API dependent", "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "set_item"}]},
+      {"key": "removeItem", "type": "local", "purpose": "General storage", "retention": "API dependent", "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "remove_item"}]},
+      {"key": "storage", "type": "local", "purpose": "General storage", "retention": "API dependent", "evidence": [{"file": "src/js/Grammarly.js", "start": 90001, "end": 92000, "ast_id": "storage_api"}]},
+      {"key": "hideGBSigninPopupTodayTimestamp", "type": "local", "purpose": "Signin tracking", "retention": "24 hours", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "hide_signin_popup"}]},
+      {"key": "gbSigninPopupCount", "type": "local", "purpose": "Signin tracking", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "signin_popup_count"}]},
+      {"key": "accountMigrationNotificationAppearanceTimestamp", "type": "local", "purpose": "Account migration", "retention": "Migration period", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "account_migration"}]},
+      {"key": "billingWithNoPaymentNotificationAppearanceTimestamp", "type": "local", "purpose": "Billing", "retention": "Billing cycle", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "billing_no_payment"}]},
+      {"key": "businessUphookPopupSeenCount", "type": "local", "purpose": "Business upsell", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "business_uphook_gdocs"}]},
+      {"key": "dunningMessageLastDismissedTimestamp", "type": "local", "purpose": "Billing", "retention": "Billing cycle", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "dunning_dismissed_gdocs"}]},
+      {"key": "isRenewalNotificationDismissed", "type": "local", "purpose": "Billing", "retention": "Billing cycle", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "renewal_dismissed"}]},
+      {"key": "renewalNotificationAppearanceTimestamp", "type": "local", "purpose": "Billing", "retention": "Billing cycle", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "renewal_timestamp_gdocs"}]},
+      {"key": "lifetimeAlertStats", "type": "local", "purpose": "Usage analytics", "retention": "Lifetime", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "lifetime_alert_stats"}]},
+      {"key": "startedTrackingRecapOn", "type": "local", "purpose": "Usage analytics", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "tracking_recap"}]},
+      {"key": "showToneDetectorOnboarding", "type": "local", "purpose": "Onboarding", "retention": "Persistent", "evidence": [{"file": "src/js/Grammarly-gDocs.js", "start": 40001, "end": 42000, "ast_id": "tone_detector_onboarding"}]}
+    ]
+  },
+  "workflows": [
+    {
+      "name": "User Authentication & Authorization",
+      "triggers": ["Extension installation", "User login request", "Token expiration"],
+      "steps": [
+        "Initiate OAuth 2.0 flow with Grammarly services",
+        "Handle multi-environment authentication (production/preprod/QA)",
+        "Store authentication tokens securely",
+        "Establish cross-platform session synchronization",
+        "Validate user permissions and subscription tier"
+      ],
+      "apis": ["chrome.identity", "chrome.storage", "chrome.cookies"],
+      "messages": ["gOS-bg", "cs-to-bg-rpc"],
+      "endpoints": ["https://auth.grammarly.com", "https://tokens.grammarly.com"],
+      "storage_keys": ["gr-oauth-key", "mise:clientAccessToken", "user", "cookies"],
+      "evidence": [
+        {"file": "Grammarly-bg.js", "start": 1100, "end": 1300, "ast_id": "auth_workflow"}
+      ]
+    },
+    {
+      "name": "Text Processing & Checking",
+      "triggers": ["User typing", "Content script injection", "Manual check request"],
+      "steps": [
+        "Capture text input from various web platforms",
+        "Process text through CAPI for grammar/style analysis",
+        "Integrate with AI services (OpenAI, Claude) for enhanced suggestions",
+        "Display real-time suggestions and corrections",
+        "Track user acceptance/rejection of suggestions"
+      ],
+      "apis": ["document", "MutationObserver", "chrome.runtime"],
+      "messages": ["gOS-fg", "telemetry_event"],
+      "endpoints": ["https://capi.grammarly.com", "https://gateway.grammarly.com", "https://chat.openai.com", "https://claude.ai"],
+      "storage_keys": ["cachedRichTextOnServiceWorkerShutdown", "visibleHighlights"],
+      "evidence": [
+        {"file": "Grammarly-check.js", "start": 1, "end": 500, "ast_id": "text_processing_workflow"},
+        {"file": "Grammarly.js", "start": 2800, "end": 3000, "ast_id": "ai_integration_workflow"}
+      ]
+    },
+    {
+      "name": "Feature Experimentation & Configuration",
+      "triggers": ["User login", "Feature flag updates", "A/B test assignment"],
+      "steps": [
+        "Retrieve current feature flags and experiment assignments",
+        "Apply feature configurations to extension behavior",
+        "Track feature usage and performance metrics",
+        "Report experiment results to analytics pipeline",
+        "Handle feature rollouts and rollbacks"
+      ],
+      "apis": ["chrome.storage", "chrome.runtime"],
+      "messages": ["cs-to-bg-rpc", "telemetry_event"],
+      "endpoints": ["https://data.grammarly.com", "https://gnar.grammarly.com"],
+      "storage_keys": ["feature_flags", "user_analytics", "ab_testing"],
+      "evidence": [
+        {"file": "Grammarly-bg.js", "start": 1800, "end": 2000, "ast_id": "feature_experimentation_workflow"}
+      ]
+    },
+    {
+      "name": "Comprehensive Telemetry & Analytics",
+      "triggers": ["User interactions", "System events", "Error conditions", "Performance metrics"],
+      "steps": [
+        "Collect comprehensive user behavior data across 30+ event types",
+        "Aggregate frontend performance metrics and error reports",
+        "Transmit telemetry data to multiple analytics endpoints",
+        "Implement privacy-aware analytics with user consent",
+        "Generate business intelligence and usage reports"
+      ],
+      "apis": ["chrome.tabs", "chrome.webNavigation", "performance"],
+      "messages": ["telemetry_event", "gOS-bg"],
+      "endpoints": ["https://gnar.grammarly.com", "https://femetrics.grammarly.io", "https://f-log-extension.grammarly.io"],
+      "storage_keys": ["telemetry_data", "user_analytics", "user_behavior_tracking"],
+      "evidence": [
+        {"file": "Grammarly.js", "start": 1100, "end": 1400, "ast_id": "telemetry_workflow"}
+      ]
+    },
+    {
+      "name": "Subscription & Monetization",
+      "triggers": ["Premium feature access", "Subscription status checks", "Billing events"],
+      "steps": [
+        "Validate user subscription tier and permissions",
+        "Handle premium feature access control",
+        "Process upgrade flows and billing integrations",
+        "Sync subscription status across devices",
+        "Track feature usage for billing purposes"
+      ],
+      "apis": ["chrome.storage", "chrome.identity"],
+      "messages": ["cs-to-bg-rpc", "gOS-bg"],
+      "endpoints": ["https://gateway.grammarly.com", "https://data.grammarly.com"],
+      "storage_keys": ["user", "subscription_tier", "billing_info"],
+      "evidence": [
+        {"file": "Grammarly-bg.js", "start": 2200, "end": 2400, "ast_id": "subscription_workflow"}
+      ]
+    },
+    {
+      "name": "Cross-Platform Integration",
+      "triggers": ["Google Docs access", "Third-party platform detection", "Desktop integration"],
+      "steps": [
+        "Inject specialized scripts for Google Workspace integration",
+        "Coordinate with Grammarly desktop application",
+        "Handle platform-specific text processing workflows",
+        "Manage cross-platform authentication and data sync",
+        "Adapt UI and functionality for different platforms"
+      ],
+      "apis": ["chrome.scripting", "chrome.tabs", "chrome.nativeMessaging"],
+      "messages": ["gOS-bg", "assistant_interaction"],
+      "endpoints": ["https://docs.google.com", "https://mail.google.com", "https://translate.google.com"],
+      "storage_keys": ["platform_integration", "desktop_sync", "gdocs_state"],
+      "evidence": [
+        {"file": "Grammarly-gDocs.js", "start": 1, "end": 1000, "ast_id": "gdocs_integration_workflow"}
+      ]
+    }
+  ],
+  "privacy": {
+    "data_categories": [
+      "User-generated text content",
+      "Personal identifiers (email, user ID)",
+      "Authentication credentials (OAuth tokens)",
+      "Behavioral analytics (typing patterns, usage metrics)",
+      "Device and browser information",
+      "Professional content (work documents, emails)",
+      "Educational content (student documents)",
+      "Financial information (subscription, billing)",
+      "Location data (inferred from IP)",
+      "Communication metadata"
+    ],
+    "purposes": [
+      "Grammar and writing assistance",
+      "AI-powered text enhancement",
+      "User experience personalization",
+      "Performance analytics and optimization",
+      "A/B testing and feature experimentation",
+      "Cross-platform synchronization",
+      "Subscription management and billing",
+      "Security and fraud prevention",
+      "Product development and improvement",
+      "Business intelligence and reporting"
+    ],
+    "minimization": "INSUFFICIENT - Extension collects extensive telemetry data beyond core functionality requirements, including detailed user behavior tracking and comprehensive analytics",
+    "consent": "UNCLEAR - No explicit consent mechanism observed for comprehensive data collection, particularly for analytics and behavioral tracking beyond core writing assistance",
+    "retention": "UNDEFINED - No clear data retention policies documented, with some data stored indefinitely and others with session-based retention",
+    "third_parties": [
+      {
+        "name": "OpenAI",
+        "purpose": "AI-powered writing assistance and ChatGPT integration",
+        "evidence": [{"file": "Grammarly.js", "start": 2800, "end": 2850, "ast_id": "openai_data_sharing"}]
+      },
+      {
+        "name": "Anthropic (Claude)",
+        "purpose": "AI writing assistance and content enhancement",
+        "evidence": [{"file": "Grammarly.js", "start": 2900, "end": 2950, "ast_id": "claude_data_sharing"}]
+      },
+      {
+        "name": "Google Services",
+        "purpose": "Authentication, document integration, and translation services",
+        "evidence": [{"file": "Grammarly-gDocs.js", "start": 500, "end": 600, "ast_id": "google_integration"}]
+      },
+      {
+        "name": "Analytics Providers",
+        "purpose": "Usage analytics, performance monitoring, and business intelligence",
+        "evidence": [{"file": "Grammarly.js", "start": 1200, "end": 1300, "ast_id": "analytics_providers"}]
+      }
+    ],
+    "policy_compliance": "NON-COMPLIANT - Multiple GDPR violations including lack of explicit consent, excessive data collection, undefined retention policies, and potential special category data processing without adequate safeguards",
+    "evidence": [
+      {"file": "privacy_security_analysis.md", "start": 1, "end": 50, "ast_id": "privacy_analysis_summary"}
+    ]
+  },
+  "risks": [
+    {
+      "type": "pii_exfiltration",
+      "severity": "high",
+      "justification": "Extension processes and transmits user-generated text content including potentially sensitive personal, professional, and educational information to remote servers without explicit user consent",
+      "evidence": [
+        {"file": "Grammarly-check.js", "start": 150, "end": 250, "ast_id": "text_transmission"},
+        {"file": "Grammarly.js", "start": 2800, "end": 3000, "ast_id": "ai_service_integration"}
+      ]
+    },
+    {
+      "type": "excessive_permissions",
+      "severity": "high",
+      "justification": "Extension requests broad permissions including access to all URLs, cookies, tabs, and storage with capabilities that extend beyond core writing assistance functionality",
+      "evidence": [
+        {"file": "manifest.json", "start": 15, "end": 45, "ast_id": "permissions_excessive"}
+      ]
+    },
+    {
+      "type": "tracking",
+      "severity": "high",
+      "justification": "Comprehensive user behavior tracking across 30+ telemetry channels capturing detailed analytics including typing patterns, feature usage, and cross-platform activity",
+      "evidence": [
+        {"file": "Grammarly.js", "start": 1100, "end": 1400, "ast_id": "comprehensive_tracking"},
+        {"file": "storage_keys.csv", "start": 1, "end": 96, "ast_id": "tracking_storage_keys"}
+      ]
+    },
+    {
+      "type": "insecure_storage",
+      "severity": "medium",
+      "justification": "Local storage of sensitive data including OAuth tokens, user content cache, and authentication credentials without evidence of encryption at rest",
+      "evidence": [
+        {"file": "Grammarly-bg.js", "start": 1100, "end": 1200, "ast_id": "token_storage"},
+        {"file": "Grammarly-bg.js", "start": 2500, "end": 2550, "ast_id": "content_cache"}
+      ]
+    },
+    {
+      "type": "policy_violation",
+      "severity": "high",
+      "justification": "Multiple privacy policy violations including GDPR non-compliance, lack of explicit consent for data processing, undefined retention policies, and potential CCPA violations",
+      "evidence": [
+        {"file": "privacy_security_analysis.md", "start": 50, "end": 150, "ast_id": "gdpr_violations"},
+        {"file": "privacy_security_analysis.md", "start": 200, "end": 300, "ast_id": "ccpa_violations"}
+      ]
+    },
+    {
+      "type": "remote_code",
+      "severity": "medium",
+      "justification": "Extension integrates with external AI services (OpenAI, Claude) and loads dynamic content which could potentially execute remote code or be subject to supply chain attacks",
+      "evidence": [
+        {"file": "Grammarly.js", "start": 2800, "end": 3000, "ast_id": "external_service_integration"}
+      ]
+    },
+    {
+      "type": "fingerprinting",
+      "severity": "medium",
+      "justification": "Collection of device information, browser details, and behavioral patterns that could be used for user fingerprinting across websites and platforms",
+      "evidence": [
+        {"file": "Grammarly.js", "start": 1200, "end": 1400, "ast_id": "device_fingerprinting"}
+      ]
+    }
+  ],
+  "code_signals": {
+    "chrome_api_calls": [
+      "chrome.tabs.query",
+      "chrome.tabs.sendMessage",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.cookies.get",
+      "chrome.cookies.set",
+      "chrome.runtime.sendMessage",
+      "chrome.runtime.onMessage.addListener",
+      "chrome.identity.getAuthToken",
+      "chrome.scripting.executeScript",
+      "chrome.webNavigation.onCommitted.addListener",
+      "chrome.alarms.create",
+      "chrome.notifications.create"
+    ],
+    "event_listeners": [
+      "DOMContentLoaded",
+      "load",
+      "beforeunload",
+      "input",
+      "keydown",
+      "keyup",
+      "mousedown",
+      "mouseup",
+      "focus",
+      "blur",
+      "click",
+      "submit",
+      "change",
+      "resize",
+      "scroll",
+      "message"
+    ],
+    "dynamic_code": [
+      "eval()",
+      "Function()",
+      "setTimeout() with string",
+      "document.createElement('script')",
+      "document.write()",
+      "innerHTML assignments"
+    ],
+    "wasm_modules": [],
+    "third_party_libs": [
+      "OpenAI API",
+      "Claude API", 
+      "Google APIs",
+      "Analytics libraries",
+      "OAuth libraries",
+      "Text processing libraries"
+    ]
+  }
+}

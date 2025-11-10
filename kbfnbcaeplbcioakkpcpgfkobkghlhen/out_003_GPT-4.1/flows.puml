@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant Page
+participant "Content Script" as CS
+participant "Service Worker" as SW
+database "chrome.storage" as Storage
+participant "Remote API" as Remote
+
+User -> Page: Visits page
+Page -> CS: Inject content script
+CS -> SW: sendMessage
+SW -> Storage: chrome.storage.local.get/set
+SW -> Remote: Network requests
+SW --> CS: response
+CS -> Page: Modify DOM
+@enduml

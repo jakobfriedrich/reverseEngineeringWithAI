@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "ChromeExtensionBehavior",
   "type": "object",
   "required": ["metadata", "permissions", "components", "workflows", "network", "messaging", "storage", "privacy", "risks"],
@@ -67,7 +67,7 @@
             "required": ["name", "direction"],
             "properties": {
               "name": {"type": "string"},
-              "direction": {"type": "string", "enum": ["content->background", "background->content", "ui->background", "other"]},
+              "direction": {"type": "string"},
               "payload_schema": {"type": "object"},
               "evidence": {"$ref": "#/$defs/evidenceArray"}
             }

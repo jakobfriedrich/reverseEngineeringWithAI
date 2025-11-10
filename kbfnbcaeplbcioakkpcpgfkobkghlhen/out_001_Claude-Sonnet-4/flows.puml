@@ -1,0 +1,115 @@
+@startuml Grammarly Extension Communication Flows
+!theme plain
+title Grammarly Chrome Extension MV3 - Component Communication Architecture
+
+' Component definitions based on file analysis
+component "Web Pages" as Page {
+  component "Google Docs" as GDocs
+  component "General Sites" as Sites
+  component "External AI Services" as AI
+}
+
+component "Content Scripts" as CS {
+  component "Grammarly.js\n(Site-specific)" as MainCS
+  component "Grammarly-check.js\n(Universal checker)" as CheckCS  
+  component "Grammarly-gDocs.js\n(Google Docs)" as GDocsCS
+}
+
+component "Background/Service Worker" as BG {
+  component "Grammarly-bg.js\n(Main service worker)" as MainBG
+  component "OAuth Engine" as OAuth
+  component "CAPI Client" as CAPI
+  component "Telemetry Engine" as Telemetry
+}
+
+component "Remote Services" as Remote {
+  component "Authentication\nauth.grammarly.com" as Auth
+  component "Checking API\ncapi.grammarly.com" as CheckAPI
+  component "Gateway\ngateway.grammarly.com" as Gateway
+  component "Analytics\nfemetrics.grammarly.io" as Analytics
+  component "Configuration\nproperties.grammarly.com" as Config
+  component "Experiments\ntreatment.grammarly.com" as Experiments
+}
+
+component "External Services" as External {
+  component "Google OAuth\naccounts.google.com" as GoogleAuth
+  component "AI Platforms\nOpenAI, Claude, etc." as AIPlatforms
+  component "Translation\nGoogle Translate, DeepL" as Translation
+}
+
+' Page <-> Content Script Communications
+Page -down-> MainCS : "DOM Events\n(keypress, focus, input)"
+MainCS -up-> Page : "DOM Manipulation\n(text replacement, highlighting)"
+
+GDocs -down-> GDocsCS : "Google Docs API Events\n(document changes)"
+GDocsCS -up-> GDocs : "Text Processing\n(corrections, suggestions)"
+
+Sites -down-> CheckCS : "Field Detection\n(contenteditable, textarea)"
+CheckCS -up-> Sites : "UI Injection\n(popups, cards)"
+
+' Content Script <-> Background Communications
+MainCS <-down-> MainBG : "gOS-bg-d5ccc5edf7e1\ngOS-fg-d5ccc5edf7e1\n(bidirectional RPC)"
+CheckCS -down-> MainBG : "cs-to-bg-rpc-1557421403805\n(authentication, checking)"
+GDocsCS <-down-> MainBG : "pushTextChanges\nsyncHighlights\n(text synchronization)"
+
+MainCS -down-> MainBG : "Text Processing Messages:\n• replace, ignore, acknowledge\n• login, signIn, signUp\n• sdui_actions"
+
+MainBG -down-> MainCS : "Feature Control:\n• alwaysAvailableAssistant\n• touchTypist, citationBuilder\n• extensionSettings"
+
+MainBG -down-> CheckCS : "CODE_SPLITTING_INJECT\n(dynamic code loading)"
+
+' Background Service Worker Internal Flows
+MainBG <-right-> OAuth : "Authentication Flow:\n• bgRpc_api_launchAuthFlow\n• authenticationStarted"
+MainBG <-right-> CAPI : "CAPI Communications:\n• cs-to-bg-static-capi-rpc\n• cs-to-bg-static-capi-observable-rpc"
+MainBG <-right-> Telemetry : "Analytics Events:\n• 30+ telemetry channels\n• performance, errors, features"
+
+' Background <-> Remote Service Communications
+OAuth <-down-> Auth : "OAuth 2.0 Flow:\n• /oauth2/token, /oauth2/authorize\n• tokens.grammarly.com"
+CAPI <-down-> CheckAPI : "Text Checking:\n• capi.grammarly.com\n• Real-time grammar analysis"
+MainBG <-down-> Gateway : "API Gateway:\n• gateway.grammarly.com\n• goldengate.grammarly.io"
+
+Telemetry -down-> Analytics : "Usage Analytics:\n• femetrics.grammarly.io\n• User behavior tracking"
+MainBG -down-> Config : "Feature Configuration:\n• properties.grammarly.com\n• Dynamic settings"
+MainBG -down-> Experiments : "A/B Testing:\n• treatment.grammarly.com\n• gates.grammarly.com"
+
+' External Service Communications
+OAuth <-down-> GoogleAuth : "Social Authentication:\n• accounts.google.com\n• Facebook, Apple ID"
+CheckCS -down-> AIPlatforms : "AI Service Detection:\n• chat.openai.com, claude.ai\n• gemini.google.com"
+MainCS -down-> Translation : "Translation Services:\n• translate.google.com\n• deepl.com"
+
+' Specialized Flows
+note right of GDocsCS
+  Google Docs Integration:
+  • Canvas text mapping
+  • Real-time collaboration
+  • Advanced positioning
+  • Human Writing Reports
+end note
+
+note right of MainBG
+  Service Worker Features:
+  • OAuth token management
+  • Cross-tab communication
+  • Offline capability
+  • Background processing
+end note
+
+note bottom of Remote
+  Multi-Environment Support:
+  • Production: grammarly.com
+  • Preprod: ppgr.io  
+  • QA: qagr.io
+end note
+
+' Message Flow Legends
+legend right
+  |= Flow Type |= Description |
+  | RPC Messages | Bidirectional request/response |
+  | Telemetry | One-way analytics data |
+  | OAuth | Authentication token flows |
+  | CAPI | Text checking and suggestions |
+  | DOM Events | User interaction capture |
+  | External APIs | Third-party integrations |
+endlegend
+
+@enduml

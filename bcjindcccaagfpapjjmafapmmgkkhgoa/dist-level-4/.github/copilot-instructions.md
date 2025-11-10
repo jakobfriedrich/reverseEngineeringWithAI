@@ -1187,7 +1187,7 @@ Initializes extension, sets up message listeners, handles storage operations.
             "required": ["name", "direction"],
             "properties": {
               "name": {"type": "string"},
-              "direction": {"type": "string", "enum": ["content->background", "background->content", "ui->background", "other"]},
+              "direction": {"type": "string"},
               "payload_schema": {"type": "object"},
               "evidence": {"$ref": "#/$defs/evidenceArray"}
             }

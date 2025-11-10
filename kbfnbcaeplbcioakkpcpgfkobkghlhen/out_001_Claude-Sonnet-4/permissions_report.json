@@ -1,0 +1,81 @@
+{
+  "name": "Grammarly: AI Writing Assistant and Grammar Checker App",
+  "version": "14.1259.0",
+  "manifest_version": 3,
+  "api_permissions": [
+    "scripting",
+    "sidePanel", 
+    "tabs",
+    "notifications",
+    "cookies",
+    "identity",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "optional_permissions": [
+    "nativeMessaging",
+    "clipboardRead"
+  ],
+  "service_worker": "sw.js",
+  "content_scripts": {
+    "count": 7,
+    "runs_on_all_urls": true,
+    "excluded_sites": [
+      "outlook.live.com",
+      "outlook.office.com", 
+      "atlassian.net",
+      "mail.google.com",
+      "quora.com",
+      "slack.com",
+      "blackboard.com",
+      "blogger.com",
+      "facebook.com",
+      "linkedin.com",
+      "medium.com",
+      "messenger.com",
+      "teams.microsoft.com",
+      "reddit.com",
+      "youtube.com",
+      "twitter.com",
+      "x.com",
+      "docs.google.com"
+    ],
+    "special_integrations": [
+      "docs.google.com/document",
+      "overleaf.com"
+    ]
+  },
+  "csp_connect_domains": [
+    "auth.grammarly.com",
+    "assets.grammarly.com",
+    "data.grammarly.com", 
+    "capi.grammarly.com",
+    "dox.grammarly.com",
+    "institution.grammarly.com",
+    "gnar.grammarly.com",
+    "in.grammarly.com",
+    "f-log-extension.grammarly.io",
+    "f-log-editor.grammarly.io", 
+    "f-log-inkwell.grammarly.io",
+    "config.extension.grammarly.com",
+    "chipmunk.grammarly.com",
+    "treatment.grammarly.com",
+    "gates.grammarly.com",
+    "goldengate.grammarly.com",
+    "femetrics.grammarly.io",
+    "extension.femetrics.grammarly.io",
+    "inkwell.femetrics.grammarly.io",
+    "rwsgfy.grammarly.com",
+    "assets.extension.grammarly.com",
+    "api.iterable.com",
+    "skills.grammarly.com",
+    "skills-proxy.grammarly.com",
+    "gateway.grammarly.com",
+    "coda.io",
+    "codahosted.io",
+    "subscription.grammarly.com"
+  ]
+}

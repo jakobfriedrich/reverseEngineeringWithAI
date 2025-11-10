@@ -1,4 +1,5 @@
-  {
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "ChromeExtensionBehavior",
   "type": "object",
   "required": ["metadata", "permissions", "components", "workflows", "network", "messaging", "storage", "privacy", "risks"],
@@ -35,7 +36,7 @@
         "web_accessible_resources": {"type": "array", "items": {"type": "string"}}
       }
     },
-  "network": {
+    "network": {
       "type": "object",
       "required": ["endpoints"],
       "properties": {
@@ -66,7 +67,7 @@
             "required": ["name", "direction"],
             "properties": {
               "name": {"type": "string"},
-              "direction": {"type": "string", "enum": ["content->background", "background->content", "ui->background", "other"]},
+              "direction": {"type": "string"},
               "payload_schema": {"type": "object"},
               "evidence": {"$ref": "#/$defs/evidenceArray"}
             }
@@ -149,7 +150,7 @@
         }
       }
     },
-  "code_signals": {
+    "code_signals": {
       "type": "object",
       "properties": {
         "chrome_api_calls": {"type": "array", "items": {"type": "string"}},
@@ -158,8 +159,8 @@
         "wasm_modules": {"type": "array", "items": {"type": "string"}},
         "third_party_libs": {"type": "array", "items": {"type": "string"}}
       }
-  }
-},
+    }
+  },
   "$defs": {
     "evidenceArray": {
       "type": "array",

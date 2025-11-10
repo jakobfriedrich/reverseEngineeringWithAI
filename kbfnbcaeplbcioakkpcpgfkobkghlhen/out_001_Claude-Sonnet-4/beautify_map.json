@@ -1,0 +1,4 @@
+[
+  {"original": "sw.js", "beautified": "sw.beautified.js", "status": "ok - already beautified"},
+  {"original": "beautify-all.js", "beautified": "beautify-all.beautified.js", "status": "ok - already beautified"}
+]

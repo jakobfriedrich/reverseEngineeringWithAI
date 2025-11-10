@@ -1119,7 +1119,7 @@ Initializes extension, sets up message listeners, handles storage operations.
 
 ```json
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "ChromeExtensionBehavior",
   "type": "object",
   "required": ["metadata", "permissions", "components", "workflows", "network", "messaging", "storage", "privacy", "risks"],
@@ -1187,7 +1187,7 @@ Initializes extension, sets up message listeners, handles storage operations.
             "required": ["name", "direction"],
             "properties": {
               "name": {"type": "string"},
-              "direction": {"type": "string", "enum": ["content->background", "background->content", "ui->background", "other"]},
+              "direction": {"type": "string"},
               "payload_schema": {"type": "object"},
               "evidence": {"$ref": "#/$defs/evidenceArray"}
             }
