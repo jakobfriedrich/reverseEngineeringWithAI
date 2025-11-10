@@ -1,0 +1,36 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "Content Script\n(content.js)" as CS
+participant "Content Script\n(set-json-global.js)" as Global
+participant "Options Page\n(options.js)" as Options
+database "chrome.storage.local" as Storage
+
+note over Page, Storage : JSON Formatter Extension Flow
+
+User -> Page: Visits page with JSON content
+Page -> CS: Content script injected (document_end)
+Page -> Global: Global script injected (document_idle, MAIN world)
+
+CS -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> CS: Theme preference
+CS -> Page: Parse JSON content
+CS -> Page: Create formatted JSON UI
+CS -> Page: Apply theme styling
+
+Global -> Page: Find JSON content in DOM
+Global -> Page: JSON.parse(content)
+Global -> Page: window.json = parsedContent
+note right: Exposes JSON as global variable\nfor developer console access
+
+User -> Options: Opens extension options
+Options -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> Options: Current theme setting
+Options -> Options: Display current selection
+
+User -> Options: Changes theme preference
+Options -> Storage: chrome.storage.local.set({themeOverride: newValue})
+Storage -> CS: onChanged event
+CS -> Page: Update theme styling
+
+@enduml

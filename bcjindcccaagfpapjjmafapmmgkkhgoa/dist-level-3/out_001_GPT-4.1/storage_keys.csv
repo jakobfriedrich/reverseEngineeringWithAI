@@ -1,0 +1,4 @@
+key,type,purpose,file,line_start,line_end
+key,type,purpose,file,line_start,line_end
+themeOverride,local,Theme selection for UI and content,content.js,1,2000
+themeOverride,local,Theme selection for UI and content,options/options.js,1,2000

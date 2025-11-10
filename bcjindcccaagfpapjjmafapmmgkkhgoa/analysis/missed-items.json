@@ -1,0 +1,283 @@
+[
+  {
+    "item_name": "chrome.storage.local.get",
+    "category": "Components",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.local.set",
+    "category": "Components",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.onChanged.addListener",
+    "category": "Components",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "addEventListener",
+    "category": "Components",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "mousedown",
+    "category": "Components",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "change",
+    "category": "Components",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "themeOverride",
+    "category": "Storage Keys",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1"
+    ],
+    "security_impact": "Medium",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.local.get",
+    "category": "Workflows",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.local.set",
+    "category": "Workflows",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "user_preferences",
+    "category": "Privacy",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "personalization",
+    "category": "Privacy",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "data_minimization",
+    "category": "Privacy",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "policy_compliant",
+    "category": "Privacy",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.local.get",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.local.set",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "chrome.storage.onChanged.addListener",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "addEventListener",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "JSON.parse",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Claude-Sonnet-4",
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "mousedown",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "change",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "Object.defineProperty",
+    "category": "Code Signals",
+    "level_first_missed": 1,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "minification"
+  },
+  {
+    "item_name": "*://*/*",
+    "category": "Permissions",
+    "level_first_missed": 3,
+    "models_missing": [
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "control_flow_flattening"
+  },
+  {
+    "item_name": "JSON Formatting",
+    "category": "Workflows",
+    "level_first_missed": 3,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "control_flow_flattening"
+  },
+  {
+    "item_name": "Theme Selection",
+    "category": "Workflows",
+    "level_first_missed": 3,
+    "models_missing": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "control_flow_flattening"
+  },
+  {
+    "item_name": "options/options.html",
+    "category": "Components",
+    "level_first_missed": 4,
+    "models_missing": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "security_impact": "Low",
+    "obfuscation_cause": "string_encoding + dead_code"
+  }
+]

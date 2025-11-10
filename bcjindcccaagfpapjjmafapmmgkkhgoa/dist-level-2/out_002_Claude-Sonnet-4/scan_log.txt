@@ -1,0 +1,62 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 002
+Model: Claude-Sonnet-4
+Timestamp: 2025-11-06T14:32:00Z
+Output Directory: ./out_002_Claude-Sonnet-4
+
+Tools/Packages Used:
+- js-beautify@1.15.4 (already installed)
+- espree@9.6.1 (newly installed)
+- acorn@8.10.0 (newly installed)
+- acorn-walk@3.2.0 (newly installed)
+- ajv-cli@5.0.0 (globally installed)
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate, pre-existing)
+- Total chunks analyzed: 3
+- No Service Worker (content script only extension)
+- Content scripts: 2 files (content.js, set-json-global.js)
+- UI files: 2 files (options/options.html, options/options.js)
+
+Analysis Results:
+- Chrome API calls found: 3 unique calls
+- Event listeners: 2
+- Message channels: 0
+- Storage keys: 1
+- Network endpoints: 0 unique domains
+- Workflows identified: 4
+- Privacy risks: 0 medium/high severity
+
+Beautification:
+- Success: 3 files (pre-existing beautified versions)
+- Errors: 0 files
+- Files excluded: node_modules (54 files), out_001_GPT-4.1
+
+Code Analysis Challenges:
+- All JS files heavily obfuscated/minified
+- Analysis based on string literals and observable patterns
+- Limited AST parsing due to obfuscation
+- Relied on manifest inspection and string table analysis
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: 3 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (0 rows), messages.csv (0 rows), storage_keys.csv (1 row)
+
+Extension Characteristics:
+- Type: Content script only (no background worker)
+- Purpose: JSON formatting for web pages
+- Data collection: Minimal (theme preference only)
+- Network activity: None detected
+- Risk level: Very low
+
+Known Gaps/Unknowns:
+- Detailed code flow obscured by obfuscation
+- Exact API usage patterns unclear due to minification
+- Open source claims not verified against distributed version
+
+Completion Status: SUCCESS

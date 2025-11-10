@@ -1,0 +1,38 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 004_Gemini-2.5-Pro
+Model: Gemini-2.5-Pro
+Timestamp: 2025-11-02T20:06:00Z
+Output Directory: ./out_004_Gemini-2.5-Pro
+
+Tools/Packages Used:
+- js-beautify
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate)
+- Total chunks analyzed: 5
+- Service worker: 1 file (serviceWorker.js)
+- Content scripts: 2 files (momoSiteInterop.js, siteBlocker.js)
+
+Analysis Results:
+- Chrome API calls found: 26 unique calls
+- Event listeners: 14
+- Message channels: 21
+- Storage keys: 11
+- Network endpoints: 7 unique domains
+- Workflows identified: 2
+- Privacy risks: 1 medium severity
+
+Beautification:
+- Success: 3 files
+- Errors: 0 files
+
+Validation:
+- honey_summary.json: PASSED schema validation (manual check)
+- outline.jsonl: 5 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (7 rows), messages.csv (21 rows), storage_keys.csv (11 rows)
+
+Completion Status: SUCCESS

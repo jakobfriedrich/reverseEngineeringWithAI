@@ -1,0 +1,43 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 003
+Model: Gemini-2.5-Pro
+Timestamp: 2025-11-06T12:00:00Z
+Output Directory: ./out_003_Gemini-2.5-Pro
+
+Tools/Packages Used:
+- js-beautify
+- ajv-cli
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate)
+- Total chunks analyzed: 3
+- Service worker: 0 files
+- Content scripts: 2 files (content.js, set-json-global.js)
+- UI files: 1 file (options/options.js)
+
+Analysis Results:
+- Chrome API calls found: 3 unique calls
+- Event listeners: 2
+- Message channels: 0
+- Storage keys: 1
+- Network endpoints: 0
+- Workflows identified: 2
+- Privacy risks: 1 low severity
+
+Beautification:
+- Success: 3 files
+- Errors: 0 files
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: 3 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (0 rows), messages.csv (0 rows), storage_keys.csv (1 rows)
+
+Known Gaps/Unknowns:
+- The purpose of `content.js` seems to be solely to inject `set-json-global.js`. The core formatting logic is likely in a web accessible resource not explicitly listed as a script.
+
+Completion Status: SUCCESS

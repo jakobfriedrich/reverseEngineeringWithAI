@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 25}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 19, "end": 20}]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": [],
+      "evidence": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js"],
+        "apis": [],
+        "listeners": ["addEventListener"],
+        "evidence": [{"file": "manifest.json", "start": 13, "end": 17}, {"file": "content.js", "start": 1, "end": 553}]
+      },
+      {
+        "files": ["set-json-global.js"],
+        "apis": [],
+        "listeners": [],
+        "evidence": [{"file": "manifest.json", "start": 18, "end": 22}, {"file": "set-json-global.js", "start": 1, "end": 63}]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": ["options/options.js"],
+        "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+        "listeners": ["addEventListener", "chrome.storage.onChanged.addListener"],
+        "evidence": [{"file": "manifest.json", "start": 22, "end": 25}, {"file": "options/options.js", "start": 1, "end": 77}]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "local",
+        "purpose": "Store user theme preference (system/force_light/force_dark)",
+        "retention": "indefinite",
+        "evidence": [{"file": "options/options.js", "start": 1, "end": 77}]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "JSON Formatting Workflow",
+      "triggers": ["User navigates to webpage containing JSON"],
+      "steps": [
+        "Browser loads page with JSON content",
+        "content.js content script automatically injects",
+        "Script detects JSON content in DOM",
+        "Parses and formats JSON for better readability",
+        "Injects formatted UI with expand/collapse functionality",
+        "Applies CSS styling based on theme preferences"
+      ],
+      "apis": ["querySelector", "createElement", "appendChild"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [{"file": "content.js", "start": 1, "end": 553}, {"file": "manifest.json", "start": 13, "end": 17}]
+    },
+    {
+      "name": "Global JSON Debug Workflow",
+      "triggers": ["User navigates to webpage containing JSON"],
+      "steps": [
+        "set-json-global.js injects into page (world: MAIN)",
+        "Finds JSON content in DOM", 
+        "Parses JSON content",
+        "Exposes parsed data as window.json global",
+        "Logs success/failure message to console"
+      ],
+      "apis": ["Object.defineProperty", "JSON.parse"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [{"file": "set-json-global.js", "start": 1, "end": 63}, {"file": "manifest.json", "start": 18, "end": 22}]
+    },
+    {
+      "name": "Theme Preference Management Workflow", 
+      "triggers": ["User opens extension options page"],
+      "steps": [
+        "Options page loads options.js",
+        "Script retrieves current themeOverride from chrome.storage.local",
+        "Sets appropriate radio button as checked",
+        "User changes theme selection",
+        "Script saves new preference to chrome.storage.local",
+        "Storage change event updates UI immediately"
+      ],
+      "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [{"file": "options/options.js", "start": 1, "end": 77}, {"file": "manifest.json", "start": 22, "end": 25}]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences"],
+    "purposes": ["json_formatting", "ui_customization", "developer_debugging"],
+    "minimization": "Extension collects minimal necessary data. Only stores user theme preference.",
+    "consent": "No explicit consent mechanism required - extension only collects user preferences explicitly set in options.",
+    "retention": "Theme preferences stored indefinitely in chrome.storage.local until user changes or uninstalls extension.",
+    "third_parties": [],
+    "policy_compliance": "Appears compliant with Chrome Web Store policies. No privacy policy violations detected.",
+    "evidence": [{"file": "options/options.js", "start": 1, "end": 77}, {"file": "manifest.json", "start": 19, "end": 20}]
+  },
+  "risks": [
+    {
+      "type": "other",
+      "severity": "medium", 
+      "justification": "Heavy obfuscation in content scripts makes security analysis difficult and could hide malicious behavior",
+      "evidence": [{"file": "content.js", "start": 1, "end": 553}, {"file": "set-json-global.js", "start": 1, "end": 63}]
+    },
+    {
+      "type": "other",
+      "severity": "low",
+      "justification": "Extension modifies global window object by adding 'json' property, could conflict with page scripts", 
+      "evidence": [{"file": "set-json-global.js", "start": 30, "end": 45}]
+    },
+    {
+      "type": "excessive_permissions",
+      "severity": "low",
+      "justification": "Extension requests access to all URLs (*://*/*, <all_urls>) but functionality justifies this for JSON formatting on any site",
+      "evidence": [{"file": "manifest.json", "start": 20, "end": 20}]
+    }
+  ],
+  "code_signals": {
+    "chrome_api_calls": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+    "event_listeners": ["addEventListener", "chrome.storage.onChanged.addListener"],
+    "dynamic_code": [],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

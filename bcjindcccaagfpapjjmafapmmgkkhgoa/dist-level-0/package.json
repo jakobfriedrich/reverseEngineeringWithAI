@@ -1,0 +1,21 @@
+{
+  "name": "dist-level-0",
+  "version": "1.0.0",
+  "main": "content.beautified.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "js-beautify": "^1.15.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/typescript-estree": "^8.46.3",
+    "acorn": "^8.15.0",
+    "acorn-walk": "^8.3.4",
+    "espree": "^10.4.0"
+  }
+}

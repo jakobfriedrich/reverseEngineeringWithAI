@@ -1,0 +1,17 @@
+key,type,purpose,file,line_start,line_end
+keyValueDb,indexeddb,Generic key-value storage,serviceWorker.js,100,150
+timestamp,indexeddb,Cache timestamps,serviceWorker.js,4400,4450
+analyticsQueue,indexeddb,PostHog analytics queue,serviceWorker.js,4500,4550
+notificationsQueue,indexeddb,Notification scheduling,serviceWorker.js,4300,4350
+xhrQueue,indexeddb,HTTP request queue,serviceWorker.js,5000,5100
+idMap,indexeddb,Client/server ID mapping,serviceWorker.js,4200,4250
+client_uuid,local,Client identifier,serviceWorker.js,5300,5310
+token,local,Authentication token,serviceWorker.js,5310,5320
+token_uuid,local,Token identifier,serviceWorker.js,5320,5330
+unregistered,local,Registration status,serviceWorker.js,5330,5340
+momentumPlatform,dom,Platform identifier injected into page,content-scripts/momoSiteInterop.js,10,15
+momentumVersion,dom,Extension version injected into page,content-scripts/momoSiteInterop.js,15,20
+momentumExtensionUserId,dom,User ID injected into page,content-scripts/momoSiteInterop.js,20,25
+chrome.storage,local,Generic Chrome storage API usage,serviceWorker.js,37,42
+indexedDB,indexeddb,Generic IndexedDB database operations,serviceWorker.js,2001,4000
+localStorage,local,Generic local storage operations,serviceWorker.js,4800,4850

@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [
+      {
+        "file": "manifest.json",
+        "start": 2,
+        "end": 6
+      }
+    ]
+  },
+  "permissions": {
+    "api_permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "optional_permissions": [],
+    "evidence": [
+      {
+        "file": "manifest.json",
+        "start": 16,
+        "end": 27
+      }
+    ]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": []
+    },
+    "content_scripts": [
+      {
+        "files": [
+          "content.js",
+          "set-json-global.js"
+        ],
+        "apis": [
+          "chrome.runtime.getURL"
+        ],
+        "listeners": [],
+        "evidence": [
+          {
+            "file": "manifest.json",
+            "start": 19,
+            "end": 26
+          }
+        ]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": [
+          "options/options.html",
+          "options/options.js"
+        ],
+        "apis": [
+          "chrome.storage.sync"
+        ],
+        "listeners": [
+          "DOMContentLoaded",
+          "change"
+        ],
+        "evidence": [
+          {
+            "file": "manifest.json",
+            "start": 28,
+            "end": 30
+          }
+        ]
+      }
+    ]
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "sync",
+        "purpose": "Store user theme preference",
+        "retention": "indefinite",
+        "evidence": [
+          {
+            "file": "options/options.js",
+            "start": 13,
+            "end": 21
+          }
+        ]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "JSON Formatting and Display",
+      "triggers": [
+        "User navigates to a page with raw JSON content."
+      ],
+      "steps": [
+        "content.js is injected into the page.",
+        "content.js injects set-json-global.js to access the page's window object.",
+        "set-json-global.js extracts the JSON content and assigns it to window.json.",
+        "The content script formats the JSON and renders it in a readable format."
+      ],
+      "apis": [
+        "chrome.runtime.getURL"
+      ],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [
+        {
+          "file": "content.js",
+          "start": 1,
+          "end": 10
+        },
+        {
+          "file": "set-json-global.js",
+          "start": 1,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "name": "Theme Customization",
+      "triggers": [
+        "User opens the extension's options page."
+      ],
+      "steps": [
+        "options.js reads the \"themeOverride\" value from chrome.storage.sync.",
+        "The user selects a theme from the dropdown.",
+        "The new theme value is saved back to chrome.storage.sync."
+      ],
+      "apis": [
+        "chrome.storage.sync.get",
+        "chrome.storage.sync.set"
+      ],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [
+        "themeOverride"
+      ],
+      "evidence": [
+        {
+          "file": "options/options.js",
+          "start": 11,
+          "end": 22
+        }
+      ]
+    }
+  ],
+  "privacy": {
+    "data_categories": [
+      "user_preferences"
+    ],
+    "purposes": [
+      "personalization"
+    ],
+    "minimization": "Collects minimal necessary data",
+    "consent": "No explicit consent mechanism observed",
+    "retention": "Indefinite storage in chrome.storage.sync",
+    "third_parties": [],
+    "policy_compliance": "No obvious violations of Chrome Web Store policies were observed."
+  },
+  "risks": [
+    {
+      "type": "insecure_storage",
+      "severity": "low",
+      "justification": "The theme preference is stored in chrome.storage.sync without encryption. While this is not sensitive data, it is a best practice to encrypt all stored data.",
+      "evidence": [
+        {
+          "file": "options/options.js",
+          "start": 13,
+          "end": 21
+        }
+      ]
+    }
+  ],
+  "code_signals": {
+    "chrome_api_calls": [
+      "chrome.runtime.getURL",
+      "chrome.storage.sync.get",
+      "chrome.storage.sync.set"
+    ],
+    "event_listeners": [
+      "DOMContentLoaded",
+      "change"
+    ],
+    "dynamic_code": [],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

@@ -1,0 +1,15 @@
+@startuml
+actor User
+participant Page
+participant "Content Script" as CS
+participant "Options Page" as Options
+database "chrome.storage" as Storage
+
+User -> Page: Visits page with JSON
+CS -> Page: Injects formatter
+Page -> CS: Renders formatted JSON
+
+User -> Options: Opens options
+Options -> Storage: chrome.storage.local.set("themeOverride")
+CS -> Storage: chrome.storage.local.get("themeOverride")
+@enduml

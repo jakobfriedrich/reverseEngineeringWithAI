@@ -1,0 +1,12 @@
+key,type,purpose,file,line_start,line_end
+config,local,get,serviceWorker.js,1,2000
+config,local,set,serviceWorker.js,1,2000
+installDate,local,set,serviceWorker.js,4001,5360
+calculateUnregisteredDashboardExperiment,local,set,serviceWorker.js,4001,5360
+releaseUpdateModalCheck,local,set,serviceWorker.js,4001,5360
+authState,local,patch,serviceWorker.js,4001,5360
+momentum-customization-1,localStorage,getObject,serviceWorker.js,4001,5360
+client_uuid,localStorage,getItem,serviceWorker.js,4001,5360
+token,localStorage,setItem,serviceWorker.js,4001,5360
+token_uuid,localStorage,setItem,serviceWorker.js,4001,5360
+unregistered,localStorage,setItem,serviceWorker.js,4001,5360

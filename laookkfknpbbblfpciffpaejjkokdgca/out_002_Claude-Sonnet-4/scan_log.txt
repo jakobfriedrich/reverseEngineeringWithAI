@@ -1,0 +1,84 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 003
+Model: Claude-Sonnet-4
+Timestamp: 2025-01-03T18:00:00Z
+Output Directory: ./out_003_Claude-Sonnet-4
+
+Tools/Packages Used:
+- js-beautify@1.15.1
+- Manual AST analysis with chunking
+- ajv-cli@5.0.0 (for validation)
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate)
+- Total chunks analyzed: 5
+- Service worker: 1 file (serviceWorker.js, 5360 lines)
+- Content scripts: 2 files (momoSiteInterop.js 55 lines, siteBlocker.js 34 lines)
+- UI files: 2 files (index.html, site-blocker.html)
+
+Analysis Results:
+- Chrome API calls found: 15 unique calls
+- Event listeners: 7 types
+- Message channels: 11 unique channels
+- Storage keys: 10 (7 IndexedDB, 3 local storage)
+- Network endpoints: 7 unique domains
+- Workflows identified: 6 major workflows
+- Privacy risks: 5 (2 medium, 3 low severity)
+
+Beautification:
+- Success: serviceWorker.js → serviceWorker.beautified.js
+- Success: content-scripts/momoSiteInterop.js → content-scripts/momoSiteInterop.beautified.js  
+- Success: content-scripts/siteBlocker.js → content-scripts/siteBlocker.beautified.js
+- Files excluded: node_modules (ignored), assets (static resources)
+
+Components Identified:
+- Background: Service worker with Dexie.js database, PostHog analytics, API integration
+- Content Scripts: Site blocking intervention system, momentumdash.com integration bridge
+- UI: New tab override (index.html), site blocker modal (site-blocker.html)
+- Network: 7 external services including PostHog, Datadog, Azure blob storage
+
+Key Findings:
+- Extension implements comprehensive analytics tracking via PostHog
+- Uses IndexedDB extensively for offline queueing and data storage
+- Integrates with momentumdash.com ecosystem via DOM injection
+- Site blocking functionality with shadow DOM manipulation
+- Authentication token storage with indefinite retention
+
+Privacy Analysis:
+- Data Categories: user_credentials, browsing_behavior, user_preferences, device_identifiers, usage_analytics
+- Third Parties: PostHog Analytics, Datadog, Microsoft Azure, Momentumdash.com API
+- Consent: No explicit consent mechanism for analytics tracking
+- Retention: Indefinite storage without cleanup mechanisms
+- Compliance: Potential GDPR concerns, Chrome Web Store policy considerations
+
+Security Risks:
+- Medium: Extensive analytics tracking without explicit consent
+- Medium: Aggressive content manipulation via shadow DOM
+- Medium: Excessive optional permissions requested
+- Low: PII injection into momentumdash.com DOM
+- Low: Indefinite storage of authentication tokens
+
+Validation:
+- honey_summary.json: Created successfully with comprehensive findings
+- outline.jsonl: 5 entries covering all analyzed chunks
+- analysis_notes.md: Complete documentation with detailed findings per chunk
+- CSV files: endpoints.csv (7 rows), messages.csv (11 rows), storage_keys.csv (10 rows)
+- PlantUML: flows.puml created with component interaction diagrams
+
+Known Gaps/Unknowns:
+- Some PostHog configuration details not fully visible due to library integration
+- Exact payload schemas for some message channels inferred from limited code context
+- Asset loading patterns from Azure blob storage could not be fully traced
+- Some Webpack bundled dependencies not individually analyzed
+
+Schema Validation:
+- Schema file created: schema.chrome_extension_behavior.json
+- Manual validation: All required fields present
+- Enum values: Verified for risk types, severities, storage types, message directions
+- Evidence arrays: Present for all claims with original file paths and line ranges
+
+Completion Status: SUCCESS
+All 9 analysis phases completed successfully with comprehensive documentation.

@@ -1,0 +1,14 @@
+channel_name,direction,payload_keys,file,line_start,line_end
+oneTimeLogin,ui->background,,serviceWorker.js,5100,5120
+momentum:authState,ui->background,"userId|src|loginState",serviceWorker.js,5120,5130
+momentum:checkUserId,ui->background,"userUuid",serviceWorker.js,5130,5140
+momentum:getUserId,ui->background,,serviceWorker.js,5140,5150
+momentum:openNew,ui->background,"params|updateSenderTab",serviceWorker.js,5150,5170
+legacyUserMigration,ui->background,"tabId",serviceWorker.js,5170,5190
+momentum-intervention:show,content->content,,content-scripts/siteBlocker.js,25,30
+momentum-intervention:dismiss,content->content,,content-scripts/siteBlocker.js,25,30
+momentum:oneTimeLogin,content->ui,,content-scripts/momoSiteInterop.js,35,40
+momentum:authState,content->ui,,content-scripts/momoSiteInterop.js,40,45
+momentum:checkUserId,content->ui,,content-scripts/momoSiteInterop.js,45,50
+momentum:getUserId,content->ui,,content-scripts/momoSiteInterop.js,48,52
+momentum:openNew,content->ui,,content-scripts/momoSiteInterop.js,50,55

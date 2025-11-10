@@ -1,0 +1,23 @@
+@startuml
+participant "Content Script (content.js)" as CS
+participant "Content Script (set-json-global.js)" as CSG
+participant "Options Page (options.js)" as OP
+database "chrome.storage" as Storage
+
+group Initialization
+    CS -> Storage: chrome.storage.local.get("themeOverride")
+    CSG -> Page: Exposes parsed JSON as window.json
+    OP -> Storage: chrome.storage.local.get("themeOverride")
+end
+
+group User Interaction
+    actor User
+    User -> OP: Selects a theme
+    OP -> Storage: chrome.storage.local.set("themeOverride")
+end
+
+group Storage Change
+    Storage -> OP: onChanged.addListener
+    OP -> OP: Updates UI
+end
+@enduml

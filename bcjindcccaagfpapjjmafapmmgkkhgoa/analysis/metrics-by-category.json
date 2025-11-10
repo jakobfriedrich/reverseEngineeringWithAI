@@ -1,0 +1,3235 @@
+[
+  {
+    "category": "Metadata",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "options/options.html",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "precision": 1,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "options/options.html",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "precision": 0.875,
+      "recall": 0.7,
+      "f1_score": 0.7777777777777777
+    },
+    "detected_items": [
+      "content.js",
+      "chrome.storage.local.get",
+      "mousedown",
+      "set-json-global.js",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged",
+      "change"
+    ],
+    "missed_items": [
+      "addEventListener",
+      "options/options.html",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "false_items": [
+      "chrome.storage.onChanged"
+    ]
+  },
+  {
+    "category": "Endpoints",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Workflows",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.4444444444444444
+    },
+    "detected_items": [
+      "Theme Selection Flow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "Theme Selection Flow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5
+    },
+    "detected_items": [
+      "JSON Page Formatting Flow",
+      "chrome.storage.local.get",
+      "Theme Configuration Flow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration Flow"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "JSON Page Formatting Flow",
+      "Theme Configuration Flow",
+      "Developer Console Integration Flow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.7272727272727272
+    },
+    "detected_items": [
+      "JSON Formatting",
+      "chrome.storage.local.get",
+      "Theme Selection",
+      "chrome.storage.local.set",
+      "chrome.storage.local.get",
+      "chrome.storage.onChanged"
+    ],
+    "missed_items": [
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "chrome.storage.onChanged"
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "precision": 0.6,
+      "recall": 0.42857142857142855,
+      "f1_score": 0.5
+    },
+    "detected_items": [
+      "user_preferences",
+      "personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed; theme selection is user-driven.",
+      "retention:indefinite storage in chrome.storage.local until user changes theme."
+    ],
+    "missed_items": [
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "consent:no explicit consent mechanism observed; theme selection is user-driven.",
+      "retention:indefinite storage in chrome.storage.local until user changes theme."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 4,
+      "false_negatives": 4,
+      "precision": 0.42857142857142855,
+      "recall": 0.42857142857142855,
+      "f1_score": 0.42857142857142855
+    },
+    "detected_items": [
+      "user_preferences",
+      "JSON formatting and display enhancement",
+      "User interface customization",
+      "data_minimization",
+      "consent:no explicit consent mechanism required. extension only processes data locally and stores minimal preference data.",
+      "retention:theme preference stored indefinitely in chrome.storage.local until user changes or removes extension.",
+      "policy_compliant"
+    ],
+    "missed_items": [
+      "personalization",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite"
+    ],
+    "false_items": [
+      "JSON formatting and display enhancement",
+      "User interface customization",
+      "consent:no explicit consent mechanism required. extension only processes data locally and stores minimal preference data.",
+      "retention:theme preference stored indefinitely in chrome.storage.local until user changes or removes extension."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 2,
+      "false_negatives": 3,
+      "precision": 0.6666666666666666,
+      "recall": 0.5714285714285714,
+      "f1_score": 0.6153846153846153
+    },
+    "detected_items": [
+      "user_preferences",
+      "personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed",
+      "retention:indefinite storage in local storage",
+      "policy_compliant"
+    ],
+    "missed_items": [
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite"
+    ],
+    "false_items": [
+      "consent:no explicit consent mechanism observed",
+      "retention:indefinite storage in local storage"
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 0,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 0,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.625,
+      "f1_score": 0.7692307692307693
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener",
+      "JSON.parse"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 0,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 5,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "precision": 0.8333333333333334,
+      "recall": 0.625,
+      "f1_score": 0.7142857142857143
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged",
+      "mousedown",
+      "change",
+      "Object.defineProperty"
+    ],
+    "missed_items": [
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "JSON.parse"
+    ],
+    "false_items": [
+      "chrome.storage.onChanged"
+    ]
+  },
+  {
+    "category": "Metadata",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "precision": 1,
+      "recall": 0.4,
+      "f1_score": 0.5714285714285715
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "addEventListener",
+      "options/options.js",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "chrome.storage.local.get",
+      "mousedown",
+      "options/options.html",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 2,
+      "false_negatives": 3,
+      "precision": 0.7777777777777778,
+      "recall": 0.7,
+      "f1_score": 0.7368421052631577
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "document.addEventListener",
+      "options/options.html",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "element.addEventListener"
+    ],
+    "missed_items": [
+      "addEventListener",
+      "mousedown",
+      "change"
+    ],
+    "false_items": [
+      "document.addEventListener",
+      "element.addEventListener"
+    ]
+  },
+  {
+    "category": "Components",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "precision": 1,
+      "recall": 0.4,
+      "f1_score": 0.5714285714285715
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "options/options.html",
+      "options/options.js"
+    ],
+    "missed_items": [
+      "chrome.storage.local.get",
+      "addEventListener",
+      "mousedown",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [
+      "themeOverride"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Workflows",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 6,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "Theme Selection Flow",
+      "JSON Formatting Flow"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "chrome.storage.local.get",
+      "Theme Selection",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "Theme Selection Flow",
+      "JSON Formatting Flow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5
+    },
+    "detected_items": [
+      "JSON Auto-Formatting Workflow",
+      "chrome.storage.local.get",
+      "Global JSON Exposure Workflow",
+      "Theme Configuration Workflow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "JSON Auto-Formatting Workflow",
+      "Global JSON Exposure Workflow",
+      "Theme Configuration Workflow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 1,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.9090909090909091
+    },
+    "detected_items": [
+      "JSON Formatting",
+      "chrome.storage.local.get",
+      "Theme Selection",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "Developer Console Integration"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Privacy",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 3,
+      "false_negatives": 7,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "Local formatting and UI only",
+      "consent:not applicable (no data collection)",
+      "retention:not applicable"
+    ],
+    "missed_items": [
+      "user_preferences",
+      "personalization",
+      "ui_customization",
+      "data_minimization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "Local formatting and UI only",
+      "consent:not applicable (no data collection)",
+      "retention:not applicable"
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 5,
+      "false_negatives": 4,
+      "precision": 0.375,
+      "recall": 0.42857142857142855,
+      "f1_score": 0.39999999999999997
+    },
+    "detected_items": [
+      "user_preferences",
+      "json_visualization",
+      "theme_preference_persistence",
+      "developer_tool_enhancement",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed, but data collection is minimal and directly related to stated functionality. theme preference is only stored when user actively configures it.",
+      "retention:theme preference stored indefinitely in chrome.storage.local until user changes or removes extension. no automatic cleanup observed. json content is processed transiently without persistence.",
+      "policy_compliant"
+    ],
+    "missed_items": [
+      "personalization",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite"
+    ],
+    "false_items": [
+      "json_visualization",
+      "theme_preference_persistence",
+      "developer_tool_enhancement",
+      "consent:no explicit consent mechanism observed, but data collection is minimal and directly related to stated functionality. theme preference is only stored when user actively configures it.",
+      "retention:theme preference stored indefinitely in chrome.storage.local until user changes or removes extension. no automatic cleanup observed. json content is processed transiently without persistence."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "precision": 0.6,
+      "recall": 0.42857142857142855,
+      "f1_score": 0.5
+    },
+    "detected_items": [
+      "user_preferences",
+      "personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed, but data collection is minimal and for functionality.",
+      "retention:indefinite storage in local storage."
+    ],
+    "missed_items": [
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "consent:no explicit consent mechanism observed, but data collection is minimal and for functionality.",
+      "retention:indefinite storage in local storage."
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 1,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 7,
+      "precision": 0.5,
+      "recall": 0.125,
+      "f1_score": 0.2
+    },
+    "detected_items": [
+      "addEventListener",
+      "addListener"
+    ],
+    "missed_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": [
+      "addListener"
+    ]
+  },
+  {
+    "category": "Code Signals",
+    "level": 1,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 5,
+      "precision": 0.6,
+      "recall": 0.375,
+      "f1_score": 0.4615384615384615
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "document.addEventListener",
+      "element.addEventListener"
+    ],
+    "missed_items": [
+      "addEventListener",
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": [
+      "document.addEventListener",
+      "element.addEventListener"
+    ]
+  },
+  {
+    "category": "Code Signals",
+    "level": 1,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 5,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.625,
+      "f1_score": 0.7692307692307693
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "JSON.parse"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "options/options.html",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "precision": 0.7,
+      "recall": 0.7,
+      "f1_score": 0.7
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "document.addEventListener(mousedown)",
+      "chrome.storage.onChanged",
+      "options/options.html",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener(change)"
+    ],
+    "missed_items": [
+      "addEventListener",
+      "mousedown",
+      "change"
+    ],
+    "false_items": [
+      "document.addEventListener(mousedown)",
+      "chrome.storage.onChanged",
+      "addEventListener(change)"
+    ]
+  },
+  {
+    "category": "Endpoints",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Workflows",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.4444444444444444
+    },
+    "detected_items": [
+      "Theme Selection and Application",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "Theme Selection and Application"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "precision": 0.42857142857142855,
+      "recall": 0.5,
+      "f1_score": 0.4615384615384615
+    },
+    "detected_items": [
+      "JSON Page Formatting Flow",
+      "chrome.storage.local.get",
+      "Theme Selection Flow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "Interactive JSON Navigation",
+      "Console Development Access"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "JSON Page Formatting Flow",
+      "Theme Selection Flow",
+      "Interactive JSON Navigation",
+      "Console Development Access"
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 6,
+      "precision": 0.2,
+      "recall": 0.14285714285714285,
+      "f1_score": 0.16666666666666666
+    },
+    "detected_items": [
+      "user_preferences/settings",
+      "feature_personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed; theme selection is user-driven and local.",
+      "retention:indefinite storage in chrome.storage.local; no expiration or cleanup observed."
+    ],
+    "missed_items": [
+      "user_preferences",
+      "personalization",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "user_preferences/settings",
+      "feature_personalization",
+      "consent:no explicit consent mechanism observed; theme selection is user-driven and local.",
+      "retention:indefinite storage in chrome.storage.local; no expiration or cleanup observed."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 5,
+      "false_negatives": 4,
+      "precision": 0.375,
+      "recall": 0.42857142857142855,
+      "f1_score": 0.39999999999999997
+    },
+    "detected_items": [
+      "user_preferences",
+      "ui_theming",
+      "json_formatting",
+      "developer_convenience",
+      "data_minimization",
+      "consent:no explicit consent mechanism, but none required - theme preference is explicitly set by user in options",
+      "retention:indefinite local storage of theme preference until user changes it or uninstalls extension",
+      "policy_compliant"
+    ],
+    "missed_items": [
+      "personalization",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite"
+    ],
+    "false_items": [
+      "ui_theming",
+      "json_formatting",
+      "developer_convenience",
+      "consent:no explicit consent mechanism, but none required - theme preference is explicitly set by user in options",
+      "retention:indefinite local storage of theme preference until user changes it or uninstalls extension"
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "other:low"
+    ],
+    "missed_items": [],
+    "false_items": [
+      "other:low"
+    ]
+  },
+  {
+    "category": "Code Signals",
+    "level": 2,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 2,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1_score": 0.5714285714285715
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "document.addEventListener(mousedown)",
+      "addEventListener(change)",
+      "JSON.parse"
+    ],
+    "missed_items": [
+      "addEventListener",
+      "mousedown",
+      "change",
+      "Object.defineProperty"
+    ],
+    "false_items": [
+      "document.addEventListener(mousedown)",
+      "addEventListener(change)"
+    ]
+  },
+  {
+    "category": "Metadata",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 1,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.8
+    },
+    "detected_items": [
+      "storage",
+      "<all_urls>"
+    ],
+    "missed_items": [
+      "*://*/*"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "precision": 1,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "options/options.js",
+      "options/options.html",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "precision": 1,
+      "recall": 0.8,
+      "f1_score": 0.888888888888889
+    },
+    "detected_items": [
+      "content.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "set-json-global.js",
+      "options/options.html",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 5,
+      "false_positives": 3,
+      "false_negatives": 5,
+      "precision": 0.625,
+      "recall": 0.5,
+      "f1_score": 0.5555555555555556
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.runtime.getURL",
+      "options/options.html",
+      "options/options.js",
+      "chrome.storage.sync",
+      "DOMContentLoaded",
+      "change"
+    ],
+    "missed_items": [
+      "chrome.storage.local.get",
+      "addEventListener",
+      "mousedown",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "false_items": [
+      "chrome.runtime.getURL",
+      "chrome.storage.sync",
+      "DOMContentLoaded"
+    ]
+  },
+  {
+    "category": "Endpoints",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Workflows",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.4444444444444444
+    },
+    "detected_items": [
+      "Theme Selection Flow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "Theme Selection Flow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 3,
+      "false_negatives": 3,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5
+    },
+    "detected_items": [
+      "JSON Formatting Workflow",
+      "chrome.storage.local.get",
+      "Developer Console Access Workflow",
+      "Theme Preference Management Workflow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "JSON Formatting Workflow",
+      "Developer Console Access Workflow",
+      "Theme Preference Management Workflow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 5,
+      "false_negatives": 6,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "JSON Formatting and Display",
+      "chrome.runtime.getURL",
+      "Theme Customization",
+      "chrome.storage.sync.get",
+      "chrome.storage.sync.set"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "chrome.storage.local.get",
+      "Theme Selection",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "JSON Formatting and Display",
+      "chrome.runtime.getURL",
+      "Theme Customization",
+      "chrome.storage.sync.get",
+      "chrome.storage.sync.set"
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 3,
+      "false_negatives": 5,
+      "precision": 0.4,
+      "recall": 0.2857142857142857,
+      "f1_score": 0.3333333333333333
+    },
+    "detected_items": [
+      "user_preferences/settings",
+      "personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed; theme selection is user-driven.",
+      "retention:indefinite storage in chrome.storage.local; no expiration or cleanup observed."
+    ],
+    "missed_items": [
+      "user_preferences",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "user_preferences/settings",
+      "consent:no explicit consent mechanism observed; theme selection is user-driven.",
+      "retention:indefinite storage in chrome.storage.local; no expiration or cleanup observed."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 5,
+      "false_negatives": 5,
+      "precision": 0.2857142857142857,
+      "recall": 0.2857142857142857,
+      "f1_score": 0.2857142857142857
+    },
+    "detected_items": [
+      "user_preferences",
+      "json_formatting",
+      "theme_persistence",
+      "developer_tools",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed - extension relies on chrome web store installation consent",
+      "retention:theme preference stored indefinitely in chrome.storage.local until user uninstalls extension or clears data"
+    ],
+    "missed_items": [
+      "personalization",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "json_formatting",
+      "theme_persistence",
+      "developer_tools",
+      "consent:no explicit consent mechanism observed - extension relies on chrome web store installation consent",
+      "retention:theme preference stored indefinitely in chrome.storage.local until user uninstalls extension or clears data"
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 2,
+      "false_negatives": 4,
+      "precision": 0.6,
+      "recall": 0.42857142857142855,
+      "f1_score": 0.5
+    },
+    "detected_items": [
+      "user_preferences",
+      "personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed",
+      "retention:indefinite storage in chrome.storage.sync"
+    ],
+    "missed_items": [
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "consent:no explicit consent mechanism observed",
+      "retention:indefinite storage in chrome.storage.sync"
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Risks",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "insecure_storage:low"
+    ],
+    "missed_items": [],
+    "false_items": [
+      "insecure_storage:low"
+    ]
+  },
+  {
+    "category": "Code Signals",
+    "level": 3,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 3,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 5,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "precision": 0.8333333333333334,
+      "recall": 0.625,
+      "f1_score": 0.7142857142857143
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener",
+      "setTimeout",
+      "JSON.parse"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "Object.defineProperty"
+    ],
+    "false_items": [
+      "setTimeout"
+    ]
+  },
+  {
+    "category": "Code Signals",
+    "level": 3,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 7,
+      "precision": 0.2,
+      "recall": 0.125,
+      "f1_score": 0.15384615384615385
+    },
+    "detected_items": [
+      "chrome.runtime.getURL",
+      "chrome.storage.sync.get",
+      "chrome.storage.sync.set",
+      "DOMContentLoaded",
+      "change"
+    ],
+    "missed_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "mousedown",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": [
+      "chrome.runtime.getURL",
+      "chrome.storage.sync.get",
+      "chrome.storage.sync.set",
+      "DOMContentLoaded"
+    ]
+  },
+  {
+    "category": "Metadata",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Metadata",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "JSON Formatter",
+      "0.8.0",
+      "3",
+      "Makes JSON easy to read. Open source."
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Permissions",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "storage",
+      "*://*/*",
+      "<all_urls>"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058
+    },
+    "detected_items": [
+      "content.js",
+      "set-json-global.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "options/options.html",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058
+    },
+    "detected_items": [
+      "content.js",
+      "addEventListener",
+      "set-json-global.js",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "options/options.html",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Components",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.7,
+      "f1_score": 0.8235294117647058
+    },
+    "detected_items": [
+      "content.js",
+      "chrome.storage.local.get",
+      "addEventListener",
+      "set-json-global.js",
+      "options/options.js",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "options/options.html",
+      "change"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Endpoints",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Channels",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0.5,
+      "recall": 1,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "userPrefs",
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": [
+      "userPrefs"
+    ]
+  },
+  {
+    "category": "Storage Keys",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Storage Keys",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1
+    },
+    "detected_items": [
+      "themeOverride"
+    ],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Workflows",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 2,
+      "false_positives": 1,
+      "false_negatives": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.4444444444444444
+    },
+    "detected_items": [
+      "Theme Selection Flow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "Theme Selection Flow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 8,
+      "false_negatives": 3,
+      "precision": 0.2727272727272727,
+      "recall": 0.5,
+      "f1_score": 0.3529411764705882
+    },
+    "detected_items": [
+      "JSON Formatting Workflow",
+      "querySelector",
+      "createElement",
+      "appendChild",
+      "Global JSON Debug Workflow",
+      "Object.defineProperty",
+      "JSON.parse",
+      "Theme Preference Management Workflow",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "Theme Selection",
+      "Developer Console Integration"
+    ],
+    "false_items": [
+      "JSON Formatting Workflow",
+      "querySelector",
+      "createElement",
+      "appendChild",
+      "Global JSON Debug Workflow",
+      "Object.defineProperty",
+      "JSON.parse",
+      "Theme Preference Management Workflow"
+    ]
+  },
+  {
+    "category": "Workflows",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "Theme Selection",
+      "chrome.storage.local.get",
+      "chrome.storage.local.set"
+    ],
+    "missed_items": [
+      "JSON Formatting",
+      "chrome.storage.onChanged.addListener",
+      "Developer Console Integration"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Privacy",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 6,
+      "precision": 0.2,
+      "recall": 0.14285714285714285,
+      "f1_score": 0.16666666666666666
+    },
+    "detected_items": [
+      "user_preferences/settings",
+      "feature_personalization",
+      "data_minimization",
+      "consent:no explicit consent mechanism observed (theme selection is user-driven).",
+      "retention:indefinite storage in chrome.storage.local (until user changes theme)."
+    ],
+    "missed_items": [
+      "user_preferences",
+      "personalization",
+      "ui_customization",
+      "consent:implicit",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "false_items": [
+      "user_preferences/settings",
+      "feature_personalization",
+      "consent:no explicit consent mechanism observed (theme selection is user-driven).",
+      "retention:indefinite storage in chrome.storage.local (until user changes theme)."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "precision": 0.5,
+      "recall": 0.5714285714285714,
+      "f1_score": 0.5333333333333333
+    },
+    "detected_items": [
+      "user_preferences",
+      "json_formatting",
+      "ui_customization",
+      "developer_debugging",
+      "data_minimization",
+      "consent:no explicit consent mechanism required - extension only collects user preferences explicitly set in options.",
+      "retention:theme preferences stored indefinitely in chrome.storage.local until user changes or uninstalls extension.",
+      "policy_compliant"
+    ],
+    "missed_items": [
+      "personalization",
+      "consent:implicit",
+      "retention:indefinite"
+    ],
+    "false_items": [
+      "json_formatting",
+      "developer_debugging",
+      "consent:no explicit consent mechanism required - extension only collects user preferences explicitly set in options.",
+      "retention:theme preferences stored indefinitely in chrome.storage.local until user changes or uninstalls extension."
+    ]
+  },
+  {
+    "category": "Privacy",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "precision": 0.8,
+      "recall": 0.5714285714285714,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "user_preferences",
+      "personalization",
+      "consent:implicit consent by changing settings.",
+      "retention:indefinite",
+      "policy_compliant"
+    ],
+    "missed_items": [
+      "ui_customization",
+      "data_minimization",
+      "consent:implicit"
+    ],
+    "false_items": [
+      "consent:implicit consent by changing settings."
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "other:low"
+    ],
+    "missed_items": [],
+    "false_items": [
+      "other:low"
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [
+      "other:medium",
+      "other:low",
+      "excessive_permissions:low"
+    ],
+    "missed_items": [],
+    "false_items": [
+      "other:medium",
+      "other:low",
+      "excessive_permissions:low"
+    ]
+  },
+  {
+    "category": "Risks",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1_score": 0
+    },
+    "detected_items": [],
+    "missed_items": [],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 4,
+    "model": "GPT-4.1",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 4,
+    "model": "Claude-Sonnet-4",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  },
+  {
+    "category": "Code Signals",
+    "level": 4,
+    "model": "Gemini-2.5-Pro",
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "precision": 1,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666
+    },
+    "detected_items": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set",
+      "chrome.storage.onChanged.addListener",
+      "addEventListener"
+    ],
+    "missed_items": [
+      "mousedown",
+      "change",
+      "JSON.parse",
+      "Object.defineProperty"
+    ],
+    "false_items": []
+  }
+]

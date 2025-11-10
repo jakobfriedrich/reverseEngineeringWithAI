@@ -1,0 +1,19 @@
+@startuml
+actor User
+participant Page
+participant "Content Script" as CS
+participant "Service Worker" as SW
+participant "Offscreen Document" as Offscreen
+database "chrome.storage" as Storage
+participant "Remote API" as Remote
+
+User -> Page: Visits page
+Page -> CS: Inject content script
+CS -> SW: (no direct messaging found)
+SW -> Offscreen: sendMessage("offscreen:tag")
+Offscreen -> SW: sendMessage("offscreen:tag:success")
+SW -> Storage: chrome.storage.local.get/set
+SW -> Remote: Various coupon, tracking, and GraphQL endpoints
+@enduml
+@startuml
+@enduml

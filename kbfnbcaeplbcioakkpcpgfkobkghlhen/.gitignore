@@ -1,0 +1,53 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Beautified files (can be regenerated)
+*.beautified.js
+analyze-chunks.beautified.js
+beautify-all.beautified.js
+sw.beautified.js
+
+# Early experimental runs (keep only final runs: 005, 006, 007)
+out_001_*/
+out_002_*/
+out_003_*/
+out_004_*/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Large intermediate outputs (optional - keep if disk space allows)
+# out_*/outline.jsonl
+# out_*/analysis_notes.md
+
+# Verification scripts output (intermediate, not final)
+verification_output/
+verification_scripts/
+
+# Data files (model weights, not needed for thesis)
+data/

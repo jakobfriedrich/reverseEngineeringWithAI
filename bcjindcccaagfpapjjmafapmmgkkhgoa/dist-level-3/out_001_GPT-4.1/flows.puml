@@ -1,0 +1,14 @@
+@startuml
+@enduml
+@startuml
+actor User
+participant "Content Script" as CS
+participant "Options UI" as UI
+participant "chrome.storage" as Storage
+
+User -> UI: Selects theme
+UI -> Storage: chrome.storage.local.set("themeOverride")
+UI -> UI: Updates radio button
+CS -> Storage: chrome.storage.local.get("themeOverride")
+CS -> CS: Applies theme to JSON view
+@enduml

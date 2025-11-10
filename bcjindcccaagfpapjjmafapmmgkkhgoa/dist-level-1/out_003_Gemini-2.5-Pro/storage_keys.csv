@@ -1,0 +1,2 @@
+key,type,purpose,file,line_start,line_end
+themeOverride,local,Store user theme preference,options/options.js,13,22

@@ -1,0 +1,32 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "Content Script\n(content.js)" as CS
+participant "Set JSON Global\n(set-json-global.js)" as SJG
+database "chrome.storage.local" as Storage
+participant "Options Page\n(options.html)" as Options
+
+User -> Page: Visits page with JSON
+Page -> CS: Inject content script
+CS -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> CS: Return theme preference
+CS -> Page: Apply JSON formatting and theme
+CS -> Page: Inject styles and UI elements
+CS -> Page: Add event listeners for expand/collapse
+
+Page -> SJG: Inject set-json-global script (MAIN world)
+SJG -> Page: Parse JSON and expose as window.json
+SJG -> Page: Log message to console
+
+User -> Options: Open extension options
+Options -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> Options: Return current theme
+Options -> User: Display theme radio buttons
+User -> Options: Select new theme
+Options -> Storage: chrome.storage.local.set({themeOverride: newValue})
+Storage -> CS: chrome.storage.onChanged notification
+CS -> Page: Update applied theme styles
+
+note over CS, Storage: Theme synchronization\nbetween options and content
+note over SJG: Runs in MAIN world\nfor direct page access
+@enduml

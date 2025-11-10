@@ -1,0 +1,7 @@
+{
+  "api_permissions": ["offscreen", "unlimitedStorage", "idle"],
+  "host_permissions": [],
+  "optional_permissions": ["bookmarks", "tabs", "sessions", "topSites", "favicon", "scripting", "alarms", "notifications", "tabGroups", "search"],
+  "optional_host_permissions": ["file:///*", "*://*/*"],
+  "evidence": [{"file": "manifest.json", "start": 35, "end": 52}]
+}

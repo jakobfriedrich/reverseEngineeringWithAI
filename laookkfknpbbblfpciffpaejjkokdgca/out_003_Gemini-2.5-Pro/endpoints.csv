@@ -1,0 +1,8 @@
+url,method,file,line_start,line_end
+https://api.momentumdash.com/config,GET,serviceWorker.js,1,2000
+https://browser-http-intake.logs.datadoghq.com/v1/input/pub18ef9128dd80db1a80dfc3f9180b55b5?ddsource=browser&ddtags=env:production,service:extension,version:2.25.3,POST,serviceWorker.js,1,2000
+https://api.momentumdash.com/user:migrateLegacy?canceled=true,POST,serviceWorker.js,4001,5360
+https://momentumdash.com/uninstall,unknown,serviceWorker.js,4001,5360
+https://modash.blob.core.windows.net/,GET,serviceWorker.js,4001,5360
+posthog.momentumdash.com/e/,POST,serviceWorker.js,4001,5360
+.posthog.com/e/,POST,serviceWorker.js,4001,5360

@@ -1,0 +1,63 @@
+key,type,purpose,file,line_start,line_end
+device:lastPayPalHeartbeat,local,Track PayPal integration heartbeat,h0.js,22001,24000
+currentSession,local,Current user session tracking,h0.js,22001,24000
+screenViewId,local,Screen view analytics identifier,h0.js,22001,24000
+coinyFamily,local,Coiny rewards family configuration,h0.js,22001,24000
+coinyDashConfig,local,Coiny dashboard configuration,h0.js,22001,24000
+standDownRules,local,Extension stand down rules,h0.js,22001,24000
+debug,local,Debug logging configuration,h0.js,26001,28000
+localStorage,local,Browser local storage access,h0.js,26001,28000
+sentryReplaySession,local,Sentry session recording data,h0.js,36001,38000
+device:lastHeartbeat,local,Device heartbeat timestamp,h0.js,84001,86000
+device:deviceId,local,Unique device identifier,h0.js,84001,86000
+device:firstTime,local,First time installation flag,h0.js,84001,86000
+device:firstTimeFS,local,First time find savings flag,h0.js,84001,86000
+device:firstTimeHG,local,First time honey gold flag,h0.js,84001,86000
+device:firstTimeFSHG,local,First time FS/HG combination flag,h0.js,84001,86000
+device:firstTimeLaunchpad,local,First time launchpad flag,h0.js,84001,86000
+device:pendingInstallReport,local,Pending installation report data,h0.js,84001,86000
+device:pendingUpdateReport,local,Pending update report data,h0.js,84001,86000
+device:settings,local,Device-specific settings,h0.js,86001,88000
+ssd:ckalive,local,SSD cookie alive check data,h0.js,86001,88000
+ssd:lastState,local,SSD last recorded state,h0.js,86001,88000
+ssd:rules,local,SSD stand down rules,h0.js,86001,88000
+ssd:lastBuild,local,SSD last build information,h0.js,86001,88000
+ssd:lastParameters,local,SSD last parameters,h0.js,86001,88000
+ssd:activeTabId,local,SSD active tab identifier,h0.js,86001,88000
+giftcardsReminderMap,local,Store gift card reminder states by store,h0.js,100001,102000
+honeyTips:badgeExperiments,local,Track badge experiment interactions,h0.js,100001,102000
+honeyTips:containerShown,local,Track tip container visibility states,h0.js,100001,102000
+honeyTips:couponSuppression,local,Track coupon autopop suppression by session,h0.js,100001,102000
+storage:lastWiped,local,Last storage wipe timestamp,h0.js,118001,120000
+honeyCornerIllustration,local,Corner illustration settings,h0.js,114001,116000
+frameworkMetadata:${storeId},local,Store framework metadata by store ID,h0.js,122001,124000
+six:metadata:${storeId},local,SIX metadata by store ID,h0.js,122001,124000
+currentActiveTabId,local,Currently active tab identifier,h0.js,122001,124000
+lastRequestTabId,local,Last request tab identifier,h0.js,122001,124000
+storeDoubleGold:${userId}:${storeId},local,Double gold store activation by user and store,h0.js,122001,124000
+storeNNA:${userId}:${storeId},local,Store NNA settings by user and store,h0.js,122001,124000
+ext_getCouponStatsByProduct,local,Coupon statistics by product (GraphQL),h0.js,124001,126000
+trendingStores,local,Trending stores data,h0.js,124001,126000
+carrental:${domain}:path,local,Car rental domain path data,h0.js,124001,126000
+sentShopifyMessage:${hostname},local,Shopify message sent flag by hostname,h0.js,124001,126000
+${storeId}:${tabId}:stoodup,local,Store stood up flag by store and tab,h0.js,124001,126000
+supportedDomainsInMemoryList,local,In-memory supported domains list,h0.js,124001,126000
+carrental:${domain}:allStoresCoupons,local,Car rental coupons by domain,h0.js,126001,128000
+honey-access-audiences,localStorage,Honey access audience data,h0.js,126001,128000
+honey-refresh-audiences,localStorage,Honey refresh audience data,h0.js,126001,128000
+user:information,local,User profile information,h0.js,128001,130000
+user:userId,local,User identifier,h0.js,128001,130000
+user:country,local,User country setting,h0.js,128001,130000
+user:settings,local,User preference settings,h0.js,128001,130000
+userPoints:${userId},local,User points balance by user ID,h0.js,128001,130000
+redeemableGoldBalance:${payerId}:${currencyCode},local,Redeemable gold balance by payer and currency,h0.js,128001,130000
+user:storeSessions:${userId},local,User store sessions by user ID,h0.js,128001,130000
+lastHpidCallParamsByTabId,local,Last HPID call parameters by tab,h0.js,130001,132000
+lastHpidCallResultsByTabId,local,Last HPID call results by tab,h0.js,130001,132000
+currentProductIdByTabId,local,Current product ID by tab,h0.js,130001,132000
+openPromiseResStore,local,Open promise resolution store,h0.js,130001,132000
+runInfos,local,VIM run information data,h0.js,130001,132000
+vimInstsByTabId,local,VIM instances by tab ID,h0.js,130001,132000
+window.localStorage,local,Window localStorage access,h1-check.js,1,2000
+window.sessionStorage,session,Window sessionStorage access,h1-check.js,1,2000
+document.cookie,cookies,Document cookie access,h1-check.js,2001,4000

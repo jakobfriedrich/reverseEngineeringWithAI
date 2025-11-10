@@ -1,0 +1,2403 @@
+[
+  {
+    "key": "GR-Auth",
+    "type": "local",
+    "purpose": "Authentication token",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 292,
+        "end": 292
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "GR-Auth-Expiry",
+    "type": "local",
+    "purpose": "Authentication token expiration",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 293,
+        "end": 293
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "GR-Auth-Pending",
+    "type": "local",
+    "purpose": "Pending authentication state",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 294,
+        "end": 294
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "GR-SID",
+    "type": "local",
+    "purpose": "Session ID",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 295,
+        "end": 295
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "GR-SID-Expiry",
+    "type": "local",
+    "purpose": "Session ID expiration",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 296,
+        "end": 296
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "GR-SID-Pending",
+    "type": "local",
+    "purpose": "Pending session ID state",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 297,
+        "end": 297
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "IndexedDB",
+    "type": "indexeddb",
+    "purpose": "User data storage",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "indexeddb_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "accountMigrationNotificationAppearanceTimestamp",
+    "type": "local",
+    "purpose": "Account migration",
+    "retention": "Migration period",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "account_migration"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "activeTab",
+    "type": "local",
+    "purpose": "Session state",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "active_tab_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "alwaysOnAssistant",
+    "type": "session",
+    "purpose": "Assistant",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "always_on_assistant"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "alwaysOnAssistantOnOpenData",
+    "type": "session",
+    "purpose": "Assistant",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "always_on_assistant_data"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "assistantOnboarding_*",
+    "type": "local",
+    "purpose": "Assistant onboarding state",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": false,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "authenticationOptions",
+    "type": "local",
+    "purpose": "Authentication",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "auth_options"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "autoApplyEnabled",
+    "type": "session",
+    "purpose": "Feature settings",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "auto_apply_enabled"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "autocorrectEnabled",
+    "type": "session",
+    "purpose": "Feature settings",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "autocorrect_enabled"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "billingWithNoPaymentNotificationAppearanceTimestamp",
+    "type": "local",
+    "purpose": "Billing",
+    "retention": "Billing cycle",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "billing_no_payment"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "blocklistConfigMetadata",
+    "type": "local",
+    "purpose": "Store blocklist config metadata",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 80001,
+        "end": 82000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "businessUphookPopupLastShownTimestamp",
+    "type": "local",
+    "purpose": "Business upsell",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "business_uphook_timestamp"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "businessUphookPopupSeenCount",
+    "type": "local",
+    "purpose": "Business upsell",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "business_uphook_count"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "business_uphook_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "cachedRichTextOnServiceWorkerShutdown",
+    "type": "session",
+    "purpose": "Backup",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "cached_rich_text"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "capiStartAckMessage",
+    "type": "local",
+    "purpose": "Connection",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "capi_start_ack"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "clientControlsCacheEntry",
+    "type": "local",
+    "purpose": "Enterprise policy",
+    "retention": "Policy refresh",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 76001,
+        "end": 78000,
+        "ast_id": "client_controls_cache"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "cookies",
+    "type": "cookies",
+    "purpose": "Authentication cookies",
+    "retention": "Browser policy",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 48001,
+        "end": 50000,
+        "ast_id": "cookies_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "copiedTextMessage",
+    "type": "local",
+    "purpose": "User data",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "copied_text"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "crash_logs",
+    "type": "local",
+    "purpose": "Diagnostics",
+    "retention": "30 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "crash_logs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "csPageState",
+    "type": "local",
+    "purpose": "Page state",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "cs_page_state"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "dunningMessageLastDismissedTimestamp",
+    "type": "local",
+    "purpose": "Billing",
+    "retention": "Billing cycle",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "dunning_dismissed"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "dunning_dismissed_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "duration_service_availability_metrics_db_v1",
+    "type": "indexeddb",
+    "purpose": "Service availability metrics",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 56001,
+        "end": 58000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "dynamicConfig",
+    "type": "local",
+    "purpose": "Configuration",
+    "retention": "Config refresh",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "dynamic_config"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "error_reports",
+    "type": "local",
+    "purpose": "Diagnostics",
+    "retention": "30 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "error_reports"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "experimentClient",
+    "type": "local",
+    "purpose": "Experiments",
+    "retention": "Experiment duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "experiment_client"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "experimentTreatments",
+    "type": "local",
+    "purpose": "A/B testing",
+    "retention": "Experiment duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "experiment_treatments"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "experimentationGatesTreatments",
+    "type": "local",
+    "purpose": "A/B testing",
+    "retention": "Experiment duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 76001,
+        "end": 78000,
+        "ast_id": "gates_treatments"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "experimentationTreatments",
+    "type": "local",
+    "purpose": "A/B testing",
+    "retention": "Experiment duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 76001,
+        "end": 78000,
+        "ast_id": "experimentation_treatments"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "extensionDictionaryEvent",
+    "type": "local",
+    "purpose": "Dictionary event tracking",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000
+      },
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 14001,
+        "end": 14264
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "extensionInstallDate",
+    "type": "local",
+    "purpose": "Analytics",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "install_date_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "extensionInstallSource",
+    "type": "local",
+    "purpose": "Analytics",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "install_source_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "extensionSettings",
+    "type": "local",
+    "purpose": "Extension configuration",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "ext_settings_storage"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "ext_settings_main"
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "g2MultilingualOnboardingShowsCount",
+    "type": "local",
+    "purpose": "Onboarding",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "g2_multilingual_onboarding"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (case-insensitive) in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "g2OnboardingDismissed",
+    "type": "local",
+    "purpose": "Onboarding",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "g2_onboarding_dismissed"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (case-insensitive) in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "g2OnboardingPulsatingSeen",
+    "type": "local",
+    "purpose": "Onboarding",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "g2_onboarding_pulsating"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (case-insensitive) in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "g2TranslationLanguages",
+    "type": "local",
+    "purpose": "Translation",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "g2_translation_languages"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (case-insensitive) in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "gateTreatments",
+    "type": "local",
+    "purpose": "Feature flags",
+    "retention": "Feature lifecycle",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "gate_treatments"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "gbSigninPopupCount",
+    "type": "local",
+    "purpose": "Signin tracking",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "signin_popup_count"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "gdocs_peak_collabs_dismissed",
+    "type": "local",
+    "purpose": "UI state for Google Docs",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 40001,
+        "end": 42000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "getItem",
+    "type": "local",
+    "purpose": "General storage",
+    "retention": "API dependent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "get_item"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "gr-oauth-key",
+    "type": "local",
+    "purpose": "OAuth token storage",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "oauth_key"
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "gr-oauth-service-state",
+    "type": "local",
+    "purpose": "OAuth",
+    "retention": "OAuth flow",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "oauth_service_state"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "gr-oauth-state",
+    "type": "local",
+    "purpose": "OAuth",
+    "retention": "OAuth flow",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "oauth_state"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "grammarly.auth.accessToken",
+    "type": "local",
+    "purpose": "Access token for authentication",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 304,
+        "end": 304
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "grammarly.auth.anonymousId",
+    "type": "local",
+    "purpose": "Anonymous user ID for authentication",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 302,
+        "end": 302
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "grammarly.auth.refreshToken",
+    "type": "local",
+    "purpose": "Refresh token for authentication",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 305,
+        "end": 305
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "grammarly.auth.stytch",
+    "type": "local",
+    "purpose": "Stytch authentication data",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 307,
+        "end": 307
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "grammarly.auth.user",
+    "type": "local",
+    "purpose": "User information",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 306,
+        "end": 306
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "grammarly.auth.utid",
+    "type": "local",
+    "purpose": "User tracking ID for authentication",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "sw.js",
+        "start": 303,
+        "end": 303
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "hasInProductDiscountSpecialOffer",
+    "type": "local",
+    "purpose": "Promotion",
+    "retention": "Campaign duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "has_discount_offer"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "hideGBSigninPopupTodayTimestamp",
+    "type": "local",
+    "purpose": "Signin tracking",
+    "retention": "24 hours",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "hide_signin_popup"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "highlightsLayoutInfo",
+    "type": "local",
+    "purpose": "UI layout",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "highlights_layout"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "in_product_discount_pro",
+    "type": "local",
+    "purpose": "Promotion",
+    "retention": "Campaign duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "in_product_discount"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "indexedDB",
+    "type": "indexeddb",
+    "purpose": "Structured data",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "indexeddb_general"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "inviteEligibilityCache",
+    "type": "local",
+    "purpose": "Feature flags",
+    "retention": "Cache TTL",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 74001,
+        "end": 76000,
+        "ast_id": "invite_eligibility"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "isRenewalNotificationDismissed",
+    "type": "local",
+    "purpose": "Billing",
+    "retention": "Billing cycle",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "renewal_dismissed"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "isSidePanelOpen",
+    "type": "session",
+    "purpose": "UI state",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "is_side_panel_open"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "iterableTriggerSettings",
+    "type": "session",
+    "purpose": "Marketing",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 34001,
+        "end": 36000,
+        "ast_id": "iterable_trigger_settings"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "langDetectCache",
+    "type": "session",
+    "purpose": "Language detection",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "lang_detect_cache"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "lifetimeAlertStats",
+    "type": "local",
+    "purpose": "Usage analytics",
+    "retention": "Lifetime",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "lifetime_alert_stats"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "local",
+    "type": "local",
+    "purpose": "Extension settings",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 48001,
+        "end": 50000,
+        "ast_id": "local_storage"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "general_local"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "localStorage",
+    "type": "local",
+    "purpose": "General storage",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "local_storage_general"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "managed",
+    "type": "managed",
+    "purpose": "Enterprise config",
+    "retention": "Policy-based",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "managed_config"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "managedStorage",
+    "type": "managed",
+    "purpose": "Enterprise policy",
+    "retention": "Policy-based",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "managed_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "mise:clientAccessToken",
+    "type": "local",
+    "purpose": "Authentication",
+    "retention": "Until refresh",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 74001,
+        "end": 76000,
+        "ast_id": "client_access_token"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "oauth.tokens",
+    "type": "session",
+    "purpose": "OAuth token storage",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000
+      },
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 14001,
+        "end": 14264
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "outgoingMessages",
+    "type": "session",
+    "purpose": "Messaging",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "outgoing_messages"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "performance_data",
+    "type": "local",
+    "purpose": "Performance",
+    "retention": "30 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "performance_data"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "persistentStorage",
+    "type": "local",
+    "purpose": "General storage",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "persistent_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "popupDynamicConfig",
+    "type": "session",
+    "purpose": "Popup configuration",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 42001,
+        "end": 44000,
+        "ast_id": "popup_dynamic_config"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "preferences",
+    "type": "local",
+    "purpose": "User settings",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "preferences_storage"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "preferences_session"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "propertiesCache",
+    "type": "local",
+    "purpose": "Configuration",
+    "retention": "Cache TTL",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "properties_cache"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "reconnectInfo",
+    "type": "session",
+    "purpose": "Connection",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "reconnect_info"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "removeItem",
+    "type": "local",
+    "purpose": "General storage",
+    "retention": "API dependent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "remove_item"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "renewalNotificationAppearanceTimestamp",
+    "type": "local",
+    "purpose": "Billing",
+    "retention": "Billing cycle",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "renewal_notification"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "renewal_timestamp_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "replacement_analytics",
+    "type": "local",
+    "purpose": "Text processing",
+    "retention": "90 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "replacement_analytics"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "runtime_messaging",
+    "type": "session",
+    "purpose": "Communication",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "runtime_messaging"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": false,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "service_availability_metrics",
+    "type": "local",
+    "purpose": "Monitoring",
+    "retention": "30 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "service_availability"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "service_worker_communication",
+    "type": "session",
+    "purpose": "Communication",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "sw_communication"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "session",
+    "type": "session",
+    "purpose": "Temporary data",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "session_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "sessionStorage",
+    "type": "session",
+    "purpose": "Temporary data",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "session_storage_general"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "session_storage_gdocs"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 92001,
+        "end": 94238,
+        "ast_id": "session_storage_main"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "sessionUuid",
+    "type": "session",
+    "purpose": "Session tracking",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "session_uuid"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "setItem",
+    "type": "local",
+    "purpose": "General storage",
+    "retention": "API dependent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "set_item"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "settings",
+    "type": "session",
+    "purpose": "User preferences",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "settings_session"
+      },
+      {
+        "file": "sw.js",
+        "start": 401,
+        "end": 401
+      },
+      {
+        "file": "sw.js",
+        "start": 408,
+        "end": 408
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 2: ✗ NOT found in sw.js; Evidence 3: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "showToneDetectorOnboarding",
+    "type": "local",
+    "purpose": "Onboarding",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "tone_detector_onboarding"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "specialOffer",
+    "type": "local",
+    "purpose": "Promotion",
+    "retention": "Campaign duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 24001,
+        "end": 26000,
+        "ast_id": "special_offer"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "standWithUkraineBannerPopupWasShown",
+    "type": "session",
+    "purpose": "Banner tracking",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 42001,
+        "end": 44000,
+        "ast_id": "ukraine_banner"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "startedTrackingRecapOn",
+    "type": "local",
+    "purpose": "Usage analytics",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 40001,
+        "end": 42000,
+        "ast_id": "tracking_recap"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "storage",
+    "type": "local",
+    "purpose": "General storage",
+    "retention": "API dependent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "storage_api"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "sync",
+    "type": "sync",
+    "purpose": "Extension settings sync",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 48001,
+        "end": 50000,
+        "ast_id": "sync_storage"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "general_sync"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "telemetry_data",
+    "type": "local",
+    "purpose": "Analytics",
+    "retention": "30 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "telemetry_data"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "treatmentStorage",
+    "type": "local",
+    "purpose": "Experiments",
+    "retention": "Experiment duration",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "treatment_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "treatment_cache",
+    "type": "local",
+    "purpose": "Experiments",
+    "retention": "Cache TTL",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "treatment_cache"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "usage_metrics",
+    "type": "local",
+    "purpose": "Analytics",
+    "retention": "30 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "usage_metrics"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "user",
+    "type": "local",
+    "purpose": "User profile and settings",
+    "retention": "",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "user_storage"
+      },
+      {
+        "file": "sw.js",
+        "start": 400,
+        "end": 400
+      },
+      {
+        "file": "sw.js",
+        "start": 407,
+        "end": 407
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 3: ✗ NOT found in sw.js; Evidence 4: ✗ NOT found in sw.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "user_analytics",
+    "type": "local",
+    "purpose": "Analytics",
+    "retention": "90 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "user_analytics"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "user_behavior_tracking",
+    "type": "local",
+    "purpose": "Analytics",
+    "retention": "90 days",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "user_behavior_tracking"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "version",
+    "type": "local",
+    "purpose": "Extension metadata",
+    "retention": "Persistent",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "version_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  },
+  {
+    "key": "visibleHighlights",
+    "type": "local",
+    "purpose": "Text interaction",
+    "retention": "Session",
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "visible_highlights"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_key": "",
+    "correct_type": "",
+    "correct_purpose": ""
+  }
+]

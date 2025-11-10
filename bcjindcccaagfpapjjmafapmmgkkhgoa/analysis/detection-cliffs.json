@@ -1,0 +1,142 @@
+[
+  {
+    "model": "GPT-4.1",
+    "category": "Components",
+    "cliff_level": 1,
+    "recall_at_cliff": 0.4,
+    "obfuscation_technique": "minification"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Endpoints",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Channels",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Storage Keys",
+    "cliff_level": 1,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "minification"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Workflows",
+    "cliff_level": 0,
+    "recall_at_cliff": 0.3333333333333333,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Privacy",
+    "cliff_level": 0,
+    "recall_at_cliff": 0.42857142857142855,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Risks",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "GPT-4.1",
+    "category": "Code Signals",
+    "cliff_level": 1,
+    "recall_at_cliff": 0.125,
+    "obfuscation_technique": "minification"
+  },
+  {
+    "model": "Claude-Sonnet-4",
+    "category": "Endpoints",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Claude-Sonnet-4",
+    "category": "Channels",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Claude-Sonnet-4",
+    "category": "Privacy",
+    "cliff_level": 0,
+    "recall_at_cliff": 0.42857142857142855,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Claude-Sonnet-4",
+    "category": "Risks",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Claude-Sonnet-4",
+    "category": "Code Signals",
+    "cliff_level": 1,
+    "recall_at_cliff": 0.375,
+    "obfuscation_technique": "minification"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Components",
+    "cliff_level": 1,
+    "recall_at_cliff": 0.4,
+    "obfuscation_technique": "minification"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Endpoints",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Channels",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Workflows",
+    "cliff_level": 3,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "control_flow_flattening"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Privacy",
+    "cliff_level": 1,
+    "recall_at_cliff": 0.42857142857142855,
+    "obfuscation_technique": "minification"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Risks",
+    "cliff_level": 0,
+    "recall_at_cliff": 0,
+    "obfuscation_technique": "none"
+  },
+  {
+    "model": "Gemini-2.5-Pro",
+    "category": "Code Signals",
+    "cliff_level": 3,
+    "recall_at_cliff": 0.125,
+    "obfuscation_technique": "control_flow_flattening"
+  }
+]

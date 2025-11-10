@@ -1,0 +1,16 @@
+url,method,file,line_start,line_end
+https://api.momentumdash.com/config,GET,serviceWorker.js,1,2000
+https://browser-http-intake.logs.datadoghq.com/v1/input/pub18ef9128dd80db1a80dfc3f9180b55b5,POST,serviceWorker.js,1,2000
+https://api.momentumdash.com/,GET/POST/PATCH/DELETE,serviceWorker.js,2001,4000
+https://browser-http-intake.logs.datadoghq.com/v1/input/pub18ef9128dd80db1a80dfc3f9180b55b5,POST,serviceWorker.js,2001,4000
+https://modash.blob.core.windows.net/,GET,serviceWorker.js,2001,4000
+https://posthog.momentumdash.com/e/,POST,serviceWorker.js,2001,4000
+https://account.momentumdash.com/,GET/POST,serviceWorker.js,2001,4000
+https://www.momentumdash.com/,GET/POST,serviceWorker.js,2001,4000
+https://api.momentumdash.com/,GET/POST/PATCH/DELETE,serviceWorker.js,4001,5360
+https://browser-http-intake.logs.datadoghq.com/v1/input/pub18ef9128dd80db1a80dfc3f9180b55b5,POST,serviceWorker.js,4001,5360
+https://modash.blob.core.windows.net/,GET,serviceWorker.js,4001,5360
+https://posthog.momentumdash.com/e/,POST,serviceWorker.js,4001,5360
+https://account.momentumdash.com/,GET/POST,serviceWorker.js,4001,5360
+https://www.momentumdash.com/,GET/POST,serviceWorker.js,4001,5360
+chrome-extension://<id>/site-blocker.html?hostname=...&sitename=...&metatitle=...&documenttitle=...,GET,content-scripts/siteBlocker.js,18,36

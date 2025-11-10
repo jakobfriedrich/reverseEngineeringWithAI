@@ -1,0 +1,5 @@
+[
+	{"original": "content.js", "beautified": "content.beautified.js", "status": "ok"},
+	{"original": "set-json-global.js", "beautified": "set-json-global.beautified.js", "status": "ok"},
+	{"original": "options/options.js", "beautified": "options/options.beautified.js", "status": "ok"}
+]

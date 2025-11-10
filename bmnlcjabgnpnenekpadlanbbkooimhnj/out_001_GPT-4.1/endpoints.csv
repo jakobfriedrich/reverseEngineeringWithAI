@@ -1,0 +1,161 @@
+url,method,file,line_start,line_end
+url,method,file,line_start,line_end
+https://www.dsw.com/api/v1/coupons/claim,POST,h0.js,2001,4000
+https://www.dsw.com/api/v1/cart/details,GET,h0.js,2001,4000
+https://www.expedia.com/Checkout/applyCoupon,POST,h0.js,2001,4000
+https://www.fitflop.com/us/en/cart/coupon,POST,h0.js,2001,4000
+https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-AddCoupon,POST,h0.js,2001,4000
+https://secure-www.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,h0.js,2001,4000
+https://www2.hm.com/en_ca/checkout/redeemVoucher,POST,h0.js,2001,4000
+https://www.hammacher.com/shoppingcart/applypromocode,POST,h0.js,2001,4000
+https://www.homedepot.com/mcc-checkout/v2/promo/add,POST,h0.js,2001,4000
+https://order-api.jcpenney.com/order-api/v1/accounts/.../draft-order/adjustment/discounts,POST,h0.js,2001,4000
+https://www.jcrew.com/checkout-api/graphql,POST,h0.js,2001,4000
+https://www.kohls.com/cnc/applyCoupons,POST,h0.js,2001,4000
+https://www.loft.com/cws/cart/claimCoupon.jsp,POST,h0.js,2001,4000
+https://www.macys.com/my-bag/.../promo?promoCode=...,PUT,h0.js,2001,4000
+https://www.officedepot.com/async/cart/addCoupon.do,POST,h0.js,2001,4000
+https://secure-oldnavy.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,h0.js,2001,4000
+https://www.orbitz.com/Checkout/applyCoupon,POST,h0.js,2001,4000
+https://www.papajohns.com/order/validate-promo,GET,h0.js,2001,4000
+https://www.prettylittlething.fr/pltmobile/coupon/couponPost/,POST,h0.js,2001,4000
+https://www.puritan.com/shoppingcart/applyCoupon,POST,h0.js,2001,4000
+https://www.saksfifthavenue.com/cart-coupon-add,GET,h0.js,2001,4000
+https://www.sephora.com/api/shopping-cart/basket/promotions,POST,h0.js,2001,4000
+https://www.jcrew.com/checkout-api/graphql,POST,h0.js,2001,4000
+https://www.shutterstock.com/papi/orders/...,PATCH,h0.js,2001,4000
+https://www.staples.com/cc/api/checkout/default/coupon,POST,h0.js,4001,6000
+https://tjmaxx.tjx.com/store/checkout/cart.jsp?_DARGS=/store/checkout/views/cart.jsp.promo,POST,h0.js,4001,6000
+https://www.vimeo.com/,POST,h0.js,4001,6000
+https://www.vitacost.com/Checkout/ShoppingCart.aspx?sce=view,POST,h0.js,4001,6000
+https://www.wish.com/api/promo-code/apply,POST,h0.js,4001,6000
+https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-ApplyCoupon,GET,h0.js,4001,6000
+https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-RemoveCouponLineItem,GET,h0.js,4001,6000
+https://d.joinhoney.com/v2/stores/modules/list,GET,h0.js,78000,79999
+https://d.joinhoney.com/v2/stores/module/\{type\}/\{storeId\},GET,h0.js,78000,79999
+https://cdn-checkout.joinhoney.com/honey-checkout/stores.json,GET,h0.js,80000,81999
+https://cdn-checkout.joinhoney.com/honey-checkout/version_config.json,GET,h0.js,82000,83999
+https://cdn-checkout-staging.joinhoney.com/honey-checkout/branches/branches.json,GET,h0.js,82000,83999
+https://www.paypal.com/smart/button\?\*,GET,h0.js,82000,83999
+https://www.paypal.com/smart/buttons\?\*,GET,h0.js,82000,83999
+https://d.joinhoney.com/extusers/install,POST,h0.js,84000,85999
+https://www.joinhoney.com/uninstall,GET,h0.js,84000,85999
+https://www.joinhoney.com/welcome,GET,h0.js,84000,85999
+https://www.joinhoney.com/explore\?onUpdate\=true,GET,h0.js,84000,85999
+https://www.amazon.com/cart/ref\=ox_sc_inf_saved-for-later,POST,h0.js,88000,89999
+GraphQL:endpoint:ext_getProductPriceHistory,,h0.js,92000,93999
+GraphQL:endpoint:ext_getProductByIdsWithOffer,,h0.js,92000,93999
+GraphQL:endpoint:ext_getProductByIdSecondaryDetails,,h0.js,92000,93999
+GraphQL:endpoint:ext_addNonCatalogItemToDroplist,,h0.js,92000,93999
+GraphQL:endpoint:ext_getDroplistByCanonicalUrl,,h0.js,92000,93999
+GraphQL:endpoint:ext_updateNonCatalogItem,,h0.js,94000,95999
+GraphQL:endpoint:ext_removeDroplist,,h0.js,94000,95999
+GraphQL:endpoint:ext_removeProductFromCollections,,h0.js,94000,95999
+GraphQL:endpoint:ext_removeSmartDroplist,,h0.js,94000,95999
+GraphQL:endpoint:ext_updateDroplist,,h0.js,94000,95999
+GraphQL:endpoint:ext_instantPSBRedemption,,h0.js,96000,97999
+https://d.joinhoney.com/features/owner/extension-engineers,,h0.js,96000,97999
+tips_ext_getInventoryByStoreIdParentId,GraphQL,h0.js,102000,103999
+tips_getProductsCanonicalByClusterId,GraphQL,h0.js,102000,103999
+tips_getProductsForComparisonShopping,GraphQL,h0.js,102000,103999
+tips_getProductByIds,GraphQL,h0.js,102000,103999
+ext_getProductByIdSecondaryDetails,GraphQL,h0.js,102000,103999
+tips_getProductsByIds,GraphQL,h0.js,102000,103999
+tips_getSortedDealsPublic,GraphQL,h0.js,104000,105999
+tips_getStoreSaleCategoriesByStoreId,GraphQL,h0.js,104000,105999
+TIPS_GET_STORES_BY_IDS,GraphQL,h0.js,104000,105999
+tips_getTipHits,GraphQL,h0.js,106000,107999
+tips_getConfiguration,GraphQL,h0.js,108000,109999
+ext_triggerEmailMseLink,GraphQL,h0.js,112000,113999
+ext_getProductOffer,GraphQL,h0.js,112000,113999
+offers_activateProductOffer,GraphQL,h0.js,112000,113999
+offers_getProductOfferActivations,GraphQL,h0.js,112000,113999
+ext_getStoreProductOffers,GraphQL,h0.js,112000,113999
+ext_optimus_getProductByIds,GraphQL,h0.js,112000,113999
+ext_optimus_getProductByStoreIdVariantIds,GraphQL,h0.js,112000,113999
+ext_getPayPalMessaging,GraphQL,h0.js,114000,115999
+ext_getUserTransactions,GraphQL,h0.js,114000,115999
+ext_getCouponStatsByProduct,GraphQL,h0.js,114000,115999
+ext_getProductByIds,GraphQL,h0.js,114000,115999
+https://s.joinhoney.com/pe,POST,h0.js,114000,115999
+https://history.paypal.com/credit-presentment/honey,GET,h0.js,114000,115999
+GraphQL: ext_sendRoktEvents,POST,h0.js,117200,117300
+GraphQL: ext_getRoktOffers,POST,h0.js,117100,117200
+https://d.joinhoney.com/atlas\?q\=\<base64\>,GET,h0.js,119200,119300
+GraphQL: ext_getAllActiveStoresBoostedCashbackOffers,POST,h0.js,119800,119900
+https://d.joinhoney.com/cmap\?q\=\<base64\>,GET,h0.js,120100,120200
+GraphQL: ext_getStoreWhitelist,POST,h0.js,120300,120400
+GraphQL: ext_getTopStores,POST,h0.js,120500,120600
+GraphQL: ext_insertStoreUGC,POST,h0.js,121200,121300
+GraphQL: ext_incrementUGCSuccess,POST,h0.js,121300,121400
+GraphQL: external_v2_incrementUGCFailure,POST,h0.js,121400,121500
+GraphQL: ext_getFixedRateActivationByStoreAndUserId,POST,h0.js,122100,122200
+GraphQL: ext_getStoreWhitelist,POST,h0.js,122300,122400
+GraphQL: ext_getTopStores,POST,h0.js,122500,122600
+GraphQL: ext_insertStoreUGC,POST,h0.js,122700,122800
+GraphQL: ext_incrementUGCSuccess,POST,h0.js,122900,123000
+GraphQL: external_v2_incrementUGCFailure,POST,h0.js,123100,123200
+GraphQL: tips_ext_getStoreInsightsByIds,POST,h0.js,123300,123400
+GraphQL: ext_getAvgGoldEarnedByStoreId,POST,h0.js,123500,123600
+GraphQL: ext_storeSales,POST,h0.js,123700,123800
+GraphQL: ext_isValueInSegmentationListV2,POST,h0.js,123900,124000
+GraphQL: ext_getNnaStoreByStoreId,POST,h0.js,123900,124000
+GraphQL: ext_getNnaUserByUserId,POST,h0.js,123900,124000
+GraphQL: ext_getCouponStatsByProduct,POST,h0.js,124100,124200
+GraphQL: ext_getSupportedDomains,POST,h0.js,124300,124400
+GraphQL: ext_getStorePartialsByDomain,POST,h0.js,124500,124600
+https://cdn.honey.io/extension/data/trending-stores-\<country\>.json,GET,h0.js,124700,124800
+https://d.joinhoney.com/extdata/ckdata,GET,h0.js,126500,126700
+https://cdn.honey.io/experiments.json,GET,h0.js,128700,128800
+https://cdn.honey.io/images/findsavings/coiny-dash-config.json,GET,h0.js,129200,129300
+https://d.joinhoney.com/hpid,POST,h0.js,130300,130400
+https://v.joinhoney.com/stores/\<storeId\>/\<vim\>\?engine\=4.4.4,GET,h0.js,130700,130800
+https://v.joinhoney.com/recipe/stores/\<storeId\>\?full\=true,GET,h0.js,131000,131100
+https://v.joinhoney.com/framework/pageDetector,GET,h0.js,131200,131300
+https://cdn.honey.io/css/honey-font.min.css\?v2,GET,h0.js,132100,132200
+https://3b4bb33e1dfc432c9ccd9f9ce5a4bd25@o197999.ingest.sentry.io/6008007,POST,h0.js,132300,132400
+https://www.joinhoney.com/auth\?mode\=...,GET,h0.js,132500,132600
+chrome.google.com/webstore/detail/honey/,GET,h0.js,133000,133100
+https://www.dsw.com/api/v1/coupons/claim,POST,h1-check.js,2001,4000
+https://www.dsw.com/api/v1/cart/details,GET,h1-check.js,2001,4000
+https://cdn.joinhoney.com/dummy-store/api/,GET,h1-check.js,2001,4000
+https://www.expedia.com/Checkout/applyCoupon,POST,h1-check.js,2001,4000
+https://www.expedia.com/Checkout/removeCoupon,POST,h1-check.js,2001,4000
+https://www.fitflop.com/us/en/cart/coupon,POST,h1-check.js,2001,4000
+https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-AddCoupon,POST,h1-check.js,2001,4000
+https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-RemoveCouponLineItem,GET,h1-check.js,2001,4000
+https://secure-www.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,h1-check.js,2001,4000
+https://www2.hm.com/en_ca/checkout/redeemVoucher,POST,h1-check.js,2001,4000
+https://www2.hm.com/en_ca/checkout/releaseVoucher,GET,h1-check.js,2001,4000
+https://www.hammacher.com/shoppingcart/applypromocode,POST,h1-check.js,2001,4000
+https://order-api.jcpenney.com/order-api/v1/accounts/,POST,h1-check.js,2001,4000
+https://www.jcrew.com/checkout-api/graphql,POST,h1-check.js,2001,4000
+https://www.kohls.com/cnc/applyCoupons,POST,h1-check.js,2001,4000
+https://www.loft.com/cws/cart/claimCoupon.jsp,POST,h1-check.js,2001,4000
+https://www.loft.com/cws/cart/removeCoupon.jsp,POST,h1-check.js,2001,4000
+https://www.macys.com/my-bag/,PUT,h1-check.js,2001,4000
+https://www.officedepot.com/async/cart/addCoupon.do,POST,h1-check.js,2001,4000
+https://www.officedepot.com/async/cart/removeCoupon.do,POST,h1-check.js,2001,4000
+https://secure-oldnavy.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,h1-check.js,2001,4000
+https://www.orbitz.com/Checkout/applyCoupon,POST,h1-check.js,2001,4000
+https://www.orbitz.com/Checkout/removeCoupon,POST,h1-check.js,2001,4000
+https://www.papajohns.com/order/validate-promo,GET,h1-check.js,2001,4000
+https://www.papajohns.com/order/apply-promo/,GET,h1-check.js,2001,4000
+https://www.papajohns.com/order/view-cart,GET,h1-check.js,2001,4000
+https://www.prettylittlething.fr/pltmobile/coupon/couponPost/,POST,h1-check.js,2001,4000
+https://checkout.prettylittlething.fr/checkout-api/coupon/set,POST,h1-check.js,2001,4000
+https://checkout.prettylittlething.fr/checkout-api/coupon,POST,h1-check.js,2001,4000
+https://www.prettylittlething.com/pltmobile/coupon/couponPost/,POST,h1-check.js,2001,4000
+https://checkout.prettylittlething.com/checkout-api/coupon/set,POST,h1-check.js,2001,4000
+https://checkout.prettylittlething.com/checkout-api/coupon,POST,h1-check.js,2001,4000
+https://www.puritan.com/shoppingcart/applyCoupon,POST,h1-check.js,2001,4000
+https://www.saksfifthavenue.com/cart-coupon-add,GET,h1-check.js,2001,4000
+https://www.sephora.com/api/shopping-cart/basket/promotions,POST,h1-check.js,2001,4000
+https://www.sephora.com/api/shopping-cart/baskets/current/promotions,DELETE,h1-check.js,2001,4000
+https://www.shutterstock.com/papi/orders/,PATCH,h1-check.js,2001,4000
+https://www.staples.com/cc/api/checkout/default/coupon,POST,h1-check.js,4001,6000
+https://tjmaxx.tjx.com/store/checkout/cart.jsp,POST,h1-check.js,4001,6000
+https://www.vitacost.com/Checkout/ShoppingCart.aspx,POST,h1-check.js,4001,6000
+https://www.wish.com/api/promo-code/apply,POST,h1-check.js,4001,6000
+https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-ApplyCoupon,GET,h1-check.js,4001,6000
+https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-RemoveCouponLineItem,GET,h1-check.js,4001,6000

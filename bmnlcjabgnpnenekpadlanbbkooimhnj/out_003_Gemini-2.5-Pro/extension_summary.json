@@ -1,0 +1,2882 @@
+{
+  "metadata": {
+    "name": "Honey",
+    "version": "17.1.1",
+    "manifest_version": 3,
+    "description": "Honey is a free tool that automatically finds and applies coupon codes at checkout.",
+    "evidence": [
+      {
+        "file": "manifest.json",
+        "start": 2,
+        "end": 5
+      }
+    ]
+  },
+  "permissions": {
+    "api_permissions": [
+        "alarms",
+        "cookies",
+        "storage",
+        "unlimitedStorage",
+        "scripting",
+        "webRequest",
+        "offscreen"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "optional_permissions": [],
+    "evidence": [
+      {
+        "file": "manifest.json",
+        "start": 10,
+        "end": 20
+      }
+    ]
+  },
+  "components": {
+    "background": {
+      "files": [
+        "h0.js"
+      ],
+      "apis": [
+        "chrome.runtime.onConnect",
+        "chrome.webRequest.onErrorOccurred",
+        "chrome.alarms.onAlarm.addListener",
+        "chrome.alarms.clear",
+        "chrome.alarms.create",
+        "chrome.alarms.get",
+        "chrome.webRequest.onBeforeRedirect",
+        "chrome.cookies.set",
+        "chrome.cookies.get",
+        "chrome.cookies.remove",
+        "chrome.cookies.getAll",
+        "chrome.tabs.executeScript",
+        "chrome.runtime.onMessage",
+        "chrome.runtime.onInstalled",
+        "chrome.runtime.setUninstallURL",
+        "chrome.tabs.get",
+        "chrome.storage.local",
+        "chrome.storage.sync",
+        "chrome.webRequest.onBeforeRequest",
+        "chrome.webRequest.onCompleted",
+        "chrome.tabs.update",
+        "chrome.tabs.query",
+        "chrome.tabs.create",
+        "chrome.runtime.sendNativeMessage",
+        "chrome.cookies.getAllForUrl",
+        "chrome.webRequest.onBeforeRequest.addListener",
+        "chrome.webRequest.onBeforeSendHeaders.addListener",
+        "chrome.webRequest.onHeadersReceived.addListener",
+        "chrome.webRequest.onCompleted.addListener",
+        "chrome.webRequest.onErrorOccurred.addListener",
+        "chrome.action.setIcon",
+        "chrome.action.setTitle",
+        "chrome.action.setBadgeText",
+        "chrome.action.setBadgeBackgroundColor",
+        "chrome.action.onClicked",
+        "chrome.runtime.reload",
+        "chrome.storage.session",
+        "chrome.runtime.getURL",
+        "chrome.tabs.sendMessage",
+        "chrome.tabs.onCreated",
+        "chrome.tabs.onUpdated",
+        "chrome.tabs.onActivated",
+        "chrome.tabs.onRemoved",
+        "chrome.tabs.onReplaced",
+        "chrome.windows.update",
+        "chrome.windows.create",
+        "chrome.windows.getAll",
+        "chrome.scripting.executeScript",
+        "chrome.offscreen.hasDocument",
+        "chrome.offscreen.createDocument"
+      ],
+      "listeners": [
+        "chrome.runtime.onConnect",
+        "chrome.webRequest.onErrorOccurred",
+        "chrome.alarms.onAlarm.addListener",
+        "runtime.onMessage.addListener",
+        "runtime.onInstalled.addListener",
+        "page:load",
+        "alarms.onAlarm",
+        "tabs.onActivated",
+        "tabs.onUpdated",
+        "chrome.action.onClicked",
+        "tabs:created",
+        "tabs:updated",
+        "tabs:activated",
+        "tabs:removed",
+        "tabs:replaced",
+        "windows.onFocusChanged"
+      ],
+      "evidence": [
+        {
+          "file": "manifest.json",
+          "start": 7,
+          "end": 7
+        }
+      ]
+    },
+    "content_scripts": [
+      {
+        "files": [
+          "h1-check.js"
+        ],
+        "apis": [],
+        "listeners": [],
+        "evidence": [
+          {
+            "file": "manifest.json"
+          }
+        ]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": [
+          "popover/index.html"
+        ],
+        "apis": [],
+        "listeners": [],
+        "evidence": [
+          {
+            "file": "manifest.json"
+          }
+        ]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": [
+    {
+        "url": "https://www.dsw.com/api/v1/coupons/claim",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.dsw.com/api/v1/cart/details",
+        "purpose": "Cart information retrieval",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://cdn.joinhoney.com/dummy-store/api/",
+        "purpose": "Test store API",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.expedia.com/Checkout",
+        "purpose": "Checkout operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.fitflop.com/us/en/cart/coupon",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.forever21.com",
+        "purpose": "Store operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://secure-www.gap.com/shopping-bag-xapi/apply-bag-promo/",
+        "purpose": "Promo code application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www2.hm.com/en_ca/checkout/redeemVoucher",
+        "purpose": "Voucher redemption",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www2.hm.com/en_ca/checkout/releaseVoucher",
+        "purpose": "Voucher release",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.hammacher.com/shoppingcart/applypromocode",
+        "purpose": "Promo code application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.homedepot.com/mcc-checkout/v2/promo/add",
+        "purpose": "Promo code application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://order-api.jcpenney.com/order-api/v1/accounts",
+        "purpose": "Account information",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.jcrew.com/checkout-api/graphql",
+        "purpose": "GraphQL checkout API",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.kohls.com/cnc/applyCoupons",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.loft.com/cws/cart/claimCoupon.jsp",
+        "purpose": "Coupon claim",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.loft.com/cws/cart/removeCoupon.jsp",
+        "purpose": "Coupon removal",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.macys.com/my-bag/",
+        "purpose": "Shopping bag operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.officedepot.com",
+        "purpose": "Store operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://secure-oldnavy.gap.com/shopping-bag-xapi/apply-bag-promo/",
+        "purpose": "Promo code application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.orbitz.com/Checkout/applyCoupon",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.orbitz.com/Checkout/removeCoupon",
+        "purpose": "Coupon removal",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.papajohns.com/order/validate-promo",
+        "purpose": "Promo validation",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.papajohns.com/order/apply-promo/",
+        "purpose": "Promo application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.papajohns.com/order/view-cart",
+        "purpose": "Cart viewing",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.prettylittlething.fr/pltmobile/coupon/couponPost/",
+        "purpose": "Coupon application (FR)",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://checkout.prettylittlething.fr/checkout-api/coupon/set",
+        "purpose": "Coupon setting (FR)",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://checkout.prettylittlething.fr/checkout-api/coupon",
+        "purpose": "Coupon API (FR)",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.prettylittlething.com/pltmobile/coupon/couponPost/",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://checkout.prettylittlething.com/checkout-api/coupon/set",
+        "purpose": "Coupon setting",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://checkout.prettylittlething.com/checkout-api/coupon",
+        "purpose": "Coupon API",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.puritan.com/shoppingcart/applyCoupon",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.saksfifthavenue.com/cart-coupon-add",
+        "purpose": "Coupon addition",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.sephora.com/api/shopping-cart/basket/promotions",
+        "purpose": "Basket promotions",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.sephora.com/api/shopping-cart/baskets/current/promotions",
+        "purpose": "Current basket promotions",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.shutterstock.com/papi/orders/",
+        "purpose": "Order processing",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.staples.com/cc/api/checkout/default/coupon",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://tjmaxx.tjx.com/store/checkout/cart.jsp",
+        "purpose": "Cart operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://www.vimeo.com",
+        "purpose": "Video platform access",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://www.vitacost.com/Checkout/ShoppingCart.aspx",
+        "purpose": "Shopping cart operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://www.wish.com/api/promo-code/apply",
+        "purpose": "Promo code application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-ApplyCoupon",
+        "purpose": "Coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-RemoveCouponLineItem",
+        "purpose": "Coupon removal",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://v.joinhoney.com",
+        "purpose": "VIM recipe API",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 4001, "end": 6000}]
+    },
+    {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/",
+        "purpose": "Product image retrieval",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 30001, "end": 32000}]
+    },
+    {
+        "url": "https://www.amazon.com.au/dp/",
+        "purpose": "Product page access (AU)",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 30001, "end": 32000}]
+    },
+    {
+        "url": "https://api.example.com/track",
+        "purpose": "Analytics tracking",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 30001, "end": 32000}]
+    },
+    {
+        "url": "https://www.amazon.co.uk/dp/",
+        "purpose": "Product page access (UK)",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 30001, "end": 32000}]
+    },
+    {
+        "url": "https://www.amazon.com/dp/",
+        "purpose": "Product page access",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 30001, "end": 32000}]
+    },
+    {
+        "url": "https://www.bestbuy.com",
+        "purpose": "Store access",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 30001, "end": 32000}]
+    },
+    {
+        "url": "https://cdn.honey.io/images/findsavings/coiny-dash-config.json",
+        "purpose": "Coiny dash configuration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://cdn.honey.io/standdown-rules.json",
+        "purpose": "Stand down rules",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://s.joinhoney.com/evs",
+        "purpose": "Event tracking",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://s.joinhoney.com/ev/",
+        "purpose": "Event submission",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://s.joinhoney.com/ext_obs",
+        "purpose": "Extension observations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://s.joinhoney.com/pr",
+        "purpose": "Product reporting",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://o.honey.io/store/",
+        "purpose": "Store information",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 22001, "end": 24000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/features/owner/",
+        "purpose": "Feature ownership",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 96001, "end": 98000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/v3",
+        "purpose": "API v3",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 96001, "end": 98000}]
+    },
+    {
+        "url": "https://google_places_api",
+        "purpose": "Address suggestions for payments",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 100001, "end": 102000}]
+    },
+    {
+        "url": "https://tips_ext_getInventoryByStoreIdParentId",
+        "purpose": "Get product inventory by store and parent ID",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 102001, "end": 104000}]
+    },
+    {
+        "url": "https://tips_getProductsCanonicalByClusterId",
+        "purpose": "Get canonical products by cluster ID",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 102001, "end": 104000}]
+    },
+    {
+        "url": "https://tips_getProductsForComparisonShopping",
+        "purpose": "Get products for comparison shopping",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 102001, "end": 104000}]
+    },
+    {
+        "url": "https://tips_getProductByIds",
+        "purpose": "Get product details by IDs",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 102001, "end": 104000}]
+    },
+    {
+        "url": "https://ext_getProductByIdSecondaryDetails",
+        "purpose": "Get secondary product details",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 102001, "end": 104000}]
+    },
+    {
+        "url": "https://history.paypal.com/credit-presentment/honey",
+        "purpose": "PayPal credit integration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "url": "https://s.joinhoney.com/pe",
+        "purpose": "PayPal event tracking",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/atlas",
+        "purpose": "Store insights analytics",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 118001, "end": 120000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/cmap",
+        "purpose": "Cart product mapping",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 120001, "end": 122000}]
+    },
+    {
+        "url": "https://cdn.honey.io/extension/data/trending-stores-${country}.json",
+        "purpose": "Trending stores data",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 124001, "end": 126000}]
+    },
+    {
+        "url": "https://ext_getSupportedDomains",
+        "purpose": "Supported domains list",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 124001, "end": 126000}]
+    },
+    {
+        "url": "https://ext_getStorePartialsByDomain",
+        "purpose": "Store URL matching",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 124001, "end": 126000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/extdata/ckdata",
+        "purpose": "Authentication token retrieval",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 126001, "end": 128000}]
+    },
+    {
+        "url": "https://ext_getDoubleGoldActivationsByUserId",
+        "purpose": "Double gold user activations",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 126001, "end": 128000}]
+    },
+    {
+        "url": "https://ext_updateUserFollow",
+        "purpose": "User store following",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 126001, "end": 128000}]
+    },
+    {
+        "url": "https://ext_getUserFollow",
+        "purpose": "User following data",
+        "methods": ["GraphQL"],
+        "evidence": [{"file": "h0.js", "start": 126001, "end": 128000}]
+    },
+    {
+        "url": "https://cdn.honey.io/experiments.json",
+        "purpose": "A/B testing experiments",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 128001, "end": 130000}]
+    },
+    {
+        "url": "https://cdn.honey.io/experiments-staging.json",
+        "purpose": "Staging experiments",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 128001, "end": 130000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/hpid",
+        "purpose": "Product tracking via HPID",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 130001, "end": 132000}]
+    },
+    {
+        "url": "https://v.joinhoney.com/stores/{storeId}/{vimType}",
+        "purpose": "VIM store recipes",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 130001, "end": 132000}]
+    },
+    {
+        "url": "https://v.joinhoney.com/recipe/stores/{storeId}",
+        "purpose": "Store recipe configuration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 130001, "end": 132000}]
+    },
+    {
+        "url": "https://v.joinhoney.com/framework/pageDetector",
+        "purpose": "Page detection framework",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 130001, "end": 132000}]
+    },
+    {
+        "url": "https://www.joinhoney.com/auth",
+        "purpose": "User authentication",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    },
+    {
+        "url": "https://www.joinhoney.com/",
+        "purpose": "Honey homepage",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    },
+    {
+        "url": "https://cdn-checkout.joinhoney.com/honey-checkout/stores.json",
+        "purpose": "Checkout stores configuration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 80001, "end": 82000}]
+    },
+    {
+        "url": "https://cdn-checkout.joinhoney.com/honey-checkout/version_config.json",
+        "purpose": "Version configuration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 82001, "end": 84000}]
+    },
+    {
+        "url": "https://cdn-checkout.joinhoney.com/honey-checkout/",
+        "purpose": "Checkout infrastructure",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 82001, "end": 84000}]
+    },
+    {
+        "url": "https://cdn-checkout-staging.joinhoney.com/honey-checkout/branches/branches.json",
+        "purpose": "Branch configuration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 82001, "end": 84000}]
+    },
+    {
+        "url": "https://d.joinhoney.com/extusers/install",
+        "purpose": "Extension install reporting",
+        "methods": ["POST"],
+        "evidence": [{"file": "h0.js", "start": 84001, "end": 86000}]
+    },
+    {
+        "url": "https://extension.joinhoney.com/",
+        "purpose": "Extension portal",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 84001, "end": 86000}]
+    },
+    {
+        "url": "https://s.joinhoney.com/ck/alive",
+        "purpose": "Cookie alive check",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 86001, "end": 88000}]
+    },
+    {
+        "url": "https://cdn.honey.io/ab/ssd.json",
+        "purpose": "SSD A/B testing configuration",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 86001, "end": 88000}]
+    },
+    {
+        "url": "https://d.joinhoney.com",
+        "purpose": "Primary API endpoint",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "url": "https://o.honey.io",
+        "purpose": "Operations endpoint",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "url": "https://o.joinhoney.com",
+        "purpose": "Operations endpoint (alt)",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "url": "https://out.joinhoney.com",
+        "purpose": "External redirect endpoint",
+        "methods": ["GET"],
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "url": "https://www.4wheelparts.com/cart/shoppingCart.jsp",
+        "purpose": "4WheelParts cart operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.ae.com/ugp-api/bag/v1/coupon",
+        "purpose": "American Eagle coupon API",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.aeropostale.com/on/demandware.store/Sites-aeropostale-Site/en_US/Cart-AddCouponJson",
+        "purpose": "Aeropostale coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.amazon.com/gp/buy/spc/handlers/add-giftcard-promotion.html",
+        "purpose": "Amazon gift card promo",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://secure-athleta.gap.com/shopping-bag-xapi/apply-bag-promo/",
+        "purpose": "Athleta promo application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://secure-bananarepublic.gap.com/shopping-bag-xapi/apply-bag-promo/",
+        "purpose": "Banana Republic promo application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.belk.com/on/demandware.store/Sites-Belk-Site/default/Coupon-Validate",
+        "purpose": "Belk coupon validation",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.buyagift.co.uk/Basket/ApplyDiscount",
+        "purpose": "Buy A Gift discount application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.carid.com/cart.php",
+        "purpose": "CarID cart operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.catherines.com/on/demandware.store/Sites-oss-Site/default/Cart-SubmitForm",
+        "purpose": "Catherines cart submission",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://shop.coles.com.au",
+        "purpose": "Coles shopping operations",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.cvs.com/RETAGPV3/RxExpress/V2/applyCoupon",
+        "purpose": "CVS coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 1, "end": 2000}]
+    },
+    {
+        "url": "https://www.expedia.com/Checkout/applyCoupon",
+        "purpose": "Expedia coupon application",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 2001, "end": 4000}]
+    },
+    {
+        "url": "https://www.expedia.com/Checkout/removeCoupon",
+        "purpose": "Expedia coupon removal",
+        "methods": ["POST"],
+        "evidence": [{"file": "h1-check.js", "start": 2001, "end": 4000}]
+    }
+    ]
+  },
+  "messaging": {
+    "channels": [
+    {
+        "name": "acorns:action",
+        "direction": "unknown",
+        "payload_schema": {"storeId": "string", "type": "string"},
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "name": "adbbp:cs",
+        "direction": "content->background",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "name": "adbBp:action",
+        "direction": "unknown",
+        "payload_schema": {"action": "string"},
+        "evidence": [{"file": "h0.js", "start": 78001, "end": 80000}]
+    },
+    {
+        "name": "utils:action",
+        "direction": "unknown",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 80001, "end": 82000}]
+    },
+    {
+        "name": "affManager:tag",
+        "direction": "unknown",
+        "payload_schema": {"storeId": "string", "tabId": "number", "type": "string", "targetUrl": "string", "options": "object"},
+        "evidence": [{"file": "h0.js", "start": 80001, "end": 82000}]
+    },
+    {
+        "name": "honey-checkout",
+        "direction": "iframe->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 82001, "end": 84000}]
+    },
+    {
+        "name": "cookies:cs",
+        "direction": "content->background",
+        "payload_schema": {"type": "string", "url": "string", "name": "string", "value": "string", "domain": "string", "path": "string", "secure": "boolean", "httpOnly": "boolean", "expirationDate": "number", "storeId": "string"},
+        "evidence": [{"file": "h0.js", "start": 84001, "end": 86000}]
+    },
+    {
+        "name": "device:heart",
+        "direction": "other",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 84001, "end": 86000}]
+    },
+    {
+        "name": "device:action",
+        "direction": "other",
+        "payload_schema": {"action": "string", "data": "any", "key": "string", "value": "any", "options": "object"},
+        "evidence": [{"file": "h0.js", "start": 84001, "end": 86000}]
+    },
+    {
+        "name": "user:session:started",
+        "direction": "background->all",
+        "payload_schema": {"sessionId": "string"},
+        "evidence": [{"file": "h0.js", "start": 86001, "end": 88000}]
+    },
+    {
+        "name": "droplist:product:v3",
+        "direction": "message",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 92001, "end": 94000}]
+    },
+    {
+        "name": "circuitBreaker:event",
+        "direction": "background->background",
+        "payload_schema": {"alert_type": "string", "event_name": "string", "operation": "string"},
+        "evidence": [{"file": "h0.js", "start": 96001, "end": 98000}]
+    },
+    {
+        "name": "gxp:ui:actions",
+        "direction": "background->ui",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 96001, "end": 98000}]
+    },
+    {
+        "name": "honey-pay-now:action:local-storage",
+        "direction": "content->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 100001, "end": 102000}]
+    },
+    {
+        "name": "honey-pay-now:action:ui",
+        "direction": "content->background",
+        "payload_schema": {"action": "string", "data": "any", "term": "string"},
+        "evidence": [{"file": "h0.js", "start": 100001, "end": 102000}]
+    },
+    {
+        "name": "honey-tip:badge-experiments",
+        "direction": "content->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 100001, "end": 102000}]
+    },
+    {
+        "name": "honeyTips:tips",
+        "direction": "content->background",
+        "payload_schema": {"action": "string", "storeId": "string", "isTipsEligibleOnly": "boolean", "productIds": "array", "clusterId": "string", "parentId": "string", "priceInCents": "number"},
+        "evidence": [{"file": "h0.js", "start": 104001, "end": 106000}]
+    },
+    {
+        "name": "background:started",
+        "direction": "background->content",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 110001, "end": 112000}]
+    },
+    {
+        "name": "debug:change",
+        "direction": "background->content",
+        "payload_schema": {"active": "boolean"},
+        "evidence": [{"file": "h0.js", "start": 110001, "end": 112000}]
+    },
+    {
+        "name": "offers:action",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any", "tabId": "number"},
+        "evidence": [{"file": "h0.js", "start": 112001, "end": 114000}]
+    },
+    {
+        "name": "mseupsell:action",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "flow": "string", "tabId": "number"},
+        "evidence": [{"file": "h0.js", "start": 112001, "end": 114000}]
+    },
+    {
+        "name": "mseupsell:bg:action",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "userId": "string"},
+        "evidence": [{"file": "h0.js", "start": 112001, "end": 114000}]
+    },
+    {
+        "name": "optimuslru:access",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 112001, "end": 114000}]
+    },
+    {
+        "name": "optimus:fetch:product",
+        "direction": "background<->background",
+        "payload_schema": {"productId": "string", "variantId": "string"},
+        "evidence": [{"file": "h0.js", "start": 112001, "end": 114000}]
+    },
+    {
+        "name": "paypal:action",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "name": "bg:permissions",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string"},
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "name": "popover:bg",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any", "tabId": "number"},
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "name": "popover:cs",
+        "direction": "background->content",
+        "payload_schema": {"action": "string", "data": "any", "tabId": "number"},
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "name": "product:coupons",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "name": "product_fetcher:action",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 114001, "end": 116000}]
+    },
+    {
+        "name": "rokt-offers:action",
+        "direction": "background<->background",
+        "payload_schema": {"action": "string", "data": "any"},
+        "evidence": [{"file": "h0.js", "start": 116001, "end": 118000}]
+    },
+    {
+        "name": "stats:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 118001, "end": 120000}]
+    },
+    {
+        "name": "sdata:event",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 118001, "end": 120000}]
+    },
+    {
+        "name": "site_support:sawStoreRequestStarted",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 118001, "end": 120000}]
+    },
+    {
+        "name": "site_support:sawStoreRequestFinished",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 118001, "end": 120000}]
+    },
+    {
+        "name": "affManager:tag",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 120001, "end": 122000}]
+    },
+    {
+        "name": "rewardsManager:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 120001, "end": 122000}]
+    },
+    {
+        "name": "stores:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 120001, "end": 122000}]
+    },
+    {
+        "name": "experiments:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 122001, "end": 124000}]
+    },
+    {
+        "name": "ui:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 122001, "end": 124000}]
+    },
+    {
+        "name": "ui:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 124001, "end": 126000}]
+    },
+    {
+        "name": "findsavings:apply_code_top_funnel",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 124001, "end": 126000}]
+    },
+    {
+        "name": "experiments:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 124001, "end": 126000}]
+    },
+    {
+        "name": "car_rental:action",
+        "direction": "unknown",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 126001, "end": 128000}]
+    },
+    {
+        "name": "user:current:update",
+        "direction": "background->content",
+        "payload_schema": {"user": "object"},
+        "evidence": [{"file": "h0.js", "start": 128001, "end": 130000}]
+    },
+    {
+        "name": "vims:action",
+        "direction": "background->background",
+        "payload_schema": {"action": "string", "data": "any", "runId": "string", "storeId": "string", "type": "string", "options": "object", "currentPageUrl": "string", "frameworkId": "string", "result": "any", "event": "string"},
+        "evidence": [{"file": "h0.js", "start": 128001, "end": 130000}]
+    },
+    {
+        "name": "pdp:debug",
+        "direction": "background->background",
+        "payload_schema": {"eventName": "string"},
+        "evidence": [{"file": "h0.js", "start": 128001, "end": 130000}]
+    },
+    {
+        "name": "vims:action",
+        "direction": "content->background",
+        "payload_schema": {"action": "string", "runId": "string", "data": "any", "vimPayload": "any"},
+        "evidence": [{"file": "h0.js", "start": 130001, "end": 132000}]
+    },
+    {
+        "name": "button:bg:clicked",
+        "direction": "background->cs",
+        "payload_schema": {},
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    },
+    {
+        "name": "button:cs",
+        "direction": "cs->background",
+        "payload_schema": {"type": "string", "info": "any"},
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    },
+    {
+        "name": "tabs:cs",
+        "direction": "cs->background",
+        "payload_schema": {"type": "string", "params": "any", "tabId": "number"},
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    },
+    {
+        "name": "messages:cs",
+        "direction": "cs->background",
+        "payload_schema": {"type": "string", "content": "any", "dest": "string"},
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    },
+    {
+        "name": "messages:popover",
+        "direction": "ui->background",
+        "payload_schema": {"content": "any", "dest": "string"},
+        "evidence": [{"file": "h0.js", "start": 132001, "end": 134000}]
+    }
+    ]
+  },
+  "storage": {
+    "keys": [
+  {
+    "key": "localStorage",
+    "type": "local",
+    "purpose": "Generic browser local storage access.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 6001,
+        "end": 8000
+      }
+    ]
+  },
+  {
+    "key": "sessionStorage",
+    "type": "local",
+    "purpose": "Generic browser session storage access.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 6001,
+        "end": 8000
+      }
+    ]
+  },
+  {
+    "key": "localStorage",
+    "type": "local",
+    "purpose": "Generic browser local storage access.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ]
+  },
+  {
+    "key": "chrome.storage",
+    "type": "local",
+    "purpose": "Generic access to Chrome extension storage API.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ]
+  },
+  {
+    "key": "localStorage",
+    "type": "local",
+    "purpose": "Generic browser local storage access.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ]
+  },
+  {
+    "key": "chrome.storage",
+    "type": "local",
+    "purpose": "Generic access to Chrome extension storage API.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ]
+  },
+  {
+    "key": "sessionStorage",
+    "type": "local",
+    "purpose": "Generic browser session storage access.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 40001,
+        "end": 42000
+      }
+    ]
+  },
+  {
+    "key": "bg-acorns",
+    "type": "local",
+    "purpose": "Cache for dynamically fetched 'acorn' modules.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ]
+  },
+  {
+    "key": "adbBp:activeContexts",
+    "type": "local",
+    "purpose": "Stores active ad-block-bypass communication contexts.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ]
+  },
+  {
+    "key": "bg-adb-tabs",
+    "type": "local",
+    "purpose": "Cache for ad-blocker related tab state.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ]
+  },
+  {
+    "key": "checkoutStoresRawConfig",
+    "type": "local",
+    "purpose": "Caches raw configuration for stores supporting Honey's checkout features.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 80001,
+        "end": 82000
+      }
+    ]
+  },
+  {
+    "key": "checkoutDevToolsEnabled",
+    "type": "local",
+    "purpose": "Flag to enable developer tools for the checkout feature.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      }
+    ]
+  },
+  {
+    "key": "checkoutIFrameOriginUrl",
+    "type": "local",
+    "purpose": "Stores the URL for the checkout iframe, potentially overridden for development.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      }
+    ]
+  },
+  {
+    "key": "checkoutStoreConfigOverwrites",
+    "type": "local",
+    "purpose": "Developer overrides for store configurations related to checkout.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      }
+    ]
+  },
+  {
+    "key": "device:deviceId",
+    "type": "local",
+    "purpose": "Stores the unique device identifier.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "user:device-id",
+    "type": "local",
+    "purpose": "Legacy key for the unique device identifier.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:lastHeartbeat",
+    "type": "local",
+    "purpose": "Timestamp of the last activity heartbeat.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:firstTime",
+    "type": "local",
+    "purpose": "Flag for first-time installation.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:firstTimeFS",
+    "type": "local",
+    "purpose": "Flag for first-time use of a feature (FS).",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:firstTimeHG",
+    "type": "local",
+    "purpose": "Flag for first-time use of a feature (HG).",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:firstTimeFSHG",
+    "type": "local",
+    "purpose": "Flag for first-time use of a feature (FSHG).",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:firstTimeLaunchpad",
+    "type": "local",
+    "purpose": "Flag for first-time use of the Launchpad feature.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:pendingInstallReport",
+    "type": "local",
+    "purpose": "Stores install report data if the initial send fails, for retry.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:pendingUpdateReport",
+    "type": "local",
+    "purpose": "Stores update report data if the initial send fails, for retry.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ]
+  },
+  {
+    "key": "device:settings",
+    "type": "local",
+    "purpose": "Stores a general-purpose object for various device-level settings.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "ssd:ckalive",
+    "type": "local",
+    "purpose": "Caches the result of the 'ck/alive' blocklist check.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "ssd:rules",
+    "type": "local",
+    "purpose": "Caches the downloaded SSD ruleset from the CDN.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "ssd:lastBuild",
+    "type": "local",
+    "purpose": "Timestamp of the last time the SSD parameters were calculated.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "ssd:lastParameters",
+    "type": "local",
+    "purpose": "Caches the last calculated SSD parameter object.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "ssd:activeTabId",
+    "type": "local",
+    "purpose": "Stores the ID of the currently active tab for SSD state determination.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "ssd:lastState",
+    "type": "local",
+    "purpose": "Caches the last determined SSD state as a fallback.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ]
+  },
+  {
+    "key": "bg-honey-pay-now-HoneyPayNow",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 98001,
+        "end": 100000
+      }
+    ]
+  },
+  {
+    "key": "bg-recently-purchased",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 98001,
+        "end": 100000
+      }
+    ]
+  },
+  {
+    "key": "giftcardsReminderMap",
+    "type": "local",
+    "purpose": "Stores user preferences for gift card reminders on a per-store basis.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 100001,
+        "end": 102000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:badgeExperiments",
+    "type": "local",
+    "purpose": "Caches interaction data for A/B testing of Honey Tip badges.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 100001,
+        "end": 102000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:containerShown",
+    "type": "local",
+    "purpose": "Tracks if a Honey Tips container has been shown to prevent repeated displays.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 100001,
+        "end": 102000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:couponSuppression",
+    "type": "local",
+    "purpose": "Tracks which coupons have been autopopulated to suppress redundant tips.",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 100001,
+        "end": 102000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:launchpadShown",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 104001,
+        "end": 106000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:pdpAutopopCounts",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 104001,
+        "end": 106000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:teaserShown:*",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 104001,
+        "end": 106000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:teaserCountsPerTipAndProduct",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 106001,
+        "end": 108000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:teaserCountsPerTipAndStore",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 106001,
+        "end": 108000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:teasersCountPerStore",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 106001,
+        "end": 108000
+      }
+    ]
+  },
+  {
+    "key": "honeyTipsConfiguration_v4",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 106001,
+        "end": 108000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:tipsConfig:",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 106001,
+        "end": 108000
+      }
+    ]
+  },
+  {
+    "key": "TIPS_CONFIGURATION_CACHE",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 108001,
+        "end": 110000
+      }
+    ]
+  },
+  {
+    "key": "honeyTipsConfiguration_v4",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 108001,
+        "end": 110000
+      }
+    ]
+  },
+  {
+    "key": "honeyTips:tipsShown",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 108001,
+        "end": 110000
+      }
+    ]
+  },
+  {
+    "key": "session-scoped storage wrapper",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 108001,
+        "end": 110000
+      }
+    ]
+  },
+  {
+    "key": "tips:webPriceComparisonViewed:",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 110001,
+        "end": 112000
+      }
+    ]
+  },
+  {
+    "key": "lruCache:bg-main",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 110001,
+        "end": 112000
+      }
+    ]
+  },
+  {
+    "key": "offers:<userId>:<offerId>:activated",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112001,
+        "end": 114000
+      }
+    ]
+  },
+  {
+    "key": "offers:<userId>:<offerId>:details",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112001,
+        "end": 114000
+      }
+    ]
+  },
+  {
+    "key": "offers:product:<userId>:<storeId>:<parentId>:activated",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112001,
+        "end": 114000
+      }
+    ]
+  },
+  {
+    "key": "offers:product:<userId>:<storeId>:<parentId>:details",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112001,
+        "end": 114000
+      }
+    ]
+  },
+  {
+    "key": "offers:<eguId>:<storeId>:<placementId>:TR",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112001,
+        "end": 114000
+      }
+    ]
+  },
+  {
+    "key": "optimuslru:*",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112001,
+        "end": 114000
+      }
+    ]
+  },
+  {
+    "key": "honeyCornerIllustration",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114001,
+        "end": 116000
+      }
+    ]
+  },
+  {
+    "key": "visitedProducts:<storeId>",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114001,
+        "end": 116000
+      }
+    ]
+  },
+  {
+    "key": "bg-rokt-offers",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 116001,
+        "end": 118000
+      }
+    ]
+  },
+  {
+    "key": "CLIENT-UNIQUE-OBJECT:<storeId>:<sessionId>",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 116001,
+        "end": 118000
+      }
+    ]
+  },
+  {
+    "key": "storage:lastWiped",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 118001,
+        "end": 120000
+      }
+    ]
+  },
+  {
+    "key": "user:*",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 118001,
+        "end": 120000
+      }
+    ]
+  },
+  {
+    "key": "bg-double-gold",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 118001,
+        "end": 120000
+      }
+    ]
+  },
+  {
+    "key": "bg-url",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "bg-product-allowlist",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "bg-templated-stores",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "bg-stores",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "bg-exchange-rates",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "<storeId>:<tabId>:stoodup",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "<storeId>:<sessionId>",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ]
+  },
+  {
+    "key": "bg-info-manager",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "standDown",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "standDownTracker",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "currentActiveTabId",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "lastRequestTabId",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "storeDoubleGold:<userId>:<storeId>",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "storeNNA:<userId>:<storeId>",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122001,
+        "end": 124000
+      }
+    ]
+  },
+  {
+    "key": "trendingStores",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "bg-url-matcher",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "supportedDomainsInMemoryList",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "currentActiveTabId",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "device:firstTime",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "sentShopifyMessage:*",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "carrental:*:path",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ]
+  },
+  {
+    "key": "carrental:*:allStoresCoupons",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ]
+  },
+  {
+    "key": "bg-info-manager",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ]
+  },
+  {
+    "key": "userPoints:{userId}",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "redeemableGoldBalance:{payerId}:{currencyCode}",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "bg-experiments",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "user:settings",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "user:information",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "user:userId",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "user:country",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ]
+  },
+  {
+    "key": "bg-vims",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      }
+    ]
+  },
+  {
+    "key": "N/A",
+    "type": "local",
+    "purpose": "Purpose not specified",
+    "retention": "unknown",
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 132001,
+        "end": 134000
+      }
+    ]
+  },
+  {
+    "key": "localStorage",
+    "type": "local",
+    "purpose": "Generic browser local storage access.",
+    "retention": "persistent",
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 6001,
+        "end": 8000
+      }
+    ]
+  },
+  {
+    "key": "sessionStorage",
+    "type": "local",
+    "purpose": "Generic browser session storage access.",
+    "retention": "session",
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 6001,
+        "end": 8000
+      }
+    ]
+  }
+]
+  },
+  "workflows": [
+    {
+      "name": "Direct Coupon Application (DAC)",
+      "triggers": [
+        "User visits a checkout page on a supported retail site.",
+        "User initiates the 'Find Savings' process."
+      ],
+      "steps": [
+        "The extension identifies the retailer's checkout page.",
+        "A site-specific DAC (Direct Apply Coupon) module is activated.",
+        "The DAC module sends a series of AJAX requests to the retailer's backend API to test different coupon codes.",
+        "Responses from the API are parsed to determine if a coupon is valid and what discount it provides.",
+        "The extension's UI is updated to reflect the results.",
+        "The best coupon code is automatically applied to the user's cart."
+      ],
+      "apis": [
+        "fetch",
+        "XMLHttpRequest"
+      ],
+      "messages": [],
+      "endpoints": [
+        "https://www.dsw.com/api/v1/coupons/claim",
+        "https://www.expedia.com/Checkout/applyCoupon",
+        "https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-AddCoupon",
+        "https://www.staples.com/cc/api/checkout/default/coupon",
+        "https://www.wish.com/api/promo-code/apply",
+        "Many other retailer-specific endpoints"
+      ],
+      "storage_keys": [],
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 2001,
+          "end": 6000,
+          "note": "Contains numerous DAC modules for various retailers, defining logic for applying coupons via AJAX requests."
+        },
+        {
+          "file": "h1-check.js",
+          "start": 1,
+          "end": 4000,
+          "note": "Contains webpack bootstrap and a large number of site-specific DAC modules with hardcoded AJAX endpoints for coupon application."
+        }
+      ]
+    },
+    {
+      "name": "VIM Script Execution (Remote Code)",
+      "triggers": [
+        "The extension needs to perform a complex, site-specific action like scraping product data or automating multi-step checkout."
+      ],
+      "steps": [
+        "A request is made to fetch a VIM (Visual Injection Machine) 'recipe' from the backend for a specific store.",
+        "The VIM script is received from the remote server.",
+        "A custom, sandboxed JavaScript interpreter ('we' class) parses and executes the VIM script's Abstract Syntax Tree (AST).",
+        "The script utilizes a library of 'mixin' functions provided by the interpreter to interact with the web page (e.g., click buttons, fill forms, read data).",
+        "The results of the script execution are returned to the core extension logic."
+      ],
+      "apis": [
+        "fetch"
+      ],
+      "messages": [
+        "vims:action"
+      ],
+      "endpoints": [
+        "https://v.joinhoney.com/recipe/stores/{storeId}"
+      ],
+      "storage_keys": [
+        "bg-vims"
+      ],
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 4001,
+          "end": 6000,
+          "note": "Defines the 'IntegrationRunner' for executing VIM scripts and the 'interpretMixin' system for web page interaction."
+        },
+        {
+          "file": "h0.js",
+          "start": 6001,
+          "end": 8000,
+          "note": "Contains the implementation of the 'we' class, a sandboxed JavaScript interpreter that runs VIM scripts."
+        },
+        {
+          "file": "h0.js",
+          "start": 130001,
+          "end": 132000,
+          "note": "Contains the core of the VIM engine, including script fetching from v.joinhoney.com and native action handlers."
+        }
+      ]
+    },
+    {
+      "name": "Analytics and Session Replay",
+      "triggers": [
+        "User performs actions such as page loads, clicks, or encounters errors.",
+        "A/B testing or feature flagging is active."
+      ],
+      "steps": [
+        "An event (e.g., UI interaction, page load, error) is triggered within the extension.",
+        "The 'rrweb' library records DOM changes and user interactions (mouse, scroll, input) to create a session replay.",
+        "The Sentry SDK captures the event, error data, and the rrweb session replay.",
+        "Data is compressed in a web worker using the 'pako' (zlib) library.",
+        "A central analytics dispatcher ('sdata') batches event data.",
+        "Batched analytics are sent to 's.joinhoney.com/evs'.",
+        "Sentry error reports and session replays are sent to Sentry's servers."
+      ],
+      "apis": [
+        "fetch",
+        "XMLHttpRequest",
+        "new Worker()"
+      ],
+      "messages": [
+        "sdata:event"
+      ],
+      "endpoints": [
+        "https://s.joinhoney.com/evs",
+        "https://s.joinhoney.com/ext_obs",
+        "https://s.joinhoney.com/pr",
+        "Sentry error reporting endpoint (dynamic)"
+      ],
+      "storage_keys": [],
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 22001,
+          "end": 24000,
+          "note": "Contains the comprehensive analytics dispatcher ('sdata') for batching and sending event data."
+        },
+        {
+          "file": "h0.js",
+          "start": 36001,
+          "end": 40000,
+          "note": "Contains the bundled 'rrweb' library for session replay, which records user interactions and DOM changes."
+        },
+        {
+          "file": "h0.js",
+          "start": 40001,
+          "end": 42000,
+          "note": "Contains the core of Sentry's Session Replay functionality, including the web worker for data compression and privacy controls."
+        }
+      ]
+    },
+    {
+      "name": "Droplist Product Tracking",
+      "triggers": [
+        "User adds an item to their Droplist.",
+        "User visits a product page for an item on their Droplist."
+      ],
+      "steps": [
+        "User clicks the 'Add to Droplist' button on a product page.",
+        "A message is sent to the background script to handle the action.",
+        "A GraphQL mutation (`ext_addToDroplist` or `ext_addProductToCollections`) is sent to the backend to add the item to the user's account.",
+        "The extension queries for product price history (`getProductPriceHistoryByStoreIdVariantId`) to display price charts.",
+        "The extension syncs items from the user's Amazon 'Saved for Later' list by making a POST request to Amazon's cart endpoint."
+      ],
+      "apis": [],
+      "messages": [
+        "droplist:product:v3"
+      ],
+      "endpoints": [
+        "https://d.joinhoney.com/v3 (GraphQL)",
+        "https://www.amazon.com/cart/ref=ox_sc_inf_saved-for-later_load-infinite-sfl"
+      ],
+      "storage_keys": [],
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 88001,
+          "end": 90000,
+          "note": "Contains modules for the Droplist feature, including GraphQL mutations to add items and logic to sync from Amazon's 'Saved for Later' list."
+        },
+        {
+          "file": "h0.js",
+          "start": 92001,
+          "end": 94000,
+          "note": "Contains the central message listener 'droplist:product:v3' that acts as a router for all Droplist-related actions."
+        }
+      ]
+    },
+    {
+      "name": "Dynamic Feature Configuration",
+      "triggers": [
+        "Extension startup.",
+        "Periodically on a timer."
+      ],
+      "steps": [
+        "The extension fetches A/B testing and feature flag configurations from 'cdn.honey.io/experiments/extension-experiment.json'.",
+        "The 'stand down' manager fetches rules from 'cdn.honey.io/standdown-rules.json' to determine on which sites to disable the extension's UI.",
+        "The 'SSD' (Super-Secret Droplist?) system fetches its rules from 'cdn.honey.io/ab/ssd.json'.",
+        "The behavior of the extension is dynamically altered based on the fetched configurations, enabling or disabling features and changing UI without requiring an extension update."
+      ],
+      "apis": [
+        "fetch"
+      ],
+      "messages": [
+        "experiments:action"
+      ],
+      "endpoints": [
+        "https://cdn.honey.io/experiments/extension-experiment.json",
+        "https://cdn.honey.io/standdown-rules.json",
+        "https://cdn.honey.io/ab/ssd.json"
+      ],
+      "storage_keys": [
+        "bg-experiments",
+        "ssd:rules"
+      ],
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 20001,
+          "end": 22000,
+          "note": "Contains the A/B testing framework that fetches experiment configurations from a CDN."
+        },
+        {
+          "file": "h0.js",
+          "start": 22001,
+          "end": 24000,
+          "note": "Contains the 'stand down' framework that fetches remote rules to dynamically disable the extension."
+        },
+        {
+          "file": "h0.js",
+          "start": 86001,
+          "end": 88000,
+          "note": "Contains the 'SSD' dynamic configuration system that fetches its rules from a CDN."
+        }
+      ]
+    },
+    {
+      "name": "Affiliate Link Tagging and Management",
+      "triggers": [
+        "User navigates to a partner retail site."
+      ],
+      "steps": [
+        "The 'stand down' manager inspects the navigation request using chrome.webRequest.onHeadersReceived.",
+        "It checks if the user has already been redirected by a competing affiliate link.",
+        "If a competing link is detected, Honey 'stands down' and does not apply its own affiliate tag for that session.",
+        "If no competing link is found, the 'affiliate manager' is triggered via an 'affManager:tag' message.",
+        "The affiliate manager constructs a unique affiliate URL, typically using 'https://o.honey.io/store/...'.",
+        "The user's tab is briefly redirected to this URL using chrome.tabs.update.",
+        "The redirection sets Honey's affiliate cookie in the user's browser.",
+        "The user is immediately redirected back to their original destination on the retail site."
+      ],
+      "apis": [
+        "chrome.webRequest.onHeadersReceived",
+        "chrome.tabs.update"
+      ],
+      "messages": [
+        "affManager:tag"
+      ],
+      "endpoints": [
+        "https://o.honey.io/store/"
+      ],
+      "storage_keys": [
+        "standDown",
+        "standDownTracker"
+      ],
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 122001,
+          "end": 124000,
+          "note": "Implementation of the 'standDown' manager, which monitors navigation and yields to other affiliate links."
+        },
+        {
+          "file": "h0.js",
+          "start": 80001,
+          "end": 82000,
+          "note": "Implementation of the 'affiliate manager' which handles offer activation and tagging via redirection."
+        }
+      ]
+    }
+  ],
+  "privacy": {
+    "data_categories": [
+      "user_credentials",
+      "browsing_history",
+      "pii"
+    ],
+    "purposes": [
+      "authentication",
+      "analytics",
+      "personalization",
+      "advertising"
+    ],
+    "minimization": "Collects more data than necessary for stated purpose",
+    "consent": "No explicit consent mechanism observed",
+    "retention": "Indefinite storage in local storage",
+    "third_parties": [
+      {
+        "name": "s.joinhoney.com",
+        "purpose": "Analytics"
+      },
+      {
+        "name": "cdn.honey.io",
+        "purpose": "CDN for configuration files"
+      },
+      {
+        "name": "history.paypal.com",
+        "purpose": "Tracking"
+      },
+      {
+        "name": "Rokt",
+        "purpose": "Third-party offer provider"
+      }
+    ],
+    "policy_compliance": "Potential GDPR concerns due to lack of consent and data retention policy."
+  },
+  "risks": [
+    {
+      "type": "tracking",
+      "severity": "medium",
+      "justification": "The extension performs affiliate link tagging by redirecting the user through its own servers (o.honey.io) to set tracking cookies. While it has a 'stand down' mechanism to avoid overwriting other affiliate links, this redirection is a form of user tracking to attribute purchases. The user is not explicitly notified of this redirection.",
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 80001,
+          "end": 82000,
+          "note": "The affiliate manager constructs and redirects to an affiliate URL to set cookies."
+        },
+        {
+          "file": "h0.js",
+          "start": 122001,
+          "end": 124000,
+          "note": "The 'stand down' manager monitors user navigation to decide when to apply affiliate tags, indicating a constant monitoring of browsing for affiliate opportunities."
+        }
+      ]
+    },
+    {
+      "type": "remote_code",
+      "severity": "high",
+      "justification": "The extension contains a custom JavaScript interpreter ('we' class) that can execute arbitrary code from a fetched Abstract Syntax Tree (AST). This represents a significant security risk as it can be used to bypass security restrictions and execute malicious code fetched from a remote server.",
+      "evidence": [
+        {
+          "file": "h1-check.js",
+          "start": 4001,
+          "end": 6000
+        }
+      ]
+    },
+    {
+      "type": "pii_exfiltration",
+      "severity": "high",
+      "justification": "The extension bundles the 'rrweb' library, enabling full session replay functionality. This includes recording all user interactions (mouse movements, clicks, scrolls, inputs) and DOM changes, which can be sent to Sentry. This capability could capture highly sensitive user data, including PII, financial information, and personal communications, without explicit, granular consent for each recording.",
+      "evidence": [
+        {
+          "file": "h0.js",
+          "start": 36001,
+          "end": 40000
+        }
+      ]
+    }
+  ],
+  "code_signals": {
+    "chrome_api_calls": [
+      "chrome.runtime.onConnect",
+      "chrome.webRequest.onErrorOccurred",
+      "chrome.alarms.onAlarm.addListener",
+      "chrome.alarms.clear",
+      "chrome.alarms.create",
+      "chrome.alarms.get",
+      "chrome.webRequest.onBeforeRedirect",
+      "chrome.cookies.set",
+      "chrome.cookies.get",
+      "chrome.cookies.remove",
+      "chrome.cookies.getAll",
+      "chrome.tabs.executeScript",
+      "chrome.runtime.onMessage",
+      "chrome.runtime.onInstalled",
+      "chrome.runtime.setUninstallURL",
+      "chrome.tabs.get",
+      "chrome.storage.local",
+      "chrome.storage.sync",
+      "chrome.webRequest.onBeforeRequest",
+      "chrome.webRequest.onCompleted",
+      "chrome.tabs.update",
+      "chrome.tabs.query",
+      "chrome.tabs.create",
+      "chrome.runtime.sendNativeMessage",
+      "chrome.cookies.getAllForUrl",
+      "chrome.webRequest.onBeforeRequest.addListener",
+      "chrome.webRequest.onBeforeSendHeaders.addListener",
+      "chrome.webRequest.onHeadersReceived.addListener",
+      "chrome.webRequest.onCompleted.addListener",
+      "chrome.webRequest.onErrorOccurred.addListener",
+      "chrome.action.setIcon",
+      "chrome.action.setTitle",
+      "chrome.action.setBadgeText",
+      "chrome.action.setBadgeBackgroundColor",
+      "chrome.action.onClicked",
+      "chrome.runtime.reload",
+      "chrome.storage.session",
+      "chrome.runtime.getURL",
+      "chrome.tabs.sendMessage",
+      "chrome.tabs.onCreated",
+      "chrome.tabs.onUpdated",
+      "chrome.tabs.onActivated",
+      "chrome.tabs.onRemoved",
+      "chrome.tabs.onReplaced",
+      "chrome.windows.update",
+      "chrome.windows.create",
+      "chrome.windows.getAll",
+      "chrome.scripting.executeScript",
+      "chrome.offscreen.hasDocument",
+      "chrome.offscreen.createDocument"
+    ],
+    "event_listeners": [
+      "chrome.runtime.onConnect",
+      "chrome.webRequest.onErrorOccurred",
+      "chrome.alarms.onAlarm.addListener",
+      "runtime.onMessage.addListener",
+      "runtime.onInstalled.addListener",
+      "page:load",
+      "alarms.onAlarm",
+      "tabs.onActivated",
+      "tabs.onUpdated",
+      "chrome.action.onClicked",
+      "tabs:created",
+      "tabs:updated",
+      "tabs:activated",
+      "tabs:removed",
+      "tabs:replaced",
+      "windows.onFocusChanged"
+    ],
+    "dynamic_code": [
+      "eval",
+      "new Worker(URL.createObjectURL(new Blob([ua])))",
+      "atob",
+      "acorn"
+    ],
+    "wasm_modules": [],
+    "third_party_libs": [
+      "CryptoJS",
+      "css-select",
+      "domhandler",
+      "dom-serializer",
+      "domelementtype",
+      "htmlparser2",
+      "parse5",
+      "Sentry SDK",
+      "rrweb",
+      "pako",
+      "Sentry Replay",
+      "Sentry Tracing",
+      "Sentry Browser Profiling",
+      "accounting.js",
+      "base64-js",
+      "bluebird",
+      "buffer",
+      "debug",
+      "dayjs",
+      "css-what",
+      "Lodash",
+      "PostCSS",
+      "regexp-tree",
+      "semver",
+      "lru-cache",
+      "url",
+      "punycode",
+      "qs",
+      "tslib",
+      "cheerio",
+      "deepmerge",
+      "rss-parser",
+      "escape-string-regexp",
+      "jQuery v3.7.1",
+      "long.js",
+      "ms",
+      "node-cache",
+      "nth-check",
+      "object-inspect",
+      "parse-srcset",
+      "safe-regex",
+      "url-parse"
+    ]
+  }
+}

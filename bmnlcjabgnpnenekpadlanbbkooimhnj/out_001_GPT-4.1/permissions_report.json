@@ -1,0 +1,6 @@
+{
+  "api_permissions": ["alarms", "cookies", "storage", "unlimitedStorage", "scripting", "webRequest", "offscreen"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "optional_permissions": [],
+  "evidence": [{"file": "manifest.json", "start": 1, "end": 56}]
+}

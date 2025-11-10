@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "obfuscate": "node obfuscation-pipeline.js",
+    "build": "deno task build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.328",
+    "esbuild": "^0.25.5",
+    "javascript-obfuscator": "^4.1.0"
+  }
+}

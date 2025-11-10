@@ -1,0 +1,127 @@
+[
+  {
+    "original": "checkoutPaypal/honeySPBResponders.js",
+    "beautified": "checkoutPaypal/honeySPBResponders.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "checkoutPaypal/merchantSPBContent.js",
+    "beautified": "checkoutPaypal/merchantSPBContent.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "checkoutPaypal/merchantSPBResponders.js",
+    "beautified": "checkoutPaypal/merchantSPBResponders.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "checkoutPaypal/honeySPBContent.js",
+    "beautified": "checkoutPaypal/honeySPBContent.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-searchEngine.js",
+    "beautified": "h1-searchEngine.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h2.js",
+    "beautified": "h2.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-popover.js",
+    "beautified": "h1-popover.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowAlert.js",
+    "beautified": "extensionMixinScripts/blockWindowAlert.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowConfirm.js",
+    "beautified": "extensionMixinScripts/blockWindowConfirm.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowAlertFalse.js",
+    "beautified": "extensionMixinScripts/blockWindowAlertFalse.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/clickElementThruPage.js",
+    "beautified": "extensionMixinScripts/clickElementThruPage.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowConfirmTrue.js",
+    "beautified": "extensionMixinScripts/blockWindowConfirmTrue.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowConfirmFalse.js",
+    "beautified": "extensionMixinScripts/blockWindowConfirmFalse.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowPrompt.js",
+    "beautified": "extensionMixinScripts/blockWindowPrompt.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowPromptTrue.js",
+    "beautified": "extensionMixinScripts/blockWindowPromptTrue.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowPromptFalse.js",
+    "beautified": "extensionMixinScripts/blockWindowPromptFalse.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "extensionMixinScripts/blockWindowAlertTrue.js",
+    "beautified": "extensionMixinScripts/blockWindowAlertTrue.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-offscreen.js",
+    "beautified": "h1-offscreen.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h0.js",
+    "beautified": "h0.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-check.js",
+    "beautified": "h1-check.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-vendors-main-popover.js",
+    "beautified": "h1-vendors-main-popover.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "paypal/meta.js",
+    "beautified": "paypal/meta.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-main.js",
+    "beautified": "h1-main.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "proxies/requestProxies.js",
+    "beautified": "proxies/requestProxies.beautified.js",
+    "status": "created"
+  },
+  {
+    "original": "h1-honeyscience-main-popover.js",
+    "beautified": "h1-honeyscience-main-popover.beautified.js",
+    "status": "created"
+  }
+]

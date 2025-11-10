@@ -1,0 +1,105 @@
+@startuml Honey Extension Architecture Flow
+title PayPal Honey v17.1.1 - Component Communication Flow
+
+actor User as U
+participant "Web Page" as WP
+participant "Content Script\n(h1-check.js)" as CS
+participant "Service Worker\n(h0.js)" as SW
+participant "UI Popup\n(h1-popover.js)" as UI
+participant "Offscreen Document\n(h1-offscreen.js)" as OD
+participant "Injected Scripts\n(Web Accessible)" as IS
+participant "chrome.storage" as Storage
+participant "Honey Infrastructure" as HI
+participant "Retailer APIs" as RA
+participant "VIM Recipe Server\n(v.joinhoney.com)" as VIM
+participant "Analytics Server\n(d.joinhoney.com)" as AS
+
+== Extension Initialization ==
+U -> WP: Navigate to e-commerce site
+WP -> CS: Content script injection
+CS -> SW: user:session:started
+SW -> Storage: Read user preferences
+SW -> AS: device:heart (heartbeat)
+SW -> HI: Device registration
+SW -> CS: Configuration and rules
+
+== Page Analysis & Product Detection ==
+CS -> WP: DOM analysis
+CS -> CS: Product detection algorithms
+CS -> SW: page:load {url, hasServiceWorkers, tabId}
+SW -> HI: Store matching query
+SW -> VIM: Recipe retrieval request
+VIM --> SW: VIM automation recipes
+SW -> CS: VIM execution instructions
+
+== Coupon Discovery & Application ==
+CS -> CS: Price detection
+CS -> SW: experiments:action {coupon opportunity}
+SW -> Storage: Read coupon database
+SW -> CS: affManager:tag {storeId, data}
+CS -> IS: Inject automation scripts
+IS -> WP: DOM manipulation
+IS -> RA: Coupon validation (87+ retailer APIs)
+RA --> IS: Coupon validity response
+IS -> CS: Results
+CS -> SW: Coupon application results
+SW -> UI: Update badge/notifications
+
+== Analytics & Tracking ==
+CS -> CS: User interaction capture
+CS -> SW: stats:action, sdata:event
+SW -> Storage: Store analytics data
+SW -> AS: Telemetry transmission
+SW -> SW: Data aggregation
+
+== User Interface Interactions ==
+U -> UI: Click extension icon
+UI -> SW: honey-pay-now:action:ui
+SW -> UI: User data, deals, settings
+UI -> SW: User preference changes
+SW -> Storage: Save preferences
+SW -> CS: Updated configuration
+
+== VIM Automation Execution ==
+CS -> CS: Execute VIM recipes
+CS -> WP: Automated form filling
+CS -> WP: Click automation
+CS -> WP: Price monitoring
+CS -> RA: Direct API calls
+CS -> SW: vims:action {results}
+
+== Background Processing ==
+SW -> OD: Long-running operations
+OD -> OD: Cryptographic operations
+OD -> SW: Processing results
+SW -> Storage: Persistent data storage
+
+== Cross-Component Data Flow ==
+Storage -> SW: Configuration data
+Storage -> CS: User preferences  
+Storage -> UI: Interface state
+HI -> SW: Rules and configurations
+VIM -> CS: Automation scripts
+AS <- SW: User behavior data
+RA <- CS: Coupon applications
+
+note right of CS
+Content script runs on ALL sites
+(http://*/*, https://*/*)
+with extensive DOM access
+end note
+
+note left of SW
+Service worker coordinates
+all extension activities and
+maintains persistent state
+end note
+
+note over RA
+87+ retailer integrations:
+Amazon, Best Buy, Target,
+Walmart, Gap, H&M, Sephora,
+Macy's, Kohl's, JCPenney, etc.
+end note
+
+@enduml

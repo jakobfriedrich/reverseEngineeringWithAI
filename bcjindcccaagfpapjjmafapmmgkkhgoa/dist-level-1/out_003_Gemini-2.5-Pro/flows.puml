@@ -1,0 +1,22 @@
+@startuml
+actor User
+participant "Content Script (content.js)" as CS
+participant "Injected Script (set-json-global.js)" as IS
+participant "Options Page (options.js)" as OP
+database "chrome.storage" as Storage
+participant Page
+
+User -> Page: Visits page with JSON
+Page -> CS: Injects content script
+CS -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> CS: Theme data
+CS -> Page: Replaces content with formatted JSON
+Page -> IS: Injects script into MAIN world
+IS -> Page: Exposes `window.json`
+
+User -> OP: Opens options page
+OP -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> OP: Theme data
+User -> OP: Changes theme
+OP -> Storage: chrome.storage.local.set("themeOverride")
+@enduml

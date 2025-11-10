@@ -1,0 +1,13 @@
+@startuml
+actor User
+participant "Options Page" as Options
+participant "Content Script" as Content
+participant "chrome.storage.local" as Storage
+
+User -> Options: Opens options page
+Options -> Storage: chrome.storage.local.get("themeOverride")
+User -> Options: Selects theme
+Options -> Storage: chrome.storage.local.set("themeOverride")
+Content -> Storage: chrome.storage.local.get("themeOverride")
+Content -> Content: Applies theme styles
+@enduml

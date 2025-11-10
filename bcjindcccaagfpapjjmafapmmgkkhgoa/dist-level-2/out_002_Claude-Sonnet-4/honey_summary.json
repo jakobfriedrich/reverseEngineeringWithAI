@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 22}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 17, "end": 18}]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": [],
+      "evidence": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js", "set-json-global.js"],
+        "apis": ["chrome.storage.local.get"],
+        "listeners": ["document.addEventListener(mousedown)", "chrome.storage.onChanged"],
+        "evidence": [{"file": "manifest.json", "start": 8, "end": 18}, {"file": "content.js", "start": 1, "end": 1}, {"file": "set-json-global.js", "start": 1, "end": 1}]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": ["options/options.html", "options/options.js"],
+        "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+        "listeners": ["addEventListener(change)"],
+        "evidence": [{"file": "manifest.json", "start": 19, "end": 22}, {"file": "options/options.js", "start": 1, "end": 1}]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "local",
+        "purpose": "Theme preference setting (system/force_light/force_dark)",
+        "retention": "indefinite",
+        "evidence": [{"file": "content.js", "start": 1, "end": 1}, {"file": "options/options.js", "start": 1, "end": 1}]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "JSON Page Formatting Flow",
+      "triggers": ["User navigates to page containing JSON content"],
+      "steps": [
+        "Page loads with JSON content in <body><pre> element",
+        "Content script detects JSON pattern (starts with { or [)",
+        "Content script retrieves theme preference from chrome.storage.local",
+        "Content script parses JSON and creates formatted UI",
+        "Content script adds Raw/Parsed toggle buttons",
+        "Content script applies appropriate theme styling",
+        "Global setter script exposes window.json for console access"
+      ],
+      "apis": ["chrome.storage.local.get"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [{"file": "content.js", "start": 1, "end": 1}, {"file": "set-json-global.js", "start": 1, "end": 1}, {"file": "manifest.json", "start": 8, "end": 18}]
+    },
+    {
+      "name": "Theme Selection Flow",
+      "triggers": ["User opens extension options page"],
+      "steps": [
+        "User clicks extension options",
+        "Options page loads with theme radio buttons",
+        "Options script retrieves current theme from chrome.storage.local",
+        "Options script checks appropriate radio button",
+        "User selects different theme option",
+        "Options script saves new theme to chrome.storage.local",
+        "Storage change event triggers theme update in content scripts"
+      ],
+      "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [{"file": "options/options.js", "start": 1, "end": 1}, {"file": "manifest.json", "start": 19, "end": 22}]
+    },
+    {
+      "name": "Interactive JSON Navigation",
+      "triggers": ["User clicks on JSON nodes in formatted view"],
+      "steps": [
+        "User clicks on expandable JSON node",
+        "Content script handles mousedown event",
+        "Script toggles collapsed/expanded state",
+        "Visual state updates (show/hide nested content)",
+        "User can navigate between Raw and Parsed views via toggle buttons"
+      ],
+      "apis": [],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [{"file": "content.js", "start": 1, "end": 1}]
+    },
+    {
+      "name": "Console Development Access",
+      "triggers": ["Developer opens browser console on JSON page"],
+      "steps": [
+        "set-json-global.js runs in MAIN world context",
+        "Script finds JSON content in page",
+        "Script parses JSON data",
+        "Script exposes parsed data as window.json global",
+        "Developer can inspect JSON via console: 'Type json to inspect'"
+      ],
+      "apis": [],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [{"file": "set-json-global.js", "start": 1, "end": 1}, {"file": "manifest.json", "start": 15, "end": 18}]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences"],
+    "purposes": ["ui_theming", "json_formatting", "developer_convenience"],
+    "minimization": "Data collection is minimal and appropriate for functionality - only stores single theme preference value",
+    "consent": "No explicit consent mechanism, but none required - theme preference is explicitly set by user in options",
+    "retention": "Indefinite local storage of theme preference until user changes it or uninstalls extension",
+    "third_parties": [],
+    "policy_compliance": "Highly compliant with privacy regulations - GDPR: No personal data processing, Chrome Web Store: Follows single purpose principle",
+    "evidence": [{"file": "options/options.js", "start": 1, "end": 1}, {"file": "content.js", "start": 1, "end": 1}]
+  },
+  "risks": [
+    {
+      "type": "other",
+      "severity": "low",
+      "justification": "Heavy obfuscation in all JS files makes code review difficult, but extension is open source and functionality appears benign",
+      "evidence": [{"file": "content.js", "start": 1, "end": 1}, {"file": "set-json-global.js", "start": 1, "end": 1}, {"file": "options/options.js", "start": 1, "end": 1}]
+    }
+  ],
+  "code_signals": {
+    "chrome_api_calls": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+    "event_listeners": ["document.addEventListener(mousedown)", "addEventListener(change)"],
+    "dynamic_code": ["JSON.parse"],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

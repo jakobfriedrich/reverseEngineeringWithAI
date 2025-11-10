@@ -1,0 +1,2 @@
+key,type,purpose,file,line_start,line_end
+themeOverride,sync,Store user theme preference,options/options.js,13,21

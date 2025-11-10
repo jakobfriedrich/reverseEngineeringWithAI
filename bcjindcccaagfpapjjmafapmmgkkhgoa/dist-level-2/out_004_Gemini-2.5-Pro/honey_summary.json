@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 5}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 28, "end": 30}]
+  },
+  "components": {
+    "background": {
+        "files": [],
+        "apis": [],
+        "listeners": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js", "set-json-global.js"],
+        "apis": ["chrome.storage.local"],
+        "listeners": ["DOMContentLoaded", "mousedown"],
+        "evidence": [{"file": "manifest.json", "start": 13, "end": 27}]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+        {
+            "files": ["options/options.html", "options/options.js"],
+            "apis": ["chrome.storage.local"],
+            "listeners": ["change", "chrome.storage.onChanged"],
+            "evidence": [{"file": "manifest.json", "start": 31, "end": 34}]
+        }
+    ]
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "local",
+        "purpose": "Store user theme preference",
+        "retention": "indefinite",
+        "evidence": [
+          {"file": "content.js", "start": 322, "end": 322},
+          {"file": "options/options.js", "start": 42, "end": 49}
+        ]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "JSON Formatting",
+      "triggers": ["Page load on a URL with JSON content"],
+      "steps": [
+        "content.js script is injected into the page.",
+        "It finds a <pre> tag containing JSON.",
+        "The script parses the JSON and renders it as a collapsible and readable HTML structure.",
+        "It reads the 'themeOverride' from chrome.storage.local to apply a theme."
+      ],
+      "apis": ["chrome.storage.local.get"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [
+        {"file": "content.js", "start": 332, "end": 400}
+      ]
+    },
+    {
+        "name": "Set Theme",
+        "triggers": ["User changes theme in options page"],
+        "steps": [
+            "options.js listens for changes on the theme radio buttons.",
+            "When a change occurs, it saves the new theme value to chrome.storage.local under the key 'themeOverride'."
+        ],
+        "apis": ["chrome.storage.local.set"],
+        "messages": [],
+        "endpoints": [],
+        "storage_keys": ["themeOverride"],
+        "evidence": [
+            {"file": "options/options.js", "start": 45, "end": 52}
+        ]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences"],
+    "purposes": ["personalization"],
+    "minimization": "Collects minimal necessary data",
+    "consent": "User implicitly consents by changing settings on the options page.",
+    "retention": "Indefinite storage in local storage",
+    "third_parties": [],
+    "policy_compliance": "No issues identified.",
+    "evidence": [
+        {"file": "options/options.js", "start": 38, "end": 55}
+    ]
+  },
+  "risks": [],
+  "code_signals": {
+    "chrome_api_calls": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+    "event_listeners": ["document.addEventListener", "radio.addEventListener", "chrome.storage.onChanged.addListener"],
+    "dynamic_code": ["Object.defineProperty"],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

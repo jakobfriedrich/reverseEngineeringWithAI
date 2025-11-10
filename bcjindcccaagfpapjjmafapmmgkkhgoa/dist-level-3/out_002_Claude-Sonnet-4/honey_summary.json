@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 25}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 15, "end": 16}]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": [],
+      "evidence": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js"],
+        "apis": ["chrome.storage.local.get"],
+        "listeners": ["addEventListener"],
+        "evidence": [{"file": "manifest.json", "start": 8, "end": 12}]
+      },
+      {
+        "files": ["set-json-global.js"],
+        "apis": [],
+        "listeners": [],
+        "evidence": [{"file": "manifest.json", "start": 13, "end": 17}]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": ["options/options.html", "options/options.js"],
+        "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+        "listeners": ["addEventListener", "chrome.storage.onChanged.addListener"],
+        "evidence": [{"file": "manifest.json", "start": 18, "end": 21}]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "local",
+        "purpose": "Store user theme preference for JSON formatting display",
+        "retention": "Indefinite until user uninstalls extension",
+        "evidence": [
+          {"file": "content.js", "start": 344, "end": 344},
+          {"file": "options/options.js", "start": 45, "end": 70}
+        ]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "JSON Formatting Workflow",
+      "triggers": ["User visits page with JSON content"],
+      "steps": [
+        "Browser loads page with JSON content in <pre> element",
+        "content.js content script injected at document_end",
+        "Script detects JSON content in body>pre element",
+        "Script retrieves theme preference from chrome.storage.local",
+        "Script parses JSON content and validates format",
+        "Script creates formatted, collapsible JSON tree UI",
+        "Script applies appropriate theme styling",
+        "Script replaces original content with formatted view"
+      ],
+      "apis": ["chrome.storage.local.get"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [{"file": "content.js", "start": 1, "end": 490}]
+    },
+    {
+      "name": "Developer Console Access Workflow",
+      "triggers": ["User visits page with JSON content"],
+      "steps": [
+        "set-json-global.js injected in MAIN world context at document_idle",
+        "Script finds JSON content in DOM",
+        "Script parses JSON content with JSON.parse()",
+        "Script exposes parsed JSON as window.json global variable",
+        "Developer can access JSON via console with 'json' variable"
+      ],
+      "apis": [],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [{"file": "set-json-global.js", "start": 1, "end": 60}]
+    },
+    {
+      "name": "Theme Preference Management Workflow",
+      "triggers": ["User opens extension options page"],
+      "steps": [
+        "User opens extension options via chrome://extensions",
+        "options.js loads and retrieves current theme preference",
+        "Options UI displays current selection (system/force_light/force_dark)",
+        "User selects new theme preference",
+        "Script saves preference to chrome.storage.local",
+        "All content scripts receive storage change notification",
+        "Content scripts update theme styling on active pages"
+      ],
+      "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [{"file": "options/options.js", "start": 1, "end": 82}]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences"],
+    "purposes": ["json_formatting", "theme_persistence", "developer_tools"],
+    "minimization": "Extension collects minimal necessary data - only stores a single theme preference setting",
+    "consent": "No explicit consent mechanism observed - extension relies on Chrome Web Store installation consent",
+    "retention": "Theme preference stored indefinitely in chrome.storage.local until user uninstalls extension or clears data",
+    "third_parties": [],
+    "policy_compliance": "Complies with Chrome Web Store Developer Program Policies - no privacy violations identified",
+    "evidence": [
+      {"file": "content.js", "start": 344, "end": 344},
+      {"file": "options/options.js", "start": 45, "end": 70}
+    ]
+  },
+  "risks": [],
+  "code_signals": {
+    "chrome_api_calls": [
+      "chrome.storage.local.get",
+      "chrome.storage.local.set", 
+      "chrome.storage.onChanged.addListener"
+    ],
+    "event_listeners": [
+      "addEventListener",
+      "chrome.storage.onChanged.addListener"
+    ],
+    "dynamic_code": [
+      "setTimeout",
+      "JSON.parse"
+    ],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

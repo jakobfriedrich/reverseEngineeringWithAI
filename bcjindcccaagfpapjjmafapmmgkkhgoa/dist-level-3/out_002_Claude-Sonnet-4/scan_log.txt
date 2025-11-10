@@ -1,0 +1,56 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 002
+Model: Claude-Sonnet-4
+Timestamp: 2025-11-06T20:23:00Z
+Output Directory: ./out_002_Claude-Sonnet-4
+
+Tools/Packages Used:
+- js-beautify@1.15.4 (pre-existing)
+- espree@9.6.1
+- acorn@8.10.0
+- @typescript-eslint/typescript-estree@6.7.0
+- ajv-cli@5.0.0
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate)
+- Total chunks analyzed: 3 (all whole-file)
+- Content scripts: 2 files (content.js, set-json-global.js)
+- UI files: 1 file (options/options.js)
+- Background scripts: 0 files
+
+Analysis Results:
+- Chrome API calls found: 3 unique calls (chrome.storage.local.get, chrome.storage.local.set, chrome.storage.onChanged.addListener)
+- Event listeners: 2 types (addEventListener, chrome.storage.onChanged.addListener)
+- Message channels: 0
+- Storage keys: 1 (themeOverride)
+- Network endpoints: 0
+- Workflows identified: 3
+- Privacy risks: 0 (low risk extension)
+
+Beautification:
+- Success: 3 files
+- Errors: 0 files
+- Files excluded: node_modules, out_* directories
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: 3 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (0 rows), messages.csv (0 rows), storage_keys.csv (1 row)
+
+Key Findings:
+- Extension is purely local utility tool
+- No network communication or tracking
+- Minimal permissions (storage only)
+- Heavy code obfuscation but benign functionality
+- Single storage key for theme preferences
+
+Known Gaps/Unknowns:
+- Code heavily obfuscated making detailed AST analysis difficult
+- Some dynamic patterns may not be fully captured due to obfuscation
+- Theme preference values validated against known enum (system, force_light, force_dark)
+
+Completion Status: SUCCESS

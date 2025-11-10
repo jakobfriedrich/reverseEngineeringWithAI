@@ -1,0 +1,5407 @@
+[
+  {
+    "url": "GraphQL: ext_getAllActiveStoresBoostedCashbackOffers",
+    "purpose": "GraphQL get boosted cashback offers",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 119800,
+        "end": 119900
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 119800-119900)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getAvgGoldEarnedByStoreId",
+    "purpose": "GraphQL get average gold earned",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 123500,
+        "end": 123600
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 123500-123600)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getCouponStatsByProduct",
+    "purpose": "GraphQL get coupon stats by product",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124100,
+        "end": 124200
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 124100-124200)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getDoubleGoldActivationsByUserId",
+    "purpose": "Double gold user activations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getFixedRateActivationByStoreAndUserId",
+    "purpose": "GraphQL get fixed rate activation",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 122100,
+        "end": 122200
+      },
+      {
+        "file": "h0.js",
+        "start": 122000,
+        "end": 123999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 122100-122200); Evidence 2: ✗ NOT found in h0.js (lines 122000-123999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getNnaStoreByStoreId",
+    "purpose": "GraphQL get NNA store by store ID",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 123900,
+        "end": 124000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 123900-124000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getNnaUserByUserId",
+    "purpose": "GraphQL get NNA user by user ID",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 123900,
+        "end": 124000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 123900-124000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getProductByIdSecondaryDetails",
+    "purpose": "Get secondary product details",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getRoktOffers",
+    "purpose": "GraphQL get Rokt offers",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 117100,
+        "end": 117200
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 117100-117200)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getStorePartialsByDomain",
+    "purpose": "GraphQL get store partials by domain",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124500,
+        "end": 124600
+      },
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 124500-124600); Evidence 2: ✗ NOT found in h0.js (lines 124001-126000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getStoreWhitelist",
+    "purpose": "GraphQL get store whitelist",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120300,
+        "end": 120400
+      },
+      {
+        "file": "h0.js",
+        "start": 122300,
+        "end": 122400
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 120300-120400); Evidence 2: ✗ NOT found in h0.js (lines 122300-122400)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getSupportedDomains",
+    "purpose": "GraphQL get supported domains",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124300,
+        "end": 124400
+      },
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 124300-124400); Evidence 2: ✗ NOT found in h0.js (lines 124001-126000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getTopStores",
+    "purpose": "GraphQL get top stores",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120500,
+        "end": 120600
+      },
+      {
+        "file": "h0.js",
+        "start": 122500,
+        "end": 122600
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 120500-120600); Evidence 2: ✗ NOT found in h0.js (lines 122500-122600)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_getUserFollow",
+    "purpose": "User following data",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_incrementUGCSuccess",
+    "purpose": "GraphQL increment UGC success",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 121300,
+        "end": 121400
+      },
+      {
+        "file": "h0.js",
+        "start": 122900,
+        "end": 123000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 121300-121400); Evidence 2: ✗ NOT found in h0.js (lines 122900-123000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_insertStoreUGC",
+    "purpose": "GraphQL insert store UGC",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 121200,
+        "end": 121300
+      },
+      {
+        "file": "h0.js",
+        "start": 122700,
+        "end": 122800
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 121200-121300); Evidence 2: ✗ NOT found in h0.js (lines 122700-122800)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_isValueInSegmentationListV2",
+    "purpose": "GraphQL segmentation list check",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 123900,
+        "end": 124000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 123900-124000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_sendRoktEvents",
+    "purpose": "GraphQL send Rokt events",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 117200,
+        "end": 117300
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 117200-117300)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_storeSales",
+    "purpose": "GraphQL store sales",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 123700,
+        "end": 123800
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 123700-123800)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: ext_updateUserFollow",
+    "purpose": "User store following",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: external_v2_incrementUGCFailure",
+    "purpose": "GraphQL increment UGC failure",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 121400,
+        "end": 121500
+      },
+      {
+        "file": "h0.js",
+        "start": 123100,
+        "end": 123200
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 121400-121500); Evidence 2: ✗ NOT found in h0.js (lines 123100-123200)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: tips_ext_getInventoryByStoreIdParentId",
+    "purpose": "Get product inventory by store and parent ID",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: tips_ext_getStoreInsightsByIds",
+    "purpose": "GraphQL get store insights by IDs",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 123300,
+        "end": 123400
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true
+    ,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 123300-123400)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: tips_getProductByIds",
+    "purpose": "Get product details by IDs",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: tips_getProductsCanonicalByClusterId",
+    "purpose": "Get canonical products by cluster ID",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL: tips_getProductsForComparisonShopping",
+    "purpose": "Get products for comparison shopping",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_addNonCatalogItemToDroplist",
+    "purpose": "GraphQL add non-catalog item to droplist",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 92000,
+        "end": 93999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 92000-93999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_getDroplistByCanonicalUrl",
+    "purpose": "GraphQL get droplist by canonical URL",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 92000,
+        "end": 93999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 92000-93999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_getProductByIdSecondaryDetails",
+    "purpose": "GraphQL product secondary details",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 92000,
+        "end": 93999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 92000-93999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_getProductByIdsWithOffer",
+    "purpose": "GraphQL product by IDs with offer",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 92000,
+        "end": 93999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 92000-93999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_getProductPriceHistory",
+    "purpose": "GraphQL product price history",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 92000,
+        "end": 93999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 92000-93999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_instantPSBRedemption",
+    "purpose": "GraphQL instant PSB redemption",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 96000,
+        "end": 97999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 96000-97999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_removeDroplist",
+    "purpose": "GraphQL remove droplist",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 94000,
+        "end": 95999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 94000-95999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_removeProductFromCollections",
+    "purpose": "GraphQL remove product from collections",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 94000,
+        "end": 95999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 94000-95999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_removeSmartDroplist",
+    "purpose": "GraphQL remove smart droplist",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 94000,
+        "end": 95999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 94000-95999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_updateDroplist",
+    "purpose": "GraphQL update droplist",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 94000,
+        "end": 95999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 94000-95999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "GraphQL:endpoint:ext_updateNonCatalogItem",
+    "purpose": "GraphQL update non-catalog item",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 94000,
+        "end": 95999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 94000-95999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "TIPS_GET_STORES_BY_IDS",
+    "purpose": "GraphQL get stores by IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 104000,
+        "end": 105999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 104000-105999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "chrome.google.com/webstore/detail/honey/",
+    "purpose": "Chrome Web Store",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 133000,
+        "end": 133100
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 133000-133100), found in 133949",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getCouponStatsByProduct",
+    "purpose": "GraphQL get coupon stats by product",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114000,
+        "end": 115999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 114000-115999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getPayPalMessaging",
+    "purpose": "GraphQL get PayPal messaging",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114000,
+        "end": 115999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 114000-115999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getProductByIdSecondaryDetails",
+    "purpose": "GraphQL product secondary details",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102000,
+        "end": 103999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 102000-103999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getProductByIds",
+    "purpose": "GraphQL get product by IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114000,
+        "end": 115999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 114000-115999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getProductOffer",
+    "purpose": "GraphQL get product offer",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getStoreProductOffers",
+    "purpose": "GraphQL get store product offers",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_getUserTransactions",
+    "purpose": "GraphQL get user transactions",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114000,
+        "end": 115999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 114000-115999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_optimus_getProductByIds",
+    "purpose": "GraphQL optimus get product by IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_optimus_getProductByStoreIdVariantIds",
+    "purpose": "GraphQL optimus get product by store/variant IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ext_triggerEmailMseLink",
+    "purpose": "GraphQL trigger email MSE link",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "google_places_api",
+    "purpose": "Address suggestions for payments",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 100001,
+        "end": 102000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (case-insensitive) in h0.js (lines 100001-102000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://3b4bb33e1dfc432c9ccd9f9ce5a4bd25@o197999.ingest.sentry.io/6008007",
+    "purpose": "Sentry error reporting",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 132300,
+        "end": 132400
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 132300-132400)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://api.example.com/track",
+    "purpose": "Analytics tracking",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      },
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": false,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 30001-32000); Evidence 2: ✗ NOT found in h0.js (lines 30001-32000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn-checkout-staging.joinhoney.com/honey-checkout/branches/branches.json",
+    "purpose": "Checkout branches config",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82000,
+        "end": 83999
+      },
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      },
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 82000-83999); Evidence 2: ✓ Found exact match in h0.js (lines 82001-84000); Evidence 3: ✓ Found exact match in h0.js (lines 82001-84000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn-checkout.joinhoney.com/honey-checkout/",
+    "purpose": "Checkout infrastructure",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      },
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 82001-84000); Evidence 2: ✓ Found exact match in h0.js (lines 82001-84000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn-checkout.joinhoney.com/honey-checkout/stores.json",
+    "purpose": "Checkout stores config",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 80000,
+        "end": 81999
+      },
+      {
+        "file": "h0.js",
+        "start": 80001,
+        "end": 82000
+      },
+      {
+        "file": "h0.js",
+        "start": 80001,
+        "end": 82000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 80000-81999); Evidence 2: ✓ Found exact match in h0.js (lines 80001-82000); Evidence 3: ✓ Found exact match in h0.js (lines 80001-82000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn-checkout.joinhoney.com/honey-checkout/version_config.json",
+    "purpose": "Checkout version config",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82000,
+        "end": 83999
+      },
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      },
+      {
+        "file": "h0.js",
+        "start": 82001,
+        "end": 84000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 82000-83999); Evidence 2: ✓ Found exact match in h0.js (lines 82001-84000); Evidence 3: ✓ Found exact match in h0.js (lines 82001-84000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/ab/ssd.json",
+    "purpose": "SSD A/B testing configuration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      },
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 86001-88000); Evidence 2: ~ Partial match in h0.js (lines 86001-88000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/css/honey-font.min.css?v2",
+    "purpose": "Honey font CSS",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 132100,
+        "end": 132200
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 132100-132200)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/experiments-staging.json",
+    "purpose": "Staging experiments",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      },
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 128001-130000); Evidence 2: ~ Partial match in h0.js (lines 128001-130000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/experiments.json",
+    "purpose": "Experiments config",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 128700,
+        "end": 128800
+      },
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      },
+      {
+        "file": "h0.js",
+        "start": 128001,
+        "end": 130000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 128700-128800); Evidence 2: ~ Partial match in h0.js (lines 128001-130000); Evidence 3: ~ Partial match in h0.js (lines 128001-130000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/extension/data/trending-stores-${country}.json",
+    "purpose": "Trending stores data",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      },
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 124001-126000); Evidence 2: ✗ NOT found in h0.js (lines 124001-126000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/extension/data/trending-stores-<country>.json",
+    "purpose": "Trending stores data",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124700,
+        "end": 124800
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 124700-124800)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/images/findsavings/coiny-dash-config.json",
+    "purpose": "Coiny dash config",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 129200,
+        "end": 129300
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 129200-129300); Evidence 2: ✓ Found exact match in h0.js (lines 22001-24000); Evidence 3: ✓ Found exact match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.honey.io/standdown-rules.json",
+    "purpose": "Stand down rules",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 22001-24000); Evidence 2: ✓ Found exact match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://cdn.joinhoney.com/dummy-store/api/",
+    "purpose": "Dummy store API (testing/coupon application)",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://checkout.prettylittlething.com/checkout-api/coupon",
+    "purpose": "Apply coupon (PrettyLittleThing checkout)",
+    "methods": [
+      "POST",
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://checkout.prettylittlething.com/checkout-api/coupon/set",
+    "purpose": "Set coupon (PrettyLittleThing checkout)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://checkout.prettylittlething.fr/checkout-api/coupon",
+    "purpose": "Apply coupon (PrettyLittleThing FR checkout)",
+    "methods": [
+      "POST",
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://checkout.prettylittlething.fr/checkout-api/coupon/set",
+    "purpose": "Set coupon (PrettyLittleThing FR checkout)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com",
+    "purpose": "Primary API endpoint",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      },
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 78001-80000); Evidence 2: ✓ Found exact match in h0.js (lines 78001-80000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/atlas",
+    "purpose": "Store insights analytics",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 118001,
+        "end": 120000
+      },
+      {
+        "file": "h0.js",
+        "start": 118001,
+        "end": 120000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 118001-120000); Evidence 2: ~ Partial match in h0.js (lines 118001-120000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/atlas?q=<base64>",
+    "purpose": "Atlas query",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 119200,
+        "end": 119300
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 119200-119300)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/cmap",
+    "purpose": "Cart product mapping",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      },
+      {
+        "file": "h0.js",
+        "start": 120001,
+        "end": 122000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 120001-122000); Evidence 2: ~ Partial match in h0.js (lines 120001-122000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/cmap?q=<base64>",
+    "purpose": "Cmap query",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 120100,
+        "end": 120200
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 120100-120200)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/extdata/ckdata",
+    "purpose": "CK data",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126500,
+        "end": 126700
+      },
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      },
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 126500-126700); Evidence 2: ✓ Found exact match in h0.js (lines 126001-128000); Evidence 3: ✓ Found exact match in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/extusers/install",
+    "purpose": "Extension install reporting",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84000,
+        "end": 85999
+      },
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      },
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 84000-85999); Evidence 2: ~ Partial match in h0.js (lines 84001-86000); Evidence 3: ~ Partial match in h0.js (lines 84001-86000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/features/owner/",
+    "purpose": "Feature ownership",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 96001,
+        "end": 98000
+      },
+      {
+        "file": "h0.js",
+        "start": 96001,
+        "end": 98000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 96001-98000); Evidence 2: ✓ Found exact match in h0.js (lines 96001-98000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/features/owner/extension-engineers",
+    "purpose": "Extension engineers feature",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 96000,
+        "end": 97999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 96000-97999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/hpid",
+    "purpose": "Honey PID",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 130300,
+        "end": 130400
+      },
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      },
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 130300-130400); Evidence 2: ~ Partial match in h0.js (lines 130001-132000); Evidence 3: ~ Partial match in h0.js (lines 130001-132000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/v2/stores/module/{type}/{storeId}",
+    "purpose": "Store module details",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78000,
+        "end": 79999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 78000-79999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/v2/stores/modules/list",
+    "purpose": "Store modules list",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78000,
+        "end": 79999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 78000-79999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://d.joinhoney.com/v3",
+    "purpose": "API v3",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 96001,
+        "end": 98000
+      },
+      {
+        "file": "h0.js",
+        "start": 96001,
+        "end": 98000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 96001-98000); Evidence 2: ✓ Found exact match in h0.js (lines 96001-98000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ext_getDoubleGoldActivationsByUserId",
+    "purpose": "Double gold user activations",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ext_getProductByIdSecondaryDetails",
+    "purpose": "Get secondary product details",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ext_getStorePartialsByDomain",
+    "purpose": "Store URL matching",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 124001-126000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ext_getSupportedDomains",
+    "purpose": "Supported domains list",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 124001,
+        "end": 126000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 124001-126000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ext_getUserFollow",
+    "purpose": "User following data",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ext_updateUserFollow",
+    "purpose": "User store following",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 126001,
+        "end": 128000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 126001-128000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://extension.joinhoney.com/",
+    "purpose": "Extension portal",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      },
+      {
+        "file": "h0.js",
+        "start": 84001,
+        "end": 86000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 84001-86000); Evidence 2: ✓ Found exact match in h0.js (lines 84001-86000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://google_places_api",
+    "purpose": "Address suggestions for payments",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 100001,
+        "end": 102000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 100001-102000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://history.paypal.com/credit-presentment/honey",
+    "purpose": "PayPal credit presentment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114000,
+        "end": 115999
+      },
+      {
+        "file": "h0.js",
+        "start": 114001,
+        "end": 116000
+      },
+      {
+        "file": "h0.js",
+        "start": 114001,
+        "end": 116000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 114000-115999); Evidence 2: ✗ NOT found in h0.js (lines 114001-116000); Evidence 3: ✗ NOT found in h0.js (lines 114001-116000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://images-na.ssl-images-amazon.com/images/I/",
+    "purpose": "Product image retrieval",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      },
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 30001-32000); Evidence 2: ✓ Found exact match in h0.js (lines 30001-32000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://o.honey.io",
+    "purpose": "Operations endpoint",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      },
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 78001-80000); Evidence 2: ✓ Found exact match in h0.js (lines 78001-80000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://o.honey.io/store/",
+    "purpose": "Store information",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 22001-24000); Evidence 2: ✓ Found exact match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://o.joinhoney.com",
+    "purpose": "Operations endpoint (alt)",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      },
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 78001-80000); Evidence 2: ✓ Found exact match in h0.js (lines 78001-80000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://order-api.jcpenney.com/order-api/v1/accounts",
+    "purpose": "Account information",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://order-api.jcpenney.com/order-api/v1/accounts/",
+    "purpose": "Account operations (JCPenney order API)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://order-api.jcpenney.com/order-api/v1/accounts/.../draft-order/adjustment/discounts",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://out.joinhoney.com",
+    "purpose": "External redirect endpoint for affiliate link hijacking",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      },
+      {
+        "file": "h0.js",
+        "start": 78001,
+        "end": 80000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 78001-80000); Evidence 2: ✓ Found exact match in h0.js (lines 78001-80000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://s.joinhoney.com/ck/alive",
+    "purpose": "Cookie alive check",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      },
+      {
+        "file": "h0.js",
+        "start": 86001,
+        "end": 88000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 86001-88000); Evidence 2: ~ Partial match in h0.js (lines 86001-88000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://s.joinhoney.com/ev/",
+    "purpose": "Event submission",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 22001-24000); Evidence 2: ✓ Found exact match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://s.joinhoney.com/evs",
+    "purpose": "Event tracking",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 22001-24000); Evidence 2: ✓ Found exact match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://s.joinhoney.com/ext_obs",
+    "purpose": "Extension observations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 22001-24000); Evidence 2: ~ Partial match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://s.joinhoney.com/pe",
+    "purpose": "Honey endpoint",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 114000,
+        "end": 115999
+      },
+      {
+        "file": "h0.js",
+        "start": 114001,
+        "end": 116000
+      },
+      {
+        "file": "h0.js",
+        "start": 114001,
+        "end": 116000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 114000-115999); Evidence 2: ~ Partial match in h0.js (lines 114001-116000); Evidence 3: ~ Partial match in h0.js (lines 114001-116000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://s.joinhoney.com/pr",
+    "purpose": "Product reporting",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      },
+      {
+        "file": "h0.js",
+        "start": 22001,
+        "end": 24000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 22001-24000); Evidence 2: ~ Partial match in h0.js (lines 22001-24000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://secure-athleta.gap.com/shopping-bag-xapi/apply-bag-promo/",
+    "purpose": "Athleta promo application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://secure-bananarepublic.gap.com/shopping-bag-xapi/apply-bag-promo/",
+    "purpose": "Banana Republic promo application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://secure-oldnavy.gap.com/shopping-bag-xapi/apply-bag-promo/",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://secure-www.gap.com/shopping-bag-xapi/apply-bag-promo/",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://shop.coles.com.au",
+    "purpose": "Coles shopping operations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://tips_ext_getInventoryByStoreIdParentId",
+    "purpose": "Get product inventory by store and parent ID",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://tips_getProductByIds",
+    "purpose": "Get product details by IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://tips_getProductsCanonicalByClusterId",
+    "purpose": "Get canonical products by cluster ID",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://tips_getProductsForComparisonShopping",
+    "purpose": "Get products for comparison shopping",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in h0.js (lines 102001-104000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://tjmaxx.tjx.com/store/checkout/cart.jsp",
+    "purpose": "Cart operations (TJ Maxx checkout)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 3: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://tjmaxx.tjx.com/store/checkout/cart.jsp?_DARGS=/store/checkout/views/cart.jsp.promo",
+    "purpose": "Cart promo",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://v.joinhoney.com",
+    "purpose": "VIM recipe API",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://v.joinhoney.com/framework/pageDetector",
+    "purpose": "Honey page detector",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 131200,
+        "end": 131300
+      },
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      },
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 131200-131300); Evidence 2: ~ Partial match in h0.js (lines 130001-132000); Evidence 3: ~ Partial match in h0.js (lines 130001-132000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://v.joinhoney.com/recipe/stores/<storeId>?full=true",
+    "purpose": "Honey recipe store",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 131000,
+        "end": 131100
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 131000-131100)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://v.joinhoney.com/recipe/stores/{storeId}",
+    "purpose": "Store recipe configuration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      },
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 130001-132000); Evidence 2: ✗ NOT found in h0.js (lines 130001-132000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://v.joinhoney.com/stores/<storeId>/<vim>?engine=4.4.4",
+    "purpose": "Honey store VIM",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 130700,
+        "end": 130800
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 130700-130800)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://v.joinhoney.com/stores/{storeId}/{vimType}",
+    "purpose": "VIM store recipes",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      },
+      {
+        "file": "h0.js",
+        "start": 130001,
+        "end": 132000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 130001-132000); Evidence 2: ✗ NOT found in h0.js (lines 130001-132000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.4wheelparts.com/cart/shoppingCart.jsp",
+    "purpose": "4WheelParts cart operations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.ae.com/ugp-api/bag/v1/coupon",
+    "purpose": "American Eagle coupon API",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.aeropostale.com/on/demandware.store/Sites-aeropostale-Site/en_US/Cart-AddCouponJson",
+    "purpose": "Aeropostale coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.amazon.co.uk/dp/",
+    "purpose": "Product page access (UK)",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      },
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 30001-32000); Evidence 2: ✓ Found exact match in h0.js (lines 30001-32000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.amazon.com.au/dp/",
+    "purpose": "Product page access (AU)",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      },
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 30001-32000); Evidence 2: ✓ Found exact match in h0.js (lines 30001-32000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.amazon.com/cart/ref=ox_sc_inf_saved-for-later",
+    "purpose": "Amazon cart saved for later",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 88000,
+        "end": 89999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 88000-89999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.amazon.com/dp/",
+    "purpose": "Product page access",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      },
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 30001-32000); Evidence 2: ✗ NOT found in h0.js (lines 30001-32000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.amazon.com/gp/buy/spc/handlers/add-giftcard-promotion.html",
+    "purpose": "Amazon gift card promo",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.belk.com/on/demandware.store/Sites-Belk-Site/default/Coupon-Validate",
+    "purpose": "Belk coupon validation",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.bestbuy.com",
+    "purpose": "Store access",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      },
+      {
+        "file": "h0.js",
+        "start": 30001,
+        "end": 32000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 30001-32000); Evidence 2: ✓ Found exact match in h0.js (lines 30001-32000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.buyagift.co.uk/Basket/ApplyDiscount",
+    "purpose": "Buy A Gift discount application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.carid.com/cart.php",
+    "purpose": "CarID cart operations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.catherines.com/on/demandware.store/Sites-oss-Site/default/Cart-SubmitForm",
+    "purpose": "Catherines cart submission",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.cvs.com/RETAGPV3/RxExpress/V2/applyCoupon",
+    "purpose": "CVS coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 1-2000); Evidence 2: ✓ Found exact match in h1-check.js (lines 1-2000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.dsw.com/api/v1/cart/details",
+    "purpose": "Cart details retrieval",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000); Evidence 2: ~ Partial match in h1-check.js (lines 2001-4000); Evidence 3: ~ Partial match in h0.js (lines 2001-4000); Evidence 4: ~ Partial match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.dsw.com/api/v1/coupons/claim",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000); Evidence 2: ~ Partial match in h1-check.js (lines 2001-4000); Evidence 3: ~ Partial match in h0.js (lines 2001-4000); Evidence 4: ~ Partial match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.expedia.com/Checkout",
+    "purpose": "Checkout operations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.expedia.com/Checkout/applyCoupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000); Evidence 2: ~ Partial match in h1-check.js (lines 2001-4000); Evidence 3: ~ Partial match in h1-check.js (lines 2001-4000); Evidence 4: ~ Partial match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.expedia.com/Checkout/removeCoupon",
+    "purpose": "Remove coupon (Expedia checkout)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h1-check.js (lines 2001-4000); Evidence 2: ~ Partial match in h1-check.js (lines 2001-4000); Evidence 3: ~ Partial match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.fitflop.com/us/en/cart/coupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.forever21.com",
+    "purpose": "Store operations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-AddCoupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000); Evidence 2: ~ Partial match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.forever21.com/on/demandware.store/Sites-forever21-Site/en_US/Cart-RemoveCouponLineItem",
+    "purpose": "Remove coupon line item (Forever21 cart)",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.hammacher.com/shoppingcart/applypromocode",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.homedepot.com/mcc-checkout/v2/promo/add",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000); Evidence 2: ~ Partial match in h0.js (lines 2001-4000); Evidence 3: ~ Partial match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.jcrew.com/checkout-api/graphql",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 5: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.joinhoney.com/",
+    "purpose": "Honey homepage",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 132001,
+        "end": 134000
+      },
+      {
+        "file": "h0.js",
+        "start": 132001,
+        "end": 134000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 132001-134000); Evidence 2: ✗ NOT found in h0.js (lines 132001-134000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.joinhoney.com/auth",
+    "purpose": "User authentication",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 132001,
+        "end": 134000
+      },
+      {
+        "file": "h0.js",
+        "start": 132001,
+        "end": 134000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 132001-134000); Evidence 2: ~ Partial match in h0.js (lines 132001-134000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.joinhoney.com/auth?mode=...",
+    "purpose": "Honey auth",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 132500,
+        "end": 132600
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 132500-132600)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.joinhoney.com/explore?onUpdate=true",
+    "purpose": "Explore page update",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84000,
+        "end": 85999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 84000-85999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.joinhoney.com/uninstall",
+    "purpose": "Extension uninstall reporting",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84000,
+        "end": 85999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 84000-85999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.joinhoney.com/welcome",
+    "purpose": "Welcome page",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 84000,
+        "end": 85999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 84000-85999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.kohls.com/cnc/applyCoupons",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.loft.com/cws/cart/claimCoupon.jsp",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.loft.com/cws/cart/removeCoupon.jsp",
+    "purpose": "Remove coupon (Loft cart)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.macys.com/my-bag/",
+    "purpose": "Update bag (Macy's cart)",
+    "methods": [
+      "PUT",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.macys.com/my-bag/.../promo?promoCode=...",
+    "purpose": "Promo code application",
+    "methods": [
+      "PUT"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.officedepot.com",
+    "purpose": "Store operations",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.officedepot.com/async/cart/addCoupon.do",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000); Evidence 2: ~ Partial match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.officedepot.com/async/cart/removeCoupon.do",
+    "purpose": "Remove coupon (Office Depot cart)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h1-check.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.orbitz.com/Checkout/applyCoupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.orbitz.com/Checkout/removeCoupon",
+    "purpose": "Remove coupon (Orbitz checkout)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.papajohns.com/order/apply-promo/",
+    "purpose": "Apply promo (Papa John's order)",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.papajohns.com/order/validate-promo",
+    "purpose": "Promo validation",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.papajohns.com/order/view-cart",
+    "purpose": "View cart (Papa John's order)",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.paypal.com/smart/button?*",
+    "purpose": "PayPal smart button",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82000,
+        "end": 83999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 82000-83999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.paypal.com/smart/buttons?*",
+    "purpose": "PayPal smart buttons",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 82000,
+        "end": 83999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 82000-83999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.prettylittlething.com/pltmobile/coupon/couponPost/",
+    "purpose": "Apply coupon (PrettyLittleThing mobile)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.prettylittlething.fr/pltmobile/coupon/couponPost/",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.puritan.com/shoppingcart/applyCoupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.saksfifthavenue.com/cart-coupon-add",
+    "purpose": "Coupon application",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.sephora.com/api/shopping-cart/basket/promotions",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.sephora.com/api/shopping-cart/baskets/current/promotions",
+    "purpose": "Remove basket promotions (Sephora cart)",
+    "methods": [
+      "DELETE",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.shutterstock.com/papi/orders/",
+    "purpose": "Order operations (Shutterstock)",
+    "methods": [
+      "PATCH",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.shutterstock.com/papi/orders/...",
+    "purpose": "Order patch",
+    "methods": [
+      "PATCH"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.staples.com/cc/api/checkout/default/coupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 3: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 4: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.vimeo.com",
+    "purpose": "Video platform access",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 4001-6000); Evidence 2: ✗ NOT found in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.vimeo.com/",
+    "purpose": "Vimeo endpoint",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": false,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.vitacost.com/Checkout/ShoppingCart.aspx",
+    "purpose": "Shopping cart operations (Vitacost checkout)",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 3: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.vitacost.com/Checkout/ShoppingCart.aspx?sce=view",
+    "purpose": "Shopping cart view",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.wish.com/api/promo-code/apply",
+    "purpose": "Promo code application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 3: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 4: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-ApplyCoupon",
+    "purpose": "Coupon application",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 3: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 4: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 5: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-RemoveCouponLineItem",
+    "purpose": "Remove coupon line item",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      },
+      {
+        "file": "h0.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 2: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 3: ✓ Found exact match in h1-check.js (lines 4001-6000); Evidence 4: ✓ Found exact match in h0.js (lines 4001-6000); Evidence 5: ✓ Found exact match in h0.js (lines 4001-6000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www2.hm.com/en_ca/checkout/redeemVoucher",
+    "purpose": "Coupon application",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 4: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www2.hm.com/en_ca/checkout/releaseVoucher",
+    "purpose": "Release voucher (H&M checkout)",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h1-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "h0.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h1-check.js (lines 2001-4000); Evidence 2: ✓ Found exact match in h0.js (lines 2001-4000); Evidence 3: ✓ Found exact match in h0.js (lines 2001-4000)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "offers_activateProductOffer",
+    "purpose": "GraphQL activate product offer",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "offers_getProductOfferActivations",
+    "purpose": "GraphQL get product offer activations",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 112000,
+        "end": 113999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 112000-113999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_ext_getInventoryByStoreIdParentId",
+    "purpose": "GraphQL inventory by store/parent",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102000,
+        "end": 103999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 102000-103999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getConfiguration",
+    "purpose": "GraphQL configuration",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 108000,
+        "end": 109999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in h0.js (lines 108000-109999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getProductByIds",
+    "purpose": "GraphQL product by IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102000,
+        "end": 103999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 102000-103999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getProductsByIds",
+    "purpose": "GraphQL products by IDs",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102000,
+        "end": 103999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 102000-103999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getProductsCanonicalByClusterId",
+    "purpose": "GraphQL products by cluster",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102000,
+        "end": 103999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 102000-103999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getProductsForComparisonShopping",
+    "purpose": "GraphQL comparison shopping",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 102000,
+        "end": 103999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 102000-103999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getSortedDealsPublic",
+    "purpose": "GraphQL sorted public deals",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 104000,
+        "end": 105999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 104000-105999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getStoreSaleCategoriesByStoreId",
+    "purpose": "GraphQL store sale categories",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 104000,
+        "end": 105999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 104000-105999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tips_getTipHits",
+    "purpose": "GraphQL tip hits",
+    "methods": [
+      "GraphQL"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "h0.js",
+        "start": 106000,
+        "end": 107999
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in h0.js (lines 106000-107999)",
+    "correct_url": "",
+    "correct_purpose": ""
+  }
+]

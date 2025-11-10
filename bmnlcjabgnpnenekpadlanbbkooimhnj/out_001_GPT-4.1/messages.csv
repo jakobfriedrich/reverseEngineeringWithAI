@@ -1,0 +1,11 @@
+channel_name,direction,payload_keys,file,line_start,line_end
+adbbp:cs,content->background,"storeId|type|tabId|url|action|data|content",h0.js,78000,79999
+adbBp:action,background->content,"action|data",h0.js,78000,79999
+acorns:action,background->content,"storeId|type",h0.js,78000,79999
+affManager:tag,unknown,"storeId|tabId|type|targetUrl|options",h0.js,80000,81999
+utils:action,unknown,"action|data",h0.js,80000,81999
+cookies:cs,background,"service|type|url|name|domain|storeId",h0.js,84000,85999
+device:heart,background,"action|data",h0.js,84000,85999
+device:action,background,"action|data",h0.js,84000,85999
+honey-pay-now:action:ui,background->ui,"SET_PAY_NOW_CARD_VISIBILITY|SET_PAY_NOW_MODAL_VISIBILITY|SHIFT_PAY_NOW_MODAL|OPEN_PAY_NOW_AUTOPOP|REMOVE_PAY_NOW_IFRAME|GOOGLE_PLACES_API_GET_ADDRESS_SUGGESTIONS|SET_REMINDER|GET_REMINDER",h0.js,100000,101999
+honey-pay-now:action:local-storage,background->content,"GET_LOCAL_STORAGE_ITEM|SET_LOCAL_STORAGE_ITEM|REMOVE_LOCAL_STORAGE_ITEM",h0.js,100000,101999

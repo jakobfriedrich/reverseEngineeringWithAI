@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 5}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 28, "end": 30}]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js"],
+        "matches": ["<all_urls>"],
+        "run_at": "document_end",
+        "evidence": [{"file": "manifest.json", "start": 13, "end": 17}]
+      },
+      {
+        "files": ["set-json-global.js"],
+        "matches": ["<all_urls>"],
+        "run_at": "document_idle",
+        "world": "MAIN",
+        "evidence": [{"file": "manifest.json", "start": 18, "end": 23}]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+        {
+            "files": ["options/options.html", "options/options.js"],
+            "purpose": "Options page for setting the theme."
+        }
+    ]
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "local",
+        "purpose": "Store user theme preference",
+        "retention": "indefinite",
+        "evidence": [{"file": "options/options.js", "start": 13, "end": 22}]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "JSON Formatting",
+      "triggers": ["User visits a page with JSON content"],
+      "steps": [
+        "content.js is injected into the page.",
+        "It reads the content of the first <pre> tag.",
+        "It parses the content as JSON.",
+        "It replaces the <pre> tag with a formatted, interactive HTML view of the JSON.",
+        "set-json-global.js is injected to expose the parsed JSON as window.json."
+      ],
+      "apis": ["chrome.storage.local.get"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [
+        {"file": "content.js", "start": 20, "end": 130},
+        {"file": "set-json-global.js", "start": 9, "end": 9}
+      ]
+    },
+    {
+        "name": "Theme Selection",
+        "triggers": ["User opens the options page"],
+        "steps": [
+            "options.js reads the current theme setting from chrome.storage.local.",
+            "The user selects a new theme.",
+            "options.js saves the new theme setting to chrome.storage.local."
+        ],
+        "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+        "messages": [],
+        "endpoints": [],
+        "storage_keys": ["themeOverride"],
+        "evidence": [{"file": "options/options.js", "start": 13, "end": 22}]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences"],
+    "purposes": ["personalization"],
+    "minimization": "Collects minimal necessary data for its stated purpose.",
+    "consent": "No explicit consent mechanism observed, but data collection is minimal and for functionality.",
+    "retention": "Indefinite storage in local storage.",
+    "third_parties": [],
+    "policy_compliance": "No obvious policy violations."
+  },
+  "risks": [],
+  "code_signals": {
+    "chrome_api_calls": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+    "event_listeners": ["addEventListener"],
+    "dynamic_code": ["JSON.parse"],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

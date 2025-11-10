@@ -1,0 +1,78 @@
+key,type,purpose,file,line_start,line_end
+key,type,purpose,file,line_start,line_end
+aeotoken,local,Access token for API/coupon logic,h0.js,2001,4000
+cvsbfp_v2,session,Session token for coupon logic,h0.js,2001,4000
+xsrf,cookies,Token for Wish coupon API,h0.js,4001,6000
+adbBp:activeContexts,local,Adblock/affiliate context management,h0.js,78000,79999
+adbBp:messageListeners,local,Adblock/affiliate message listeners,h0.js,78000,79999
+adbBp:newContextListeners,local,Adblock/affiliate new context listeners,h0.js,78000,79999
+resourceLastBlockedAt,local,Timestamp for last blocked resource,h0.js,78000,79999
+whitelistCheckedAt,local,Timestamp for whitelist check,h0.js,78000,79999
+isTaggingBlocked,local,Adblock/affiliate tagging state,h0.js,78000,79999
+lastFiredAdblockCheck,local,Timestamp for last adblock check,h0.js,78000,79999
+checkoutDevToolsEnabled,local,Honey Checkout dev tools flag,h0.js,82000,83999
+devToolsState,local,Honey Checkout dev tools state,h0.js,82000,83999
+checkoutIFrameOriginUrl,local,Honey Checkout iframe origin URL,h0.js,82000,83999
+checkoutIFrameOriginBranch,local,Honey Checkout iframe branch,h0.js,82000,83999
+checkoutIFrameOriginVersion,local,Honey Checkout iframe version,h0.js,82000,83999
+checkoutStoreConfigOverwrites,local,Honey Checkout store config overwrites,h0.js,82000,83999
+useLatestCheckoutAppVersion,local,Use latest Honey Checkout app version,h0.js,82000,83999
+staticPaypalButtonSelectorOverride,local,PayPal button selector override,h0.js,82000,83999
+device:lastHeartbeat,local,Last heartbeat timestamp,h0.js,84000,85999
+device:firstTime,local,First install flag,h0.js,84000,85999
+device:firstTimeFS,local,First install FS flag,h0.js,84000,85999
+device:firstTimeHG,local,First install HG flag,h0.js,84000,85999
+device:firstTimeFSHG,local,First install FSHG flag,h0.js,84000,85999
+device:firstTimeLaunchpad,local,First install Launchpad flag,h0.js,84000,85999
+device:pendingInstallReport,local,Pending install report,h0.js,84000,85999
+device:pendingUpdateReport,local,Pending update report,h0.js,84000,85999
+device:repeatInstall,local,Repeat install flag,h0.js,84000,85999
+device:primaryDeviceId,sync,Primary device ID,h0.js,84000,85999
+device:deviceId,local,Device ID,h0.js,84000,85999
+user:device-id,local,User device ID,h0.js,84000,85999
+device:settings,local,Device settings object,h0.js,86000,87999
+giftcardsReminderMap,local,Store reminder state for gift cards,h0.js,100000,101999
+badgeExperiments,local,Track badge/teaser seen state,h0.js,100000,101999
+containerShown,local,Track container shown state,h0.js,100000,101999
+couponSuppression,local,Track coupon autopop suppression,h0.js,100000,101999
+offers:<userId>:<storeId>:activated,local,Track offer activations per user/store,h0.js,112000,113999
+offers:<userId>:<offerId>:details,local,Store offer details per user/offer,h0.js,112000,113999
+offers:product:<userId>:<storeId>:<parentId>:activated,local,Track product offer activations,h0.js,112000,113999
+offers:product:<userId>:<storeId>:<parentId>:details,local,Store product offer details,h0.js,112000,113999
+optimuslru:<key>,local,LRU cache for product data,h0.js,112000,113999
+visitedProducts:<storeId>,local,Visited products cache per store,h0.js,114000,115999
+visitedProducts:<storeId>:<parentId>,local,Visited product details per store/parentId,h0.js,114000,115999
+honeyCornerIllustration,local,Track illustration shown for store,h0.js,114000,115999
+find-savings:<key>,local,Find savings cache,h0.js,117900,117999
+storage:lastWiped,local,Last wiped timestamp,h0.js,118500,118600
+user:id,local,User ID,h0.js,118600,118700
+user:device-id,local,User device ID,h0.js,118700,118800
+amazon-optimus,local,Amazon optimus data,h0.js,118800,118900
+install:synced,local,Install synced flag,h0.js,118900,119000
+reviewed,local,Reviewed flag,h0.js,119000,119100
+stores:session,local,Store session data,h0.js,119100,119200
+productCatalogAllowlist,local,Product catalog allowlist,h0.js,120300,120400
+topStoresByDomain,local,Top stores by domain,h0.js,120500,120600
+sessionAttributes:<storeId>,local,Session attributes per store,h0.js,121000,121100
+storeDoubleGold:<userId>:<storeId>,local,Double gold segmentation cache,h0.js,122100,122200
+storeNNA:<userId>:<storeId>,local,NNA segmentation cache,h0.js,123900,124000
+store-rewards:<storeId>:<userId>,local,Store rewards cache,h0.js,122500,122600
+sessionAttributes:<storeId>,local,Session attributes per store,h0.js,122700,122800
+couponStats,local,Coupon stats cache,h0.js,123300,123400
+segmentationLists,local,Segmentation lists cache,h0.js,123900,124000
+trendingStores,local,Trending stores cache,h0.js,124700,124800
+supportedDomainsInMemoryList,local,Supported domains cache,h0.js,124300,124400
+sentShopifyMessage:<hostname>,local,Shopify message sent flag,h0.js,125000,125100
+currentActiveTabId,local,Current active tab ID,h0.js,124900,125000
+stoodup:<storeId>:<tabId>,local,Store stoodup status per tab,h0.js,125100,125200
+honey-access-audiences,local,Access token cache,h0.js,126800,126900
+honey-refresh-audiences,local,Refresh token cache,h0.js,126900,127000
+bg-experiments,local,Experiments cache,h0.js,128600,128700
+bg-user-info,local,User info cache,h0.js,128900,129000
+user:settings,local,User settings cache,h0.js,129000,129100
+bg-vims,local,VIM data cache,h0.js,130600,130700
+productObservation,local,Product observation cache,h0.js,130900,131000
+inventoryCache,local,Inventory cache,h0.js,131100,131200
+chrome.storage.local,local,Chrome local storage,h0.js,132700,132800
+chrome.storage.sync,sync,Chrome sync storage,h0.js,132800,132900
+chrome.storage.session,managed,Chrome session storage,h0.js,132900,133000

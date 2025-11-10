@@ -1,0 +1,101 @@
+key,type,purpose,file,line_start,line_end
+localStorage,storage,"",h0.js,6001,8000
+sessionStorage,storage,"",h0.js,6001,8000
+localStorage,storage,"",h0.js,20001,22000
+chrome.storage,storage,"",h0.js,20001,22000
+localStorage,storage,"",h0.js,22001,24000
+chrome.storage,storage,"",h0.js,22001,24000
+sessionStorage,storage,"",h0.js,40001,42000
+bg-acorns,local,"Cache for dynamically fetched 'acorn' modules.",h0.js,78001,80000
+adbBp:activeContexts,local,"Stores active ad-block-bypass communication contexts.",h0.js,78001,80000
+bg-adb-tabs,local,"Cache for ad-blocker related tab state.",h0.js,78001,80000
+checkoutStoresRawConfig,local,"Caches raw configuration for stores supporting Honey's checkout features.",h0.js,80001,82000
+checkoutDevToolsEnabled,local,"Flag to enable developer tools for the checkout feature.",h0.js,82001,84000
+checkoutIFrameOriginUrl,local,"Stores the URL for the checkout iframe, potentially overridden for development.",h0.js,82001,84000
+checkoutStoreConfigOverwrites,local,"Developer overrides for store configurations related to checkout.",h0.js,82001,84000
+device:deviceId,local,"Stores the unique device identifier.",h0.js,84001,86000
+user:device-id,local,"Legacy key for the unique device identifier.",h0.js,84001,86000
+device:lastHeartbeat,local,"Timestamp of the last activity heartbeat.",h0.js,84001,86000
+device:firstTime,local,"Flag for first-time installation.",h0.js,84001,86000
+device:firstTimeFS,local,"Flag for first-time use of a feature (FS).",h0.js,84001,86000
+device:firstTimeHG,local,"Flag for first-time use of a feature (HG).",h0.js,84001,86000
+device:firstTimeFSHG,local,"Flag for first-time use of a feature (FSHG).",h0.js,84001,86000
+device:firstTimeLaunchpad,local,"Flag for first-time use of the Launchpad feature.",h0.js,84001,86000
+device:pendingInstallReport,local,"Stores install report data if the initial send fails, for retry.",h0.js,84001,86000
+device:pendingUpdateReport,local,"Stores update report data if the initial send fails, for retry.",h0.js,84001,86000
+device:settings,local,"Stores a general-purpose object for various device-level settings.",h0.js,86001,88000
+ssd:ckalive,session,"Caches the result of the 'ck/alive' blocklist check.",h0.js,86001,88000
+ssd:rules,session,"Caches the downloaded SSD ruleset from the CDN.",h0.js,86001,88000
+ssd:lastBuild,session,"Timestamp of the last time the SSD parameters were calculated.",h0.js,86001,88000
+ssd:lastParameters,session,"Caches the last calculated SSD parameter object.",h0.js,86001,88000
+ssd:activeTabId,session,"Stores the ID of the currently active tab for SSD state determination.",h0.js,86001,88000
+ssd:lastState,session,"Caches the last determined SSD state as a fallback.",h0.js,86001,88000
+bg-honey-pay-now-HoneyPayNow,local,"",h0.js,98001,100000
+bg-recently-purchased,local,"",h0.js,98001,100000
+giftcardsReminderMap,local,"Stores user preferences for gift card reminders on a per-store basis.",h0.js,100001,102000
+honeyTips:badgeExperiments,local,"Caches interaction data for A/B testing of Honey Tip badges.",h0.js,100001,102000
+honeyTips:containerShown,local,"Tracks if a Honey Tips container has been shown to prevent repeated displays.",h0.js,100001,102000
+honeyTips:couponSuppression,local,"Tracks which coupons have been autopopulated to suppress redundant tips.",h0.js,100001,102000
+honeyTips:launchpadShown,local,"",h0.js,104001,106000
+honeyTips:pdpAutopopCounts,local,"",h0.js,104001,106000
+honeyTips:teaserShown:*,local,"",h0.js,104001,106000
+honeyTips:teaserCountsPerTipAndProduct,local,"",h0.js,106001,108000
+honeyTips:teaserCountsPerTipAndStore,local,"",h0.js,106001,108000
+honeyTips:teasersCountPerStore,local,"",h0.js,106001,108000
+honeyTipsConfiguration_v4,local,"",h0.js,106001,108000
+honeyTips:tipsConfig:,local,"",h0.js,106001,108000
+TIPS_CONFIGURATION_CACHE,local,"",h0.js,108001,110000
+honeyTipsConfiguration_v4,local,"",h0.js,108001,110000
+honeyTips:tipsShown,local,"",h0.js,108001,110000
+session-scoped storage wrapper,local,"",h0.js,108001,110000
+tips:webPriceComparisonViewed:,local,"",h0.js,110001,112000
+lruCache:bg-main,local,"",h0.js,110001,112000
+offers:<userId>:<offerId>:activated,local,"",h0.js,112001,114000
+offers:<userId>:<offerId>:details,local,"",h0.js,112001,114000
+offers:product:<userId>:<storeId>:<parentId>:activated,local,"",h0.js,112001,114000
+offers:product:<userId>:<storeId>:<parentId>:details,local,"",h0.js,112001,114000
+offers:<eguId>:<storeId>:<placementId>:TR,local,"",h0.js,112001,114000
+optimuslru:*,local,"",h0.js,112001,114000
+honeyCornerIllustration,local,"",h0.js,114001,116000
+visitedProducts:<storeId>,local,"",h0.js,114001,116000
+bg-rokt-offers,local,"",h0.js,116001,118000
+CLIENT-UNIQUE-OBJECT:<storeId>:<sessionId>,local,"",h0.js,116001,118000
+storage:lastWiped,local,"",h0.js,118001,120000
+user:*,local,"",h0.js,118001,120000
+bg-double-gold,local,"",h0.js,118001,120000
+bg-url,local,"",h0.js,120001,122000
+bg-product-allowlist,local,"",h0.js,120001,122000
+bg-templated-stores,local,"",h0.js,120001,122000
+bg-stores,local,"",h0.js,120001,122000
+bg-exchange-rates,local,"",h0.js,120001,122000
+<storeId>:<tabId>:stoodup,local,"",h0.js,120001,122000
+<storeId>:<sessionId>,local,"",h0.js,120001,122000
+bg-info-manager,local,"",h0.js,122001,124000
+standDown,local,"",h0.js,122001,124000
+standDownTracker,local,"",h0.js,122001,124000
+currentActiveTabId,local,"",h0.js,122001,124000
+lastRequestTabId,local,"",h0.js,122001,124000
+storeDoubleGold:<userId>:<storeId>,local,"",h0.js,122001,124000
+storeNNA:<userId>:<storeId>,local,"",h0.js,122001,124000
+trendingStores,storage,"",h0.js,124001,126000
+bg-url-matcher,storage,"",h0.js,124001,126000
+supportedDomainsInMemoryList,storage,"",h0.js,124001,126000
+currentActiveTabId,storage,"",h0.js,124001,126000
+device:firstTime,storage,"",h0.js,124001,126000
+sentShopifyMessage:*,storage,"",h0.js,124001,126000
+carrental:*:path,storage,"",h0.js,124001,126000
+carrental:*:allStoresCoupons,storage,"",h0.js,126001,128000
+bg-info-manager,storage,"",h0.js,126001,128000
+userPoints:{userId},local,"",h0.js,128001,130000
+redeemableGoldBalance:{payerId}:{currencyCode},local,"",h0.js,128001,130000
+bg-experiments,local,"",h0.js,128001,130000
+user:settings,local,"",h0.js,128001,130000
+user:information,local,"",h0.js,128001,130000
+user:userId,local,"",h0.js,128001,130000
+user:country,local,"",h0.js,128001,130000
+bg-vims,local,"",h0.js,130001,132000
+N/A,local,"",h0.js,132001,134000
+N/A,sync,"",h0.js,132001,134000
+N/A,session,"",h0.js,132001,134000
+localStorage,storage,"",h1-check.js,6001,8000
+sessionStorage,storage,"",h1-check.js,6001,8000

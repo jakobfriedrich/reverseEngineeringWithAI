@@ -1,0 +1,48 @@
+@startuml
+!theme plain
+skinparam backgroundColor White
+skinparam roundcorner 5
+skinparam shadowing false
+
+actor User
+participant "Web Page" as Page
+participant "Content Script\n(content.js)" as CS
+participant "Global Setter\n(set-json-global.js)" as GSS
+participant "Options Page\n(options/options.html)" as OP
+participant "Options Script\n(options/options.js)" as OS
+database "chrome.storage.local" as Storage
+
+note over Page : Page loads JSON content
+User -> Page: Visits page with JSON
+Page -> CS: Inject content script
+CS -> Storage: Get theme preferences\n(themeOverride)
+Storage --> CS: Theme setting
+CS -> Page: Parse JSON and create UI
+CS -> Page: Apply theme styles\n(light/dark/system)
+CS -> Page: Add toggle buttons\n(Raw/Parsed)
+
+note over GSS : Runs in MAIN world
+Page -> GSS: Inject global setter
+GSS -> Page: Parse JSON content
+GSS -> Page: Set window.json = parsedData
+
+note over User : User opens options
+User -> OP: Opens extension options
+OP -> OS: Load options script
+OS -> Storage: Get current theme\n(themeOverride)
+Storage --> OS: Current theme setting
+OS -> OP: Check appropriate radio button
+User -> OP: Selects new theme
+OP -> OS: Radio button change event
+OS -> Storage: Set new theme\n(themeOverride)
+Storage -> CS: Storage change event
+CS -> Page: Update theme styling
+
+note over CS : Theme options
+note right
+- system: Use browser preference
+- force_light: Always light mode
+- force_dark: Always dark mode
+end note
+
+@enduml

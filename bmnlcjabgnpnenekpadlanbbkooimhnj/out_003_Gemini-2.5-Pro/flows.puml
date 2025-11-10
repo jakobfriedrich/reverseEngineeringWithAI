@@ -1,0 +1,59 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "Content Script (h1-check.js)" as CS
+participant "Service Worker (h0.js)" as SW
+database "Browser Storage" as Storage
+participant "Honey API" as HoneyAPI
+participant "Retailer API" as RetailerAPI
+
+User -> Page: Visits e-commerce site
+Page -> CS: Injects content script
+
+group "Page Load & Initial Checks" {
+    CS -> SW: Informs of page load
+    SW -> HoneyAPI: Fetches store data, experiments, stand-down rules
+    HoneyAPI --> SW: Configuration data
+    SW -> Storage: Caches configuration
+    SW -> CS: Sends configuration and determines if active
+}
+
+group "Product Discovery & Droplist" {
+    CS -> SW: Sends product information from page
+    SW -> HoneyAPI: GraphQL queries for product details, price history
+    HoneyAPI --> SW: Product data
+    User -> CS: Clicks "Add to Droplist"
+    CS -> SW: "droplist:product:v3" message
+    SW -> HoneyAPI: GraphQL mutation to add item to Droplist
+}
+
+group "Direct Coupon Application (DAC)" {
+    User -> Page: Navigates to cart/checkout
+    CS -> SW: "findsavings:start" message
+    SW -> RetailerAPI: Sends AJAX requests to apply coupons
+    RetailerAPI --> SW: Coupon application responses
+    SW -> CS: Reports status of coupon codes
+    CS -> Page: Updates DOM to show results
+}
+
+group "Affiliate Tagging" {
+    User -> Page: Clicks affiliate link
+    SW -> SW: onBeforeRequest listener detects navigation
+    SW -> HoneyAPI: Sends analytics event for affiliate attempt
+    SW -> Storage: Sets "stoodup" flag to disable Honey UI
+}
+
+group "Session Replay & Analytics" {
+    CS -> CS: rrweb records DOM changes and user interactions
+    CS -> SW: Batches and sends rrweb events
+    SW -> HoneyAPI: Sends analytics, errors, and session replay data to Sentry/Honey servers
+}
+
+group "Remote Code Execution (VIMs)" {
+    SW -> HoneyAPI: Fetches VIM/recipe for the current store
+    HoneyAPI --> SW: Returns VIM script
+    SW -> SW: Custom JS interpreter executes VIM script
+    SW -> CS: Sends commands from VIM to content script
+    CS -> Page: Executes DOM interactions based on VIM commands
+}
+@enduml

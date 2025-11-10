@@ -1,0 +1,45 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 001
+Model: GPT-4.1
+Timestamp: 2025-11-06T00:00:00Z
+Output Directory: ./out_001_GPT-4.1
+
+Tools/Packages Used:
+- js-beautify@1.15.4
+- ajv-cli (schema validation attempted)
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate)
+- Total chunks analyzed: 3
+- Content scripts: 2 files (content.js, set-json-global.js)
+- UI files: 1 file (options/options.js)
+
+Analysis Results:
+- Chrome API calls found: 3 unique calls
+- Event listeners: 2
+- Message channels: 0
+- Storage keys: 1
+- Network endpoints: 0
+- Workflows identified: 1
+- Privacy risks: 0
+
+Beautification:
+- Success: 3 files
+- Errors: 0 files
+- Files excluded: node_modules, icons, .github, OUT_DIR
+
+Validation:
+- honey_summary.json: Structure matches schema, meta-schema validation not supported by ajv-cli
+- outline.jsonl: 3 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (0 rows), messages.csv (0 rows), storage_keys.csv (1 row)
+
+Known Gaps/Unknowns:
+- No background/service worker present
+- No messaging or network endpoints
+- No remote code or dynamic code
+
+Completion Status: SUCCESS

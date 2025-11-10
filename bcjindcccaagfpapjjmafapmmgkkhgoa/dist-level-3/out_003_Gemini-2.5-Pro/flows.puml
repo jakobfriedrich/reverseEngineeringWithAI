@@ -1,0 +1,15 @@
+@startuml
+participant "Content Script (content.js)" as CS
+participant "Injected Script (set-json-global.js)" as IS
+participant "Browser Page" as Page
+participant "Options Page" as OP
+database "chrome.storage" as Storage
+
+Page -> CS: Page with JSON loads
+CS -> Page: Injects set-json-global.js
+Page -> IS: Executes script
+IS -> Page: Exposes JSON via window.json
+
+OP -> Storage: Reads "themeOverride"
+OP -> Storage: Writes "themeOverride"
+@enduml

@@ -1,0 +1,187 @@
+{
+	"metadata": {
+		"name": "Momentum",
+		"version": "unknown",
+		"manifest_version": 3,
+		"description": "unknown",
+		"evidence": [{"file": "manifest.json", "start": 1, "end": 25}]
+	},
+	"permissions": {
+		"api_permissions": ["storage", "tabs", "scripting", "notifications", "alarms", "offscreen"],
+		"host_permissions": ["https://*/*"],
+		"optional_permissions": [],
+		"evidence": [{"file": "manifest.json", "start": 1, "end": 25}]
+	},
+	"components": {
+		"background": {
+			"files": ["serviceWorker.js"],
+			"apis": ["chrome.runtime", "chrome.storage.local", "chrome.tabs", "chrome.alarms", "chrome.notifications", "chrome.offscreen"],
+			"listeners": ["self.addEventListener('message')", "self.addEventListener('error')", "self.addEventListener('fetch')", "self.addEventListener('install')", "self.addEventListener('activate')", "self.registration.addEventListener('updatefound')", "chrome.runtime.onMessage", "chrome.runtime.onInstalled", "chrome.alarms.onAlarm", "chrome.notifications.onClicked", "chrome.notifications.onButtonClicked", "chrome.tabs.onRemoved", "chrome.tabs.onUpdated"],
+			"evidence": [{"file": "serviceWorker.js", "start": 1, "end": 5360}]
+		},
+		"content_scripts": [
+			{
+				"files": ["content-scripts/momoSiteInterop.js"],
+				"apis": ["chrome.runtime.getURL", "chrome.runtime.getManifest", "chrome.runtime.sendMessage", "chrome.extension.inIncognitoContext"],
+				"listeners": ["window.addEventListener('message')"],
+				"evidence": [{"file": "content-scripts/momoSiteInterop.js", "start": 1, "end": 54}]
+			},
+			{
+				"files": ["content-scripts/siteBlocker.js"],
+				"apis": ["chrome.runtime.getURL"],
+				"listeners": ["window.addEventListener('message')"],
+				"evidence": [{"file": "content-scripts/siteBlocker.js", "start": 1, "end": 54}]
+			}
+		],
+		"injected_scripts": [],
+		"ui": [],
+		"web_accessible_resources": []
+	},
+	"network": {
+			"endpoints": [
+				{"url": "https://api.momentumdash.com/config", "purpose": "Config fetch", "methods": ["GET"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 1, "end": 2000}]},
+				{"url": "https://browser-http-intake.logs.datadoghq.com/v1/input/pub18ef9128dd80db1a80dfc3f9180b55b5", "purpose": "Analytics/telemetry", "methods": ["POST"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 1, "end": 2000}, {"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"url": "https://api.momentumdash.com/", "purpose": "Core extension API", "methods": ["GET", "POST", "PATCH", "DELETE"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"url": "https://modash.blob.core.windows.net/", "purpose": "Asset storage", "methods": ["GET"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"url": "https://posthog.momentumdash.com/e/", "purpose": "Analytics/telemetry", "methods": ["POST"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"url": "https://account.momentumdash.com/", "purpose": "User account management", "methods": ["GET", "POST"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"url": "https://www.momentumdash.com/", "purpose": "Web app", "methods": ["GET", "POST"], "headers": [], "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"url": "chrome-extension://<id>/site-blocker.html?hostname=...&sitename=...&metatitle=...&documenttitle=...", "purpose": "Site blocker intervention UI", "methods": ["GET"], "headers": [], "evidence": [{"file": "content-scripts/siteBlocker.js", "start": 18, "end": 36}]}
+			]
+		},
+	"messaging": {
+			"channels": [
+				{"name": "runtime.onMessage", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 1, "end": 2000}]},
+				{"name": "notificationClick", "direction": "background->tabs", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"name": "flashMessage", "direction": "background->tabs", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"name": "legacyUserMigration", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"name": "momentum:authState", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}, {"file": "content-scripts/momoSiteInterop.js", "start": 27, "end": 34}]},
+				{"name": "momentum:checkUserId", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}, {"file": "content-scripts/momoSiteInterop.js", "start": 34, "end": 41}]},
+				{"name": "momentum:getUserId", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}, {"file": "content-scripts/momoSiteInterop.js", "start": 15, "end": 18}]},
+				{"name": "momentum:openNew", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}, {"file": "content-scripts/momoSiteInterop.js", "start": 41, "end": 54}]},
+				{"name": "momentum:oneTimeLogin", "direction": "content->background", "payload_schema": {}, "evidence": [{"file": "content-scripts/momoSiteInterop.js", "start": 22, "end": 27}]},
+				{"name": "momentum-intervention:show", "direction": "content->ui", "payload_schema": {}, "evidence": [{"file": "content-scripts/siteBlocker.js", "start": 38, "end": 41}]},
+				{"name": "momentum-intervention:dismiss", "direction": "content->ui", "payload_schema": {}, "evidence": [{"file": "content-scripts/siteBlocker.js", "start": 41, "end": 44}]}
+			]
+		},
+	"storage": {
+			"keys": [
+				{"key": "userPrefs", "type": "local", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 1, "end": 2000}]},
+				{"key": "notificationsQueue", "type": "indexeddb", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "analyticsQueue", "type": "indexeddb", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "xhrQueue", "type": "indexeddb", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "idMap", "type": "indexeddb", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "timestamp", "type": "indexeddb", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "misc", "type": "indexeddb", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "installDate", "type": "local", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "releaseUpdateModalCheck", "type": "local", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "calculateUnregisteredDashboardExperiment", "type": "local", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "token", "type": "localstorage", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "token_uuid", "type": "localstorage", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "unregistered", "type": "localstorage", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "client_uuid", "type": "localstorage", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]},
+				{"key": "momentum-customization-1", "type": "localstorage", "purpose": "unknown", "retention": "unknown", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 4000}, {"file": "serviceWorker.js", "start": 4001, "end": 5360}]}
+			]
+		},
+	"workflows": [
+		{
+			"name": "User Authentication and Migration",
+			"triggers": ["Content script loaded", "user login attempt", "legacy migration event"],
+			"steps": [
+				"Content script requests userId from background (\"momentum:getUserId\")",
+				"Content script sends one-time login message (\"momentum:oneTimeLogin\")",
+				"Service worker validates credentials, migrates legacy user if needed",
+				"Service worker stores tokens and user info in localStorage/IndexedDB",
+				"Service worker sends response back to content script"
+			],
+			"apis": ["chrome.runtime.sendMessage", "chrome.storage.local", "IndexedDB"],
+			"messages": ["momentum:getUserId", "momentum:oneTimeLogin", "legacyUserMigration"],
+			"endpoints": ["https://api.momentumdash.com/", "https://account.momentumdash.com/"],
+			"storage_keys": ["token", "token_uuid", "client_uuid", "notificationsQueue"],
+			"evidence": [
+				{"file": "content-scripts/momoSiteInterop.js", "start": 15, "end": 54},
+				{"file": "serviceWorker.js", "start": 2001, "end": 5360}
+			]
+		},
+		{
+			"name": "Analytics and Tracking",
+			"triggers": ["Extension events", "tab updates", "notification events"],
+			"steps": [
+				"Service worker batches analytics events in IndexedDB",
+				"Service worker sends analytics to remote endpoints (Datadog, Posthog)",
+				"Service worker logs config and tab data"
+			],
+			"apis": ["chrome.alarms", "chrome.notifications", "chrome.runtime", "IndexedDB"],
+			"messages": ["flashMessage", "notificationClick"],
+			"endpoints": ["https://browser-http-intake.logs.datadoghq.com/v1/input/pub18ef9128dd80db1a80dfc3f9180b55b5", "https://posthog.momentumdash.com/e/"],
+			"storage_keys": ["analyticsQueue", "notificationsQueue"],
+			"evidence": [
+				{"file": "serviceWorker.js", "start": 1, "end": 5360}
+			]
+		},
+		{
+			"name": "Site Blocker Intervention",
+			"triggers": ["Blocked site detected", "content script loaded"],
+			"steps": [
+				"Content script injects intervention dialog with iframe",
+				"Content script listens for show/dismiss messages",
+				"User interacts with dialog UI"
+			],
+			"apis": ["chrome.runtime.getURL"],
+			"messages": ["momentum-intervention:show", "momentum-intervention:dismiss"],
+			"endpoints": ["chrome-extension://<id>/site-blocker.html"],
+			"storage_keys": [],
+			"evidence": [
+				{"file": "content-scripts/siteBlocker.js", "start": 8, "end": 44}
+			]
+		}
+	],
+	"privacy": {
+		"data_categories": ["user credentials", "analytics/telemetry", "legacy migration data"],
+		"purposes": ["authentication", "user migration", "analytics", "site blocking intervention"],
+		"minimization": "Collects user tokens, userId, and analytics data. Data collection is focused on extension functionality and analytics, but includes legacy migration and broad tab data.",
+		"consent": "No explicit consent mechanism observed. Data collection and analytics appear automatic upon extension use.",
+		"retention": "Indefinite storage in IndexedDB and localStorage. No evidence of data expiration or cleanup.",
+		"third_parties": [
+			{"name": "api.momentumdash.com", "purpose": "Core extension API", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 5360}]},
+			{"name": "account.momentumdash.com", "purpose": "User account management", "evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 5360}]},
+			{"name": "browser-http-intake.logs.datadoghq.com", "purpose": "Analytics/telemetry", "evidence": [{"file": "serviceWorker.js", "start": 1, "end": 5360}]},
+			{"name": "posthog.momentumdash.com", "purpose": "Analytics/telemetry", "evidence": [{"file": "serviceWorker.js", "start": 1, "end": 5360}]}
+		],
+		"policy_compliance": "Potential GDPR concerns: lacks explicit consent and data retention policy. May violate Chrome Web Store policy regarding user data disclosure.",
+		"evidence": [{"file": "serviceWorker.js", "start": 1, "end": 5360}]
+	},
+	"risks": [
+		{
+			"type": "tracking",
+			"severity": "medium",
+			"justification": "Extension sends analytics and tab data to third-party endpoints (Datadog, Posthog) without explicit user consent",
+			"evidence": [{"file": "serviceWorker.js", "start": 1, "end": 5360}]
+		},
+		{
+			"type": "pii_exfiltration",
+			"severity": "medium",
+			"justification": "User tokens and userId are sent to remote endpoints and stored indefinitely",
+			"evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 5360}]
+		},
+		{
+			"type": "insecure_storage",
+			"severity": "low",
+			"justification": "Tokens and user identifiers stored in localStorage without encryption",
+			"evidence": [{"file": "serviceWorker.js", "start": 2001, "end": 5360}]
+		},
+		{
+			"type": "excessive_permissions",
+			"severity": "low",
+			"justification": "Extension requests broad tab, notification, and offscreen access",
+			"evidence": [{"file": "manifest.json", "start": 1, "end": 25}, {"file": "serviceWorker.js", "start": 1, "end": 5360}]
+		}
+	],
+	"code_signals": {
+		"chrome_api_calls": ["chrome.runtime", "chrome.storage.local", "chrome.tabs", "chrome.alarms", "chrome.notifications", "chrome.offscreen", "chrome.runtime.getURL", "chrome.runtime.getManifest", "chrome.runtime.sendMessage", "chrome.extension.inIncognitoContext"],
+		"event_listeners": ["self.addEventListener('message')", "self.addEventListener('error')", "self.addEventListener('fetch')", "self.addEventListener('install')", "self.addEventListener('activate')", "self.registration.addEventListener('updatefound')", "chrome.runtime.onMessage", "chrome.runtime.onInstalled", "chrome.alarms.onAlarm", "chrome.notifications.onClicked", "chrome.notifications.onButtonClicked", "chrome.tabs.onRemoved", "chrome.tabs.onUpdated", "window.addEventListener('message')"],
+		"dynamic_code": [],
+		"wasm_modules": [],
+		"third_party_libs": []
+	}
+}

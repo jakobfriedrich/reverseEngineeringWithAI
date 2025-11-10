@@ -1,0 +1,41 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "Content Script\n(content.js)" as CS
+participant "Main World Script\n(set-json-global.js)" as MW
+participant "Options Page\n(options.html + options.js)" as Options
+database "chrome.storage.local" as Storage
+
+== JSON Detection and Formatting ==
+User -> Page: Visits page with JSON
+Page -> CS: Page loads, content script injected
+CS -> Page: Scans for <pre> elements with JSON
+CS -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> CS: Returns theme preference
+CS -> Page: Removes original <pre>, creates formatted JSON tree
+CS -> Page: Injects CSS styles based on theme
+
+== Global JSON Exposure ==
+CS -> MW: Triggers main world script execution
+MW -> Page: Finds #jsonFormatterRaw element
+MW -> Page: Parses JSON content
+MW -> Page: Exposes as window.json via Object.defineProperty
+
+== Theme Management ==
+User -> Options: Opens extension options
+Options -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> Options: Returns current theme setting
+User -> Options: Selects new theme (system/force_light/force_dark)
+Options -> Storage: chrome.storage.local.set({themeOverride: value})
+Storage -> CS: chrome.storage.onChanged event
+CS -> Page: Updates CSS theme accordingly
+
+== User Interaction ==
+User -> Page: Clicks expand/collapse buttons in JSON tree
+Page -> CS: Mousedown event captured
+CS -> Page: Toggles collapsed class on elements
+User -> Page: Clicks Raw/Formatted toggle
+Page -> CS: Click event on buttons
+CS -> Page: Shows/hides #jsonFormatterRaw vs #jsonFormatterParsed
+
+@enduml

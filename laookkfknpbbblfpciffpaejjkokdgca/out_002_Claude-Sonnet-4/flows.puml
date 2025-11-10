@@ -1,0 +1,56 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "Content Script\n(momoSiteInterop)" as CS
+participant "Service Worker" as SW
+participant "Site Blocker\nContent Script" as SB
+database "IndexedDB\n(Multiple DBs)" as DB
+participant "Chrome APIs" as Chrome
+participant "Momentum API" as API
+participant "PostHog Analytics" as Analytics
+participant "Datadog Logging" as Logging
+
+== Extension Initialization ==
+User -> Chrome: Install/Update Extension
+Chrome -> SW: onInstalled event
+SW -> DB: Initialize databases (xhrQueue, analyticsQueue, etc.)
+SW -> Chrome: Set uninstall URL
+
+== User Authentication Flow ==
+User -> Page: Visits momentumdash.com
+Page -> CS: Load content script
+CS -> SW: momentum:getUserId message
+SW -> DB: Query user data
+SW --> CS: Return user ID
+CS -> Page: Inject user ID into DOM
+
+== Site Blocking Flow ==
+User -> Page: Visits blocked site
+SB -> Page: Inject blocking modal
+Page -> SB: momentum-intervention:show
+SB -> Page: Display blocking UI
+SB -> Chrome: Get site-blocker.html URL
+User -> SB: Interact with intervention
+SB -> Page: momentum-intervention:dismiss
+
+== Data Synchronization ==
+SW -> API: Sync user data
+API --> SW: Return updated data
+SW -> DB: Cache response data
+SW -> Analytics: Track usage events
+SW -> Logging: Send telemetry data
+
+== Background Operations ==
+SW -> Chrome: Schedule alarms for notifications
+Chrome -> SW: onAlarm event
+SW -> Chrome: Create notifications
+Chrome -> SW: onNotificationClicked
+SW -> Chrome: Open new tab
+
+== Tab Management ==
+User -> Chrome: Close tab
+Chrome -> SW: tabs.onRemoved event
+SW -> API: Track streak data
+SW -> DB: Update local data
+
+@enduml

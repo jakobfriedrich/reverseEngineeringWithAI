@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 32}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 32}]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": [],
+      "evidence": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js", "set-json-global.js"],
+        "apis": ["chrome.storage.local.get"],
+        "listeners": ["addEventListener"],
+        "evidence": [{"file": "manifest.json", "start": 10, "end": 20}, {"file": "content.js", "start": 1, "end": 9999}]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": ["options/options.js"],
+        "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+        "listeners": ["addEventListener", "chrome.storage.onChanged.addListener"],
+        "evidence": [{"file": "options/options.js", "start": 1, "end": 9999}]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": [
+      {
+        "key": "themeOverride",
+        "type": "local",
+        "purpose": "Theme selection",
+        "retention": "indefinite",
+        "evidence": [
+          {"file": "content.js", "start": 1, "end": 9999},
+          {"file": "options/options.js", "start": 1, "end": 9999}
+        ]
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "name": "Theme Selection and Application",
+      "triggers": ["User opens options page", "changes theme selection", "content script loads"],
+      "steps": [
+        "Options page loads and reads themeOverride from chrome.storage.local",
+        "User selects a theme (system, force_light, force_dark) via radio buttons",
+        "Options page updates themeOverride in chrome.storage.local",
+        "Content script reads themeOverride from chrome.storage.local and applies corresponding styles"
+      ],
+      "apis": ["chrome.storage.local.get", "chrome.storage.local.set"],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": ["themeOverride"],
+      "evidence": [
+        {"file": "options/options.js", "start": 1, "end": 9999},
+        {"file": "content.js", "start": 1, "end": 9999}
+      ]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences/settings"],
+    "purposes": ["feature_personalization"],
+    "minimization": "Collects only minimal necessary data for stated purpose (theme preference)",
+    "consent": "No explicit consent mechanism observed; theme selection is user-driven and local.",
+    "retention": "Indefinite storage in chrome.storage.local; no expiration or cleanup observed.",
+    "third_parties": [],
+    "policy_compliance": "No evidence of policy violations or privacy risks in analyzed code.",
+    "evidence": [
+      {"file": "options/options.js", "start": 1, "end": 9999},
+      {"file": "content.js", "start": 1, "end": 9999},
+      {"file": "set-json-global.js", "start": 1, "end": 9999}
+    ]
+  },
+  "risks": [],
+  "code_signals": {
+    "chrome_api_calls": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+    "event_listeners": ["addEventListener", "chrome.storage.onChanged.addListener"],
+    "dynamic_code": [],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

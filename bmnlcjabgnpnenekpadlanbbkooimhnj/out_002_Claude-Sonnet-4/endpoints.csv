@@ -1,0 +1,110 @@
+url,method,purpose,file,line_start,line_end
+https://www.dsw.com/api/v1/coupons/claim,POST,Coupon application,h0.js,2001,4000
+https://www.dsw.com/api/v1/cart/details,GET,Cart information retrieval,h0.js,2001,4000
+https://cdn.joinhoney.com/dummy-store/api/,GET,Test store API,h0.js,2001,4000
+https://www.expedia.com/Checkout,POST,Checkout operations,h0.js,2001,4000
+https://www.fitflop.com/us/en/cart/coupon,POST,Coupon application,h0.js,2001,4000
+https://www.forever21.com,POST,Store operations,h0.js,2001,4000
+https://secure-www.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,Promo code application,h0.js,2001,4000
+https://www2.hm.com/en_ca/checkout/redeemVoucher,POST,Voucher redemption,h0.js,2001,4000
+https://www2.hm.com/en_ca/checkout/releaseVoucher,POST,Voucher release,h0.js,2001,4000
+https://www.hammacher.com/shoppingcart/applypromocode,POST,Promo code application,h0.js,2001,4000
+https://www.homedepot.com/mcc-checkout/v2/promo/add,POST,Promo code application,h0.js,2001,4000
+https://order-api.jcpenney.com/order-api/v1/accounts,GET,Account information,h0.js,2001,4000
+https://www.jcrew.com/checkout-api/graphql,POST,GraphQL checkout API,h0.js,2001,4000
+https://www.kohls.com/cnc/applyCoupons,POST,Coupon application,h0.js,2001,4000
+https://www.loft.com/cws/cart/claimCoupon.jsp,POST,Coupon claim,h0.js,2001,4000
+https://www.loft.com/cws/cart/removeCoupon.jsp,POST,Coupon removal,h0.js,2001,4000
+https://www.macys.com/my-bag/,POST,Shopping bag operations,h0.js,2001,4000
+https://www.officedepot.com,POST,Store operations,h0.js,2001,4000
+https://secure-oldnavy.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,Promo code application,h0.js,2001,4000
+https://www.orbitz.com/Checkout/applyCoupon,POST,Coupon application,h0.js,2001,4000
+https://www.orbitz.com/Checkout/removeCoupon,POST,Coupon removal,h0.js,2001,4000
+https://www.papajohns.com/order/validate-promo,POST,Promo validation,h0.js,2001,4000
+https://www.papajohns.com/order/apply-promo/,POST,Promo application,h0.js,2001,4000
+https://www.papajohns.com/order/view-cart,GET,Cart viewing,h0.js,2001,4000
+https://www.prettylittlething.fr/pltmobile/coupon/couponPost/,POST,Coupon application (FR),h0.js,2001,4000
+https://checkout.prettylittlething.fr/checkout-api/coupon/set,POST,Coupon setting (FR),h0.js,2001,4000
+https://checkout.prettylittlething.fr/checkout-api/coupon,GET,Coupon API (FR),h0.js,2001,4000
+https://www.prettylittlething.com/pltmobile/coupon/couponPost/,POST,Coupon application,h0.js,2001,4000
+https://checkout.prettylittlething.com/checkout-api/coupon/set,POST,Coupon setting,h0.js,2001,4000
+https://checkout.prettylittlething.com/checkout-api/coupon,GET,Coupon API,h0.js,2001,4000
+https://www.puritan.com/shoppingcart/applyCoupon,POST,Coupon application,h0.js,2001,4000
+https://www.saksfifthavenue.com/cart-coupon-add,POST,Coupon addition,h0.js,2001,4000
+https://www.sephora.com/api/shopping-cart/basket/promotions,POST,Basket promotions,h0.js,2001,4000
+https://www.sephora.com/api/shopping-cart/baskets/current/promotions,POST,Current basket promotions,h0.js,2001,4000
+https://www.shutterstock.com/papi/orders/,POST,Order processing,h0.js,2001,4000
+https://www.staples.com/cc/api/checkout/default/coupon,POST,Coupon application,h0.js,4001,6000
+https://tjmaxx.tjx.com/store/checkout/cart.jsp,POST,Cart operations,h0.js,4001,6000
+https://www.vimeo.com,GET,Video platform access,h0.js,4001,6000
+https://www.vitacost.com/Checkout/ShoppingCart.aspx,POST,Shopping cart operations,h0.js,4001,6000
+https://www.wish.com/api/promo-code/apply,POST,Promo code application,h0.js,4001,6000
+https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-ApplyCoupon,POST,Coupon application,h0.js,4001,6000
+https://www.worldmarket.com/on/demandware.store/Sites-World_Market-Site/en_US/Cart-RemoveCouponLineItem,POST,Coupon removal,h0.js,4001,6000
+https://v.joinhoney.com,GET,VIM recipe API,h0.js,4001,6000
+https://images-na.ssl-images-amazon.com/images/I/,GET,Product image retrieval,h0.js,30001,32000
+https://www.amazon.com.au/dp/,GET,Product page access (AU),h0.js,30001,32000
+https://api.example.com/track,POST,Analytics tracking,h0.js,30001,32000
+https://www.amazon.co.uk/dp/,GET,Product page access (UK),h0.js,30001,32000
+https://www.amazon.com/dp/,GET,Product page access,h0.js,30001,32000
+https://www.bestbuy.com,GET,Store access,h0.js,30001,32000
+https://cdn.honey.io/images/findsavings/coiny-dash-config.json,GET,Coiny dash configuration,h0.js,22001,24000
+https://cdn.honey.io/standdown-rules.json,GET,Stand down rules,h0.js,22001,24000
+https://s.joinhoney.com/evs,POST,Event tracking,h0.js,22001,24000
+https://s.joinhoney.com/ev/,POST,Event submission,h0.js,22001,24000
+https://s.joinhoney.com/ext_obs,POST,Extension observations,h0.js,22001,24000
+https://s.joinhoney.com/pr,POST,Product reporting,h0.js,22001,24000
+https://o.honey.io/store/,GET,Store information,h0.js,22001,24000
+https://d.joinhoney.com/features/owner/,GET,Feature ownership,h0.js,96001,98000
+https://d.joinhoney.com/v3,POST,API v3,h0.js,96001,98000
+https://google_places_api,GET,Address suggestions for payments,h0.js,100001,102000
+https://tips_ext_getInventoryByStoreIdParentId,GraphQL,Get product inventory by store and parent ID,h0.js,102001,104000
+https://tips_getProductsCanonicalByClusterId,GraphQL,Get canonical products by cluster ID,h0.js,102001,104000
+https://tips_getProductsForComparisonShopping,GraphQL,Get products for comparison shopping,h0.js,102001,104000
+https://tips_getProductByIds,GraphQL,Get product details by IDs,h0.js,102001,104000
+https://ext_getProductByIdSecondaryDetails,GraphQL,Get secondary product details,h0.js,102001,104000
+https://history.paypal.com/credit-presentment/honey,GET,PayPal credit integration,h0.js,114001,116000
+https://s.joinhoney.com/pe,POST,PayPal event tracking,h0.js,114001,116000
+https://d.joinhoney.com/atlas,GET,Store insights analytics,h0.js,118001,120000
+https://d.joinhoney.com/cmap,GET,Cart product mapping,h0.js,120001,122000
+https://cdn.honey.io/extension/data/trending-stores-${country}.json,GET,Trending stores data,h0.js,124001,126000
+https://ext_getSupportedDomains,GraphQL,Supported domains list,h0.js,124001,126000
+https://ext_getStorePartialsByDomain,GraphQL,Store URL matching,h0.js,124001,126000
+https://d.joinhoney.com/extdata/ckdata,GET,Authentication token retrieval,h0.js,126001,128000
+https://ext_getDoubleGoldActivationsByUserId,GraphQL,Double gold user activations,h0.js,126001,128000
+https://ext_updateUserFollow,GraphQL,User store following,h0.js,126001,128000
+https://ext_getUserFollow,GraphQL,User following data,h0.js,126001,128000
+https://cdn.honey.io/experiments.json,GET,A/B testing experiments,h0.js,128001,130000
+https://cdn.honey.io/experiments-staging.json,GET,Staging experiments,h0.js,128001,130000
+https://d.joinhoney.com/hpid,POST,Product tracking via HPID,h0.js,130001,132000
+https://v.joinhoney.com/stores/{storeId}/{vimType},GET,VIM store recipes,h0.js,130001,132000
+https://v.joinhoney.com/recipe/stores/{storeId},GET,Store recipe configuration,h0.js,130001,132000
+https://v.joinhoney.com/framework/pageDetector,GET,Page detection framework,h0.js,130001,132000
+https://www.joinhoney.com/auth,GET,User authentication,h0.js,132001,134000
+https://www.joinhoney.com/,GET,Honey homepage,h0.js,132001,134000
+https://cdn-checkout.joinhoney.com/honey-checkout/stores.json,GET,Checkout stores configuration,h0.js,80001,82000
+https://cdn-checkout.joinhoney.com/honey-checkout/version_config.json,GET,Version configuration,h0.js,82001,84000
+https://cdn-checkout.joinhoney.com/honey-checkout/,GET,Checkout infrastructure,h0.js,82001,84000
+https://cdn-checkout-staging.joinhoney.com/honey-checkout/branches/branches.json,GET,Branch configuration,h0.js,82001,84000
+https://d.joinhoney.com/extusers/install,POST,Extension install reporting,h0.js,84001,86000
+https://extension.joinhoney.com/,GET,Extension portal,h0.js,84001,86000
+https://s.joinhoney.com/ck/alive,GET,Cookie alive check,h0.js,86001,88000
+https://cdn.honey.io/ab/ssd.json,GET,SSD A/B testing configuration,h0.js,86001,88000
+https://d.joinhoney.com,GET,Primary API endpoint,h0.js,78001,80000
+https://o.honey.io,GET,Operations endpoint,h0.js,78001,80000
+https://o.joinhoney.com,GET,Operations endpoint (alt),h0.js,78001,80000
+https://out.joinhoney.com,GET,External redirect endpoint,h0.js,78001,80000
+https://www.4wheelparts.com/cart/shoppingCart.jsp,POST,4WheelParts cart operations,h1-check.js,1,2000
+https://www.ae.com/ugp-api/bag/v1/coupon,POST,American Eagle coupon API,h1-check.js,1,2000
+https://www.aeropostale.com/on/demandware.store/Sites-aeropostale-Site/en_US/Cart-AddCouponJson,POST,Aeropostale coupon application,h1-check.js,1,2000
+https://www.amazon.com/gp/buy/spc/handlers/add-giftcard-promotion.html,POST,Amazon gift card promo,h1-check.js,1,2000
+https://secure-athleta.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,Athleta promo application,h1-check.js,1,2000
+https://secure-bananarepublic.gap.com/shopping-bag-xapi/apply-bag-promo/,POST,Banana Republic promo application,h1-check.js,1,2000
+https://www.belk.com/on/demandware.store/Sites-Belk-Site/default/Coupon-Validate,POST,Belk coupon validation,h1-check.js,1,2000
+https://www.buyagift.co.uk/Basket/ApplyDiscount,POST,Buy A Gift discount application,h1-check.js,1,2000
+https://www.carid.com/cart.php,POST,CarID cart operations,h1-check.js,1,2000
+https://www.catherines.com/on/demandware.store/Sites-oss-Site/default/Cart-SubmitForm,POST,Catherines cart submission,h1-check.js,1,2000
+https://shop.coles.com.au,POST,Coles shopping operations,h1-check.js,1,2000
+https://www.cvs.com/RETAGPV3/RxExpress/V2/applyCoupon,POST,CVS coupon application,h1-check.js,1,2000
+https://www.expedia.com/Checkout/applyCoupon,POST,Expedia coupon application,h1-check.js,2001,4000
+https://www.expedia.com/Checkout/removeCoupon,POST,Expedia coupon removal,h1-check.js,2001,4000

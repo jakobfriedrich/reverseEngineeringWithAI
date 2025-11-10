@@ -1,0 +1,49 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 003
+Model: Gemini-2.5-Pro
+Timestamp: 2025-11-09T00:00:00Z
+Output Directory: ./out_003_Gemini-2.5-Pro
+
+Tools/Packages Used:
+- js-beautify
+- espree
+- acorn
+- @typescript-eslint/typescript-estree
+- ajv-cli
+
+File Counts:
+- Original JS files analyzed: 2 (h0.js, h1-check.js)
+- Beautified files: 2 (h0.beautified.js, h1-check.beautified.js)
+- Total chunks analyzed: 101
+- Service worker: 1 file (h0.js)
+- Content scripts: 1 file (h1-check.js)
+- UI files: 1 file (popover/popover.html)
+
+Analysis Results:
+- Chrome API calls found: 40+ unique calls
+- Event listeners: 30+
+- Message channels: 50+
+- Storage keys: 100+
+- Network endpoints: 100+ (REST and GraphQL)
+- Workflows identified: 2
+- Privacy risks: 3 high/medium severity
+
+Beautification:
+- Success: 2 files
+- Errors: 0 files
+- Files excluded: Other JS files not part of core service worker/content script analysis.
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: 101 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (180+ rows), messages.csv (50+ rows), storage_keys.csv (100+ rows)
+
+Known Gaps/Unknowns:
+- The purpose of many storage keys is inferred and not explicitly documented in the code.
+- The full payload schema for many message channels could not be determined.
+- The analysis focused on the primary service worker and content script; other UI-related scripts were not deeply analyzed.
+
+Completion Status: SUCCESS

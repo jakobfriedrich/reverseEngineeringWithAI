@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source."
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": []
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js", "set-json-global.js"],
+        "apis": ["chrome.storage.local.get"],
+        "listeners": ["addEventListener", "mousedown"]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": ["options/options.html", "options/options.js"],
+        "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+        "listeners": ["addEventListener", "change"]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": ["themeOverride"]
+  },
+  "workflows": [
+    {
+      "name": "JSON Formatting",
+      "apis": ["chrome.storage.local.get"],
+      "storage_keys": ["themeOverride"],
+      "triggers": ["User visits a page with JSON content"],
+      "steps_keywords": ["parse", "format", "theme", "interactive"]
+    },
+    {
+      "name": "Theme Selection",
+      "apis": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+      "storage_keys": ["themeOverride"],
+      "triggers": ["User opens options page"],
+      "steps_keywords": ["select", "save", "update", "storage"]
+    },
+    {
+      "name": "Developer Console Integration",
+      "apis": [],
+      "storage_keys": [],
+      "triggers": ["JSON page is formatted"],
+      "steps_keywords": ["console", "global", "window.json", "inspect"]
+    }
+  ],
+  "privacy": {
+    "data_categories": ["user_preferences"],
+    "purposes": ["personalization", "ui_customization"],
+    "third_parties": [],
+    "minimization": true,
+    "consent": "implicit",
+    "retention": "indefinite",
+    "policy_compliance": "compliant"
+  },
+  "risks": [],
+  "code_signals": {
+    "chrome_api_calls": ["chrome.storage.local.get", "chrome.storage.local.set", "chrome.storage.onChanged.addListener"],
+    "event_listeners": ["addEventListener", "mousedown", "change"],
+    "dynamic_code": ["JSON.parse", "Object.defineProperty"],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

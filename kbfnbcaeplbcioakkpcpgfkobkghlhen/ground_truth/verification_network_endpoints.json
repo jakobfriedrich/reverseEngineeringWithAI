@@ -1,0 +1,4389 @@
+[
+  {
+    "url": "(felog)",
+    "purpose": "Primary telemetry and event logging endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 70368,
+        "end": 72000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "(femetrics)",
+    "purpose": "Metrics-specific telemetry endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 70368,
+        "end": 72000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/account/subscription",
+    "purpose": "Subscription management page.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": false,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/api/revoke-by-refresh-token",
+    "purpose": "API token revocation",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "api_token_revocation"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/api/userinfo",
+    "purpose": "API user information",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "api_user_info"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/crashv2",
+    "purpose": "Version 2 crash reporting endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 84048,
+        "end": 84145
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/gates/get",
+    "purpose": "GatesService for feature flagging",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 4060,
+        "end": 4080
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/logout",
+    "purpose": "Logout endpoint",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 92001,
+        "end": 94238,
+        "ast_id": "logout_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/logv2",
+    "purpose": "Version 2 logging endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 84048,
+        "end": 84145
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/oauth2/authorize",
+    "purpose": "OAuth2 authorization",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "oauth2_authorize"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/oauth2/exchange",
+    "purpose": "OAuth2 token exchange",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "oauth2_exchange"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 101336,
+        "end": 101403
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/oauth2/token",
+    "purpose": "OAuth2 token endpoint",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 90001,
+        "end": 92000,
+        "ast_id": "oauth2_token"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 101235,
+        "end": 101335
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/plans",
+    "purpose": "Subscription plans",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "plans_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/properties",
+    "purpose": "PropertiesClient for user settings",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 4288,
+        "end": 4308
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/setup-trial",
+    "purpose": "Trial setup",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "trial_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/signin",
+    "purpose": "Sign-in page.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/signup",
+    "purpose": "Sign-up page.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/special-offers",
+    "purpose": "Special offers",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "offers_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/subscribe",
+    "purpose": "Subscription management",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "subscribe_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/token",
+    "purpose": "Token endpoint",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 92001,
+        "end": 94238,
+        "ast_id": "token_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/treatment/get",
+    "purpose": "TreatmentService for A/B testing",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 4488,
+        "end": 4650
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "/treatment/log",
+    "purpose": "TreatmentService for A/B testing",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 5701,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "<DYNAMIC>/oauth2/exchange",
+    "purpose": "Dynamic OAuth2 code exchange endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+        "start": 93241,
+        "end": 93341
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "<DYNAMIC>/oauth2/revoke",
+    "purpose": "Dynamic OAuth2 token revocation endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+        "start": 93480,
+        "end": 93698
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "<DYNAMIC>/oauth2/token",
+    "purpose": "Dynamic OAuth2 token endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+        "start": 92178,
+        "end": 93238
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "<DYNAMIC>/user-info",
+    "purpose": "Dynamic user information endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+        "start": 93725,
+        "end": 94238
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "auth.grammarly.com",
+    "purpose": "Authentication",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "auth_grammarly"
+      },
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000,
+        "ast_id": "auth_service"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "auth_endpoint_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "auth.ppgr.io",
+    "purpose": "Preprod auth",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000,
+        "ast_id": "preprod_auth"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "preprod_auth_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "auth.qagr.io",
+    "purpose": "QA auth",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000,
+        "ast_id": "qa_auth"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "qa_auth_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "authorship.grammarly.com",
+    "purpose": "Authorship services",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "authorship_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "capi",
+    "purpose": "Core API",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "capi_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "capiUrl",
+    "purpose": "CAPI endpoint",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "capi_url"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "chat.openai.com",
+    "purpose": "OpenAI ChatGPT",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "openai_chat"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "chatgpt.com",
+    "purpose": "ChatGPT",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "chatgpt"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "claude.ai",
+    "purpose": "Anthropic Claude",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "claude_ai"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "coda.grammarly.com",
+    "purpose": "Coda Grammarly services",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "coda_grammarly"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 28001,
+        "end": 30000,
+        "ast_id": "coda_grammarly_integration"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "coda.io",
+    "purpose": "Coda integration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "coda_integration"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "config.extension.grammarly.com",
+    "purpose": "Extension configuration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "extension_configuration"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "deepl.com",
+    "purpose": "DeepL translation",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "deepl_translate"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "docs.google.com",
+    "purpose": "Google Docs",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "google_docs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "dox.grammarly.com",
+    "purpose": "Documentation service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "documentation_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "f-log-inkwell.grammarly.io",
+    "purpose": "Inkwell logging",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "inkwell_logging"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 28001,
+        "end": 30000,
+        "ast_id": "inkwell_logging_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "felog",
+    "purpose": "Event/error logging",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "femetrics",
+    "purpose": "Frontend metrics",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "gateway.grammarly.com",
+    "purpose": "API gateway",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "gateway_endpoint"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "gateway_endpoint_main"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "gemini.google.com",
+    "purpose": "Google Gemini",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "google_gemini"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "gnar",
+    "purpose": "Analytics/tracking",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "goldengate",
+    "purpose": "Internal gateway",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "goldengate_endpoint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "goldengate.grammarly.io",
+    "purpose": "Goldengate service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 36001,
+        "end": 38000,
+        "ast_id": "goldengate_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "grammarly.com",
+    "purpose": "Main domain",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 48001,
+        "end": 50000,
+        "ast_id": "main_domain"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "grammarly.com/account",
+    "purpose": "Account management",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "account_management"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "grammarly.com/extension-success",
+    "purpose": "Extension success tracking",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 14001,
+        "end": 14264,
+        "ast_id": "success_tracking"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "grammarly.com/plans",
+    "purpose": "Subscription plans",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "subscription_plans"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "grammarly.com/upgrade",
+    "purpose": "Upgrade flow",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 38001,
+        "end": 40000,
+        "ast_id": "upgrade_flow"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "grammarly.io",
+    "purpose": "Grammarly services",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "grammarly_io"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://accounts.google.com",
+    "purpose": "Google OAuth authentication",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "google_auth"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://api.grammarly.com/",
+    "purpose": "Grammarly API.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://api.iterable.com",
+    "purpose": "Iterable API",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "iterable_api"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16325,
+        "end": 16325
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 4: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 5: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://appleid.apple.com/auth",
+    "purpose": "Apple ID OAuth authentication",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "apple_auth"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://assets.extension.grammarly.com",
+    "purpose": "Extension assets",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "extension_assets"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "extension_assets_main"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://assets.extension.grammarly.com/",
+    "purpose": "Serves static assets for the extension.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://assets.grammarly.com/",
+    "purpose": "Static asset hosting.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://assets.grammarly.com/animations/v1/",
+    "purpose": "Serves animation assets.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 233,
+        "end": 236
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://assets.grammarly.com/emoji/v1/",
+    "purpose": "Serves emoji assets.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 233,
+        "end": 236
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.${n}/v3",
+    "purpose": "Authentication API v3 (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.${n}/v4",
+    "purpose": "Authentication API v4 (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.${n}/v5",
+    "purpose": "Authentication API v5 (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.*",
+    "purpose": "Authentication service (wildcard).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com",
+    "purpose": "Authentication service",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "auth_service_main"
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16758,
+        "end": 16761
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v3",
+    "purpose": "Authentication endpoint (v3).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-bg.js; Evidence 2: ~ Partial match in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4",
+    "purpose": "Authentication endpoint (v4).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4/api/oauth2/authorize",
+    "purpose": "OAuth2 authorization endpoint",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 90001,
+        "end": 92000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 102030,
+        "end": 102030
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4/api/oauth2/exchange",
+    "purpose": "OAuth2 token exchange",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 90001,
+        "end": 92000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 102031,
+        "end": 102031
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4/api/oauth2/revoke-by-refresh-token",
+    "purpose": "OAuth2 token revocation endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 90001,
+        "end": 92000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 102033,
+        "end": 102033
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly.beautified.js; Evidence 2: ~ Partial match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4/api/oauth2/token",
+    "purpose": "OAuth2 token endpoint",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 90001,
+        "end": 92000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 102032,
+        "end": 102032
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 4: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4/api/revoke-by-refresh-token",
+    "purpose": "Revoke refresh token",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v4/api/userinfo",
+    "purpose": "User information endpoint",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 90001,
+        "end": 92000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 102034,
+        "end": 102034
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 4: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://auth.grammarly.com/v5",
+    "purpose": "Authentication endpoint (v5).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-bg.js; Evidence 2: ~ Partial match in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi.${n}",
+    "purpose": "CAPI endpoint (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi.${n}/api/configuration/cheetah/v1/settings",
+    "purpose": "Configuration API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi.*",
+    "purpose": "Core Grammarly API (wildcard).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi.grammarly.com",
+    "purpose": "Core API",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000,
+        "ast_id": "capi_service"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "capi_main"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16324,
+        "end": 16324
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js; Evidence 3: ✗ NOT found in src/js/Grammarly-bg.js; Evidence 4: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi.grammarly.com/",
+    "purpose": "Core Grammarly API.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi.grammarly.com/api/defs",
+    "purpose": "API definitions for the Core API.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi<env>/api/configuration/cheetah/v1/settings",
+    "purpose": "Configuration settings API",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://capi[...]/api/configuration/cheetah/v1/settings",
+    "purpose": "Cheetah settings retrieval.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.beautified.js",
+        "start": 46001,
+        "end": 48001
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://coda-local.ppgr.io:8080",
+    "purpose": "Coda local development",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://coda.${n}",
+    "purpose": "Coda integration (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://coda.grammarly.com",
+    "purpose": "Grammarly Coda integration",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://coda.io",
+    "purpose": "Coda integration",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "coda_platform"
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://coda.ppgr.io",
+    "purpose": "Coda staging integration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://coda.qagr.io",
+    "purpose": "Coda QA integration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://config.extension.grammarly.com",
+    "purpose": "Extension config",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000,
+        "ast_id": "extension_config"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://config.extension.grammarly.com/browserplugin/config.json",
+    "purpose": "Browser plugin specific configuration.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://config.extension.grammarly.com/dynamicConfig.json",
+    "purpose": "Dynamic configuration for the extension.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16800,
+        "end": 16800
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 2: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://config.grammarly.com/browserplugin/v3/page_config.json",
+    "purpose": "Retrieves page-specific configuration for the extension.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82004,
+        "end": 82141
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://data.${n}",
+    "purpose": "Data API endpoint (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://data.*",
+    "purpose": "Data collection service (wildcard).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://data.grammarly.com",
+    "purpose": "Data service",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000,
+        "ast_id": "data_service"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "data_services"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js; Evidence 3: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://data.grammarly.com/",
+    "purpose": "Data collection endpoint.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://dev.coda.io:8080",
+    "purpose": "Coda development environment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://dox.${n}/documents",
+    "purpose": "Documents API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://dox.grammarly.com/",
+    "purpose": "Grammarly document editor.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://extension.femetrics.grammarly.io",
+    "purpose": "Extension metrics",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "extension_metrics"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://extension.femetrics.grammarly.io/batch/import",
+    "purpose": "Batch analytics",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "batch_analytics"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16319,
+        "end": 16319
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.beautified.js; Evidence 4: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://extension.grammarly.com/",
+    "purpose": "Extension-specific resources.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://f-log-extension.grammarly.io",
+    "purpose": "Extension logging",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "extension_logging"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "extension_telemetry"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16318,
+        "end": 16318
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 4: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 5: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://f-log-extension.grammarly.io/",
+    "purpose": "Logging service for the extension.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://f-log-inkwell.grammarly.io/batch/log",
+    "purpose": "Batch logging endpoint",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 54001,
+        "end": 56000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gates.grammarly.com",
+    "purpose": "Feature gates",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "gates"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "feature_gates"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gates.qagr.io",
+    "purpose": "Feature gate retrieval",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.${n}/institution/api/institution/admin",
+    "purpose": "Institution admin API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.${n}/knowledge-hub/v1/institution",
+    "purpose": "Knowledge hub API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.${n}/passport/api/v1/passport",
+    "purpose": "Passport API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.${n}/settings-registry/v1",
+    "purpose": "Settings registry (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.${n}/skills",
+    "purpose": "Skills API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.${n}/snippets/v1/snippets",
+    "purpose": "Snippets API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.*",
+    "purpose": "API Gateway for various services (wildcard).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.grammarly.com",
+    "purpose": "Gateway service",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000,
+        "ast_id": "gateway_service"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "api_gateway"
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.grammarly.com/*",
+    "purpose": "Various APIs",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16753,
+        "end": 16753
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.grammarly.com/api/jira/tickets/create",
+    "purpose": "Create Jira tickets via API.",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.beautified.js",
+        "start": 15304,
+        "end": 15304
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.grammarly.com/authorship/v1/",
+    "purpose": "Authorship API",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway.grammarly.com/passport/api/v1/passport",
+    "purpose": "Retrieves user session information (passport).",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gateway/privacy/v1/api/data-sharing/",
+    "purpose": "Manage user data sharing settings.",
+    "methods": [
+      "GET",
+      "PUT"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.beautified.js",
+        "start": 81818,
+        "end": 81821
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-bg.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gnar.*",
+    "purpose": "Analytics and tracking service (wildcard).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://gnar.grammarly.com",
+    "purpose": "Analytics service",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "analytics_service"
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16550,
+        "end": 16550
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js; Evidence 2: ✗ NOT found in src/js/Grammarly.beautified.js; Evidence 3: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://goldengate.grammarly.com/passport/api/v1/passport",
+    "purpose": "Retrieves user session information (passport).",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82143,
+        "end": 82369
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://goldengate<env>/configuration/cheetah/v1/institution/settings",
+    "purpose": "Institution configuration settings",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 50001,
+        "end": 52000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://goldengate<env>/knowledge-hub/v1/institution",
+    "purpose": "Institution knowledge hub API",
+    "methods": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 56001,
+        "end": 58000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://goldengate<env>/settings-registry/v1",
+    "purpose": "Settings registry API",
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 56001,
+        "end": 58000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://goldengate[...]/configuration/cheetah/v1/institution/settings",
+    "purpose": "Cheetah institutional settings retrieval.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.beautified.js",
+        "start": 46001,
+        "end": 48001
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ~ Partial match in src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://head.coda.io",
+    "purpose": "Coda head environment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://in-product.report.grammarly.io/v1/report",
+    "purpose": "In-product reporting",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16840,
+        "end": 16840
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 3: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://in.*",
+    "purpose": "Event ingestion service (wildcard).",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://in.grammarly.com/v1/events",
+    "purpose": "Event tracking",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "event_tracking"
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16551,
+        "end": 16551
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js; Evidence 2: ✗ NOT found in src/js/Grammarly.beautified.js; Evidence 3: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://pp-sh.io",
+    "purpose": "Superhuman staging environment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://properties.grammarly.com",
+    "purpose": "Properties service",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "properties"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "properties_config"
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 7638,
+        "end": 7647
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js; Evidence 3: ✗ NOT found in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://properties.qagr.io",
+    "purpose": "Experimentation properties",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://settings.grammarly.com/",
+    "purpose": "User settings page.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://staging-superhuman.com",
+    "purpose": "Superhuman staging",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found (without protocol) in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://staging.coda.io",
+    "purpose": "Coda staging environment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://subscription.${n}/api/v1",
+    "purpose": "Subscription API (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://subscription.grammarly.com",
+    "purpose": "Subscription service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000,
+        "ast_id": "subscription_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://superhuman.com",
+    "purpose": "Superhuman integration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://superhuman.com/superhuman-go-intro",
+    "purpose": "Superhuman Go introduction page",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://superhuman.com/superhuman-go-intro?genesisLaunch=true",
+    "purpose": "Superhuman Go genesis launch page",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://support.${n}/hc/en-us/requests/new#/",
+    "purpose": "Support request form (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://support.*",
+    "purpose": "Support website (wildcard).",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://treatment.grammarly.com",
+    "purpose": "Treatment service",
+    "methods": [
+      "GET",
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 1,
+        "end": 2000,
+        "ast_id": "treatment"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "treatment_experiments"
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 7638,
+        "end": 7647
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-check.js; Evidence 2: ✗ NOT found in src/js/Grammarly.js; Evidence 3: ✗ NOT found in src/js/Grammarly.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://treatment.qagr.io",
+    "purpose": "A/B testing treatment retrieval",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 4001,
+        "end": 6000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://ws.grammarly.com/",
+    "purpose": "WebSocket service.",
+    "methods": [
+      "WSS"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.facebook.com/login",
+    "purpose": "Facebook OAuth authentication",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 54001,
+        "end": 56000,
+        "ast_id": "facebook_auth"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "https://www.grammarly.com/",
+    "purpose": "Main Grammarly website.",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "in-product.report.grammarly.io",
+    "purpose": "In-product reporting",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "inproduct_reporting"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "iterable",
+    "purpose": "Marketing/IPM",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "iterable.com",
+    "purpose": "Iterable marketing",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "iterable_marketing"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "mise",
+    "purpose": "Marketing/User engagement",
+    "methods": [
+      "POST"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.js",
+        "start": 20001,
+        "end": 22000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "perplexity.ai",
+    "purpose": "Perplexity AI",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "perplexity"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "pp-sh.io",
+    "purpose": "Superhuman preprod",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "superhuman_preprod"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "ppgr.io",
+    "purpose": "Preprod environment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "preprod_env"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "properties.grammarly.com",
+    "purpose": "Properties service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "properties_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "qagr.io",
+    "purpose": "QA environment",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "qa_env"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "revoke-by-refresh-token",
+    "purpose": "Token revocation",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "token_revocation"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "rwsgfy.grammarly.com",
+    "purpose": "Unknown service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "unknown_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "staging-superhuman.com",
+    "purpose": "Superhuman staging",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "superhuman_staging"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "subscription.grammarly.com",
+    "purpose": "Subscription management",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "subscription_management"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "superhuman.com",
+    "purpose": "Superhuman integration",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "superhuman"
+      },
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 14001,
+        "end": 14264,
+        "ast_id": "superhuman_platform"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "support.grammarly.com",
+    "purpose": "Support service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "support_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "tokens.grammarly.com",
+    "purpose": "Token management",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "tokens_grammarly"
+      },
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000,
+        "ast_id": "token_service"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "token_management_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✗ NOT found in src/js/Grammarly-check.js; Evidence 3: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "translate.google.com",
+    "purpose": "Google Translate",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "google_translate"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "treatment.grammarly.com",
+    "purpose": "Treatment service",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "treatment_service"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "userinfo",
+    "purpose": "User information",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 102001,
+        "end": 104000,
+        "ast_id": "user_information"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "vmetrics.grammarly.com",
+    "purpose": "Video metrics",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 82001,
+        "end": 84000,
+        "ast_id": "vmetrics"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 28001,
+        "end": 30000,
+        "ast_id": "video_metrics"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js; Evidence 2: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "wikipedia.org",
+    "purpose": "Wikipedia",
+    "methods": [
+      "GET"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "wikipedia"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "wss://capi.${n}/freews",
+    "purpose": "WebSocket for free tier (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "wss://capi.${n}/gdocs",
+    "purpose": "WebSocket for Google Docs (dynamic domain)",
+    "methods": [],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 2001,
+        "end": 4000
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "wss://capi.*",
+    "purpose": "WebSocket for real-time communication with Core API (wildcard).",
+    "methods": [
+      "WSS"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 62001,
+        "end": 64000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  },
+  {
+    "url": "wss://capi.grammarly.com/freews",
+    "purpose": "WebSocket for real-time communication with Core API.",
+    "methods": [
+      "WSS"
+    ],
+    "headers": [],
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 40001,
+        "end": 42000
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 55488,
+        "end": 55751
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 16768,
+        "end": 16768
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js; Evidence 2: ✗ NOT found in src/js/Grammarly.beautified.js; Evidence 3: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_url": "",
+    "correct_purpose": ""
+  }
+]

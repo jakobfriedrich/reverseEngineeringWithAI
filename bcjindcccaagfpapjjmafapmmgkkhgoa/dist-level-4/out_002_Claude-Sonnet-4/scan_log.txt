@@ -1,0 +1,55 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 002
+Model: Claude-Sonnet-4
+Timestamp: 2025-11-06T20:56:00Z
+Output Directory: ./out_002_Claude-Sonnet-4
+
+Tools/Packages Used:
+- js-beautify@1.15.4 (already installed)
+- espree@10.4.0 
+- acorn@8.15.0
+- @typescript-eslint/typescript-estree@8.46.3
+- ajv-cli (for validation)
+
+File Counts:
+- Original JS files: 3 
+- Beautified files: 3 (100% success rate, pre-existing)
+- Total chunks analyzed: 3 (all whole-file chunks)
+- Content scripts: 2 files (content.js, set-json-global.js)
+- UI files: 1 file (options/options.js)
+- Background scripts: 0 files (no service worker)
+
+Analysis Results:
+- Chrome API calls found: 3 unique calls (storage.local.get/set, storage.onChanged)
+- Event listeners: 2 types (addEventListener, chrome.storage.onChanged.addListener)
+- Message channels: 0
+- Storage keys: 1 (themeOverride)
+- Network endpoints: 0
+- Workflows identified: 3
+
+Beautification:
+- Success: 3 files (pre-existing beautified versions used)
+- Errors: 0 files
+- Files excluded: none (small extension)
+
+Code Characteristics:
+- Heavy obfuscation in content scripts (content.js, set-json-global.js)
+- Clear code in options script
+- No background scripts or service worker
+- Simple JSON formatting functionality
+- Local-only operation (no network calls)
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: 3 entries (all chunks covered) 
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (0 rows), messages.csv (0 rows), storage_keys.csv (1 row)
+
+Known Gaps/Unknowns:
+- Obfuscated code analysis limited due to minification
+- True functionality assessment hindered by obfuscation
+- Set-json-global.js modifies global scope (security consideration)
+
+Completion Status: SUCCESS

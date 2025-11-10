@@ -1,0 +1,107 @@
+[
+  {
+    "level": 0,
+    "timestamp": "2025-11-02T21:22:57.902Z",
+    "files": {
+      "content.js": {
+        "lines": 292,
+        "size": 10736,
+        "chars": 10736
+      },
+      "options/options.js": {
+        "lines": 2,
+        "size": 644,
+        "chars": 644
+      },
+      "set-json-global.js": {
+        "lines": 2,
+        "size": 383,
+        "chars": 383
+      }
+    }
+  },
+  {
+    "level": 1,
+    "timestamp": "2025-11-02T21:22:58.118Z",
+    "files": {
+      "content.js": {
+        "lines": 1,
+        "size": 21252,
+        "chars": 21250
+      },
+      "options/options.js": {
+        "lines": 1,
+        "size": 2497,
+        "chars": 2497
+      },
+      "set-json-global.js": {
+        "lines": 1,
+        "size": 1793,
+        "chars": 1793
+      }
+    }
+  },
+  {
+    "level": 2,
+    "timestamp": "2025-11-02T21:22:58.297Z",
+    "files": {
+      "content.js": {
+        "lines": 1,
+        "size": 21360,
+        "chars": 21358
+      },
+      "options/options.js": {
+        "lines": 1,
+        "size": 2575,
+        "chars": 2575
+      },
+      "set-json-global.js": {
+        "lines": 1,
+        "size": 1733,
+        "chars": 1733
+      }
+    }
+  },
+  {
+    "level": 3,
+    "timestamp": "2025-11-02T21:22:58.490Z",
+    "files": {
+      "content.js": {
+        "lines": 1,
+        "size": 28151,
+        "chars": 28149
+      },
+      "options/options.js": {
+        "lines": 1,
+        "size": 2998,
+        "chars": 2998
+      },
+      "set-json-global.js": {
+        "lines": 1,
+        "size": 2142,
+        "chars": 2142
+      }
+    }
+  },
+  {
+    "level": 4,
+    "timestamp": "2025-11-02T21:22:58.703Z",
+    "files": {
+      "content.js": {
+        "lines": 1,
+        "size": 31873,
+        "chars": 31871
+      },
+      "options/options.js": {
+        "lines": 1,
+        "size": 2918,
+        "chars": 2918
+      },
+      "set-json-global.js": {
+        "lines": 1,
+        "size": 2262,
+        "chars": 2262
+      }
+    }
+  }
+]

@@ -1,0 +1,11 @@
+@startuml
+@enduml
+@startuml
+actor User
+participant "Content Script" as CS
+participant "UI Options" as UI
+User -> CS: Loads page
+User -> UI: Opens options
+CS -> CS: Local DOM manipulation
+UI -> UI: Local DOM manipulation
+@enduml

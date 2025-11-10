@@ -1,0 +1,3597 @@
+[
+  {
+    "name": "CODE_SPLITTING_INJECT",
+    "direction": "ui->background",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 84001,
+        "end": 86000,
+        "ast_id": "code_splitting_inject_bg"
+      },
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 14001,
+        "end": 14264,
+        "ast_id": "code_splitting_inject_check"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 94088,
+        "end": 94143
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 21216,
+        "end": 21220
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 104860,
+        "end": 104863
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 50001,
+        "end": 50282
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 3: ✓ Found exact match in src/js/Grammarly.js; Evidence 4: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js; Evidence 5: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js; Evidence 6: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "CustomEvent",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 50001,
+        "end": 52000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "Internal RPC/messaging framework",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 1,
+        "end": 2000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": false,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "acknowledge",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "acknowledge_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "activeTab",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "active_tab"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "add",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "add_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "agents",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "agents_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "alerts",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "alerts_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "alwaysAvailableAssistant",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "always_available_assistant"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "always_available_assistant_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "alwaysOnAssistantOnOpenData",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "always_on_assistant_open_data"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "applicationHeaders",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "application_headers"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "assistant",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "assistant_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "auth",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "auth_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "authAccountChooser",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "auth_account_chooser"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "authHooks",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "auth_hooks"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "authenticationStarted",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "auth_started"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autoApply",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "auto_apply"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autoFix",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "auto_fix"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autocorrect",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "autocorrect_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autocorrectCheck",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "autocorrect_check"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autocorrectCloseSession",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "autocorrect_close_session"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autocorrectOnCorrectionAccepted",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "autocorrect_accepted"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autocorrectOnCorrectionRejected",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "autocorrect_rejected"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "autocorrectStartSession",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 30001,
+        "end": 32000,
+        "ast_id": "autocorrect_start_session"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "backendManagedStorage",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "backend_managed_storage"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "bgPageStarted",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "bg_page_started"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "bgRpc_api_launchAuthFlow",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "launch_auth_flow"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "bgSW-shutdown",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "bgsw_shutdown"
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 24001,
+        "end": 26000
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "bgStarted",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "bg_started"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "canvasGdocs",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "canvas_gdocs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cardAction/:docId",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 96182,
+        "end": 96651
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "checkScript",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "check_script"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "chromeContentScriptLoadError",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "cs_load_error"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "citationBuilder",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "citation_builder"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "citation_builder_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "clickToRunEnabledOnce",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "click_to_run"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "close-popup-gr",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "close_popup"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "closeAssistant",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "close_assistant"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "connection",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "connection_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "connector",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "connector_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "contentScript-disconnected",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "cs_disconnected"
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 64001,
+        "end": 66000
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cookiesAccessibility",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "cookies_accessibility"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-bg-runtime",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "cs_bg_runtime"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-bg-runtime-*",
+    "direction": "background->content",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 17408,
+        "end": 17408
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro",
+      "GPT-4.1"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-text-field-to-side-panel-rpc",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 26001,
+        "end": 28000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-to-bg-observable-rpc-1587687052565",
+    "direction": "content->background",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-to-bg-rpc-1557421403805",
+    "direction": "content->background",
+    "payload_schema": {
+      "tracking/RPC": "any",
+      "sendFelogEvent": "any",
+      "sendToFemetrics": "any"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocsEarlyInjector.js",
+        "start": 1,
+        "end": 2000
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 70001,
+        "end": 72000,
+        "ast_id": "cs_bg_rpc"
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.beautified.js",
+        "start": 58300,
+        "end": 58500
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      },
+      {
+        "file": "src/js/Grammarly-gDocsEarlyInjector.beautified.js",
+        "start": 153,
+        "end": 164
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 18103,
+        "end": 18103
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocsEarlyInjector.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 3: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.beautified.js; Evidence 4: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 5: ✓ Found exact match in src/js/Grammarly-gDocsEarlyInjector.beautified.js; Evidence 6: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-to-bg-rpc-1587687052565",
+    "direction": "content->background",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.beautified.js",
+        "start": 58100,
+        "end": 58250
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 18089,
+        "end": 18089
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.beautified.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 3: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-to-bg-static-capi-observable-rpc-1668544923207",
+    "direction": "content->background",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "cs_bg_static_capi_obs"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "cs-to-bg-static-capi-rpc-1668544923207",
+    "direction": "content->background",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 72001,
+        "end": 74000,
+        "ast_id": "cs_bg_static_capi"
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.beautified.js",
+        "start": 59750,
+        "end": 59850
+      },
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 66001,
+        "end": 68000
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 18113,
+        "end": 18113
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly.beautified.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocs.js; Evidence 4: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "csInitialized",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "cs_initialized"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "debugReports",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "debug_reports"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "dialectSettings",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "dialect_settings"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "dismissKnowledgeHubEntry",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "dismiss_knowledge_hub"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "downloadDebugReportsFromCS",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 28001,
+        "end": 30000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "editor",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "editor_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "environmentState",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "env_state"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "extensionInstall",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "extension_install"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "extensionSettings",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "ext_settings"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "extensionUpdated",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "extension_updated"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "external:changed-plan",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000
+      },
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "external_changed_plan"
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "external:changed-user",
+    "direction": "background->content",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "external_changed_user"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "external:cleanup",
+    "direction": "background->content",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "external_cleanup"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "external:close-current-tab",
+    "direction": "background->content",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "external_close_tab"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "external:enable-superhuman-go",
+    "direction": "background->content",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "external_superhuman"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "external:llama-action",
+    "direction": "background->content",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "external_llama"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "fetchTreatmentsFail",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "fetch_treatments_fail"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "fetchUserFail",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "fetch_user_fail"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "frameId.init",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "frameid_init"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "frameId.request",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "frameid_request"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "frameId.response",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "frameid_response"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "frequentCookieChanges",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "frequent_cookie_changes"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "gOS",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "gos_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "gOS-bg-d5ccc5edf7e1",
+    "direction": "content->background",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "gos_bg_d5ccc"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "gOS-fg-d5ccc5edf7e1",
+    "direction": "background->content",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "gos_fg_d5ccc"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "gdocs",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "gdocs_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "generateHumanWritingReport",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "generate_human_writing_report"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "getHoveredStateBehavior",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "hovered_state_behavior"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "getHumanWritingReportSettings",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "get_hwr_settings"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "getTreatment",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "get_treatment"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "grammarly_message_protocol",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 50001,
+        "end": 52000,
+        "ast_id": "grammarly_protocol"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "hideGdocsSigninPopupMessage",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "hide_gdocs_signin"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "humanWritingReport",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "human_writing_report"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "hwrCreateEncryptionKeys",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "hwr_create_encryption_keys"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "hwrDeleteReport",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "hwr_delete_report"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "hwrGetEncryptionKey",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "hwr_get_encryption_key"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "hwrRetrieveReport",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "hwr_retrieve_report"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "hwrStoreReport",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 32001,
+        "end": 34000,
+        "ast_id": "hwr_store_report"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "iframe-integration-rpc",
+    "direction": "other",
+    "payload_schema": {
+      "showCard": "unknown",
+      "openAssistant": "unknown",
+      "closeAssistant": "unknown",
+      "pushTextChanges": "unknown",
+      "selectHighlight": "unknown",
+      "syncHighlights": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 23438,
+        "end": 23488
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "ignore",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "ignore_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "inkwell",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "inkwell_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "interactionToNextPaint",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "interaction_next_paint"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "isSidePanelOpen",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "is_side_panel_open"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "iterable",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "iterable_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "keyboard_shortcuts",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "keyboard_shortcuts"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "knowledgeHub",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "knowledge_hub"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "logTreatment",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 6001,
+        "end": 8000,
+        "ast_id": "log_treatment"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "login",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "login_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "loginReminder",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "login_reminder"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "logout",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "logout_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "message-bus-port",
+    "direction": "content->background",
+    "payload_schema": {
+      "type": "string",
+      "callid": "string",
+      "content": "any"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000
+      },
+      {
+        "file": "src/js/Grammarly-check.beautified.js",
+        "start": 13208,
+        "end": 13288
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.js",
+        "start": 48055,
+        "end": 48291
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.beautified.js; Evidence 3: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "message:to-priv",
+    "direction": "content->background",
+    "payload_schema": {
+      "type": "string",
+      "callid": "string",
+      "content": "any"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 12001,
+        "end": 14000
+      },
+      {
+        "file": "src/js/Grammarly-check.beautified.js",
+        "start": 12185,
+        "end": 12285
+      },
+      {
+        "file": "src/js/Grammarly-gDocsEarlyInjector.beautified.js",
+        "start": 71,
+        "end": 71
+      },
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+        "start": 17315,
+        "end": 17315
+      }
+    ],
+    "found_by_models": [
+      "GPT-4.1",
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly-check.beautified.js; Evidence 3: ✓ Found exact match in src/js/Grammarly-gDocsEarlyInjector.beautified.js; Evidence 4: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "mise",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "mise_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "networkResponse",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 8001,
+        "end": 10000,
+        "ast_id": "network_response"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "oauthGetAccessToken",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "oauth_access_token"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "onboarding",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "onboarding_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "openAssistant",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "open_assistant"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "openSidePanel",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "open_side_panel"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "pageIntegrationLifecycle",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "page_integration_lifecycle"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "panelAction/:docId",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 96670,
+        "end": 97011
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "performanceCard",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "performance_card"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "personalizedInsightsConsent",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "insights_consent"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "popup",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "popup_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "postMessage (custom __grammarly protocol)",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 58001,
+        "end": 60000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "proofit",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "proofit_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "pushChanges",
+    "direction": "content->background",
+    "payload_schema": {
+      "token": "unknown",
+      "rev": "unknown",
+      "args": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 24001,
+        "end": 26000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "pushTextChanges",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "push_text_changes"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "reloadNotification",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "reload_notification"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "replace",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "replace_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "replacement",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "replacement_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "requestGrantPermission",
+    "direction": "content->background",
+    "payload_schema": {
+      "nativeMessaging": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 40050,
+        "end": 40075
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "requestHost",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "request_host"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sdui",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "sdui_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sdui_actions",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "sdui_actions"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "selectHighlight",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "select_highlight"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sendCsLogsToPopup",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 28001,
+        "end": 30000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sendFeedback",
+    "direction": "content->background",
+    "payload_schema": {
+      "id": "unknown",
+      "kind": "unknown",
+      "reason": "unknown",
+      "replacementText": "unknown",
+      "alternativeIndex": "unknown",
+      "subtype": "unknown",
+      "snippetUuid": "unknown",
+      "domainCategory": "unknown",
+      "popupType": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 38120,
+        "end": 38265
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sendToFocusTab",
+    "direction": "content->background",
+    "payload_schema": {
+      "showOnboardingDialog": "unknown",
+      "disableOnTab": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.beautified.js",
+        "start": 41900,
+        "end": 41950
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "serviceAvailability",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "service_availability"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "setAlwaysOnAssistant",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 26001,
+        "end": 28000,
+        "ast_id": "set_always_on_assistant"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "setSessionOption",
+    "direction": "content->background",
+    "payload_schema": {
+      "token": "unknown",
+      "args": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 24001,
+        "end": 26000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sharedAssistant",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "shared_assistant"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "showCard",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "show_card"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "side-panel-close-status",
+    "direction": "background->content",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.beautified.js",
+        "start": 12185,
+        "end": 12285
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "side-panel-to-cs-text-field-rpc",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "/Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+        "start": 26001,
+        "end": 28000
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in /Users/jfri/Downloads/kbfnbcaeplbcioakkpcpgfkobkghlhen/src/js/Grammarly-gDocs.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "sidePanel",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "side_panel"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "signIn",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "signin_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "signUp",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "signup_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "siteToggle",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "site_toggle"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✗ NOT found in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "skills-bg-d5ccc5edf7e1",
+    "direction": "content->background",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-bg.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "skills_bg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-bg.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "syncHighlights",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-gDocs.js",
+        "start": 22001,
+        "end": 24000,
+        "ast_id": "sync_highlights"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-gDocs.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "tab-connected",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.beautified.js",
+        "start": 14100,
+        "end": 14100
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "touchTypist",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 60001,
+        "end": 62000,
+        "ast_id": "touch_typist"
+      },
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "touch_typist_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "tracking/RPC",
+    "direction": "content->background",
+    "payload_schema": {
+      "function_name": "unknown",
+      "...args": "unknown"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-check.js",
+        "start": 6070,
+        "end": 6085
+      },
+      {
+        "file": "src/js/Grammarly.beautified.js",
+        "start": 64700,
+        "end": 64713
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-check.js; Evidence 2: ✓ Found exact match in src/js/Grammarly.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "translateOnboarding",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "translate_onboarding"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "treatments",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 64001,
+        "end": 66000,
+        "ast_id": "treatments_msg"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "unhandledException",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "unhandled_exception"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "unhandledRejection",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "unhandled_rejection"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "update-window-size",
+    "direction": "other",
+    "payload_schema": {},
+    "evidence": [
+      {
+        "file": "src/js/Grammarly-popup.beautified.js",
+        "start": 15600,
+        "end": 15600
+      }
+    ],
+    "found_by_models": [
+      "Gemini-2.5-Pro"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly-popup.beautified.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "update-window-size-gr",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 56001,
+        "end": 58000,
+        "ast_id": "update_window_size"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "upgradeHooks",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 62001,
+        "end": 64000,
+        "ast_id": "upgrade_hooks"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  },
+  {
+    "name": "view",
+    "direction": "other",
+    "payload_schema": {
+      "type": "object"
+    },
+    "evidence": [
+      {
+        "file": "src/js/Grammarly.js",
+        "start": 58001,
+        "end": 60000,
+        "ast_id": "view_action"
+      }
+    ],
+    "found_by_models": [
+      "Claude-Sonnet-4"
+    ],
+    "verified": true,
+    "verification_notes": "AUTO: Evidence 1: ✓ Found exact match in src/js/Grammarly.js",
+    "correct_name": "",
+    "correct_direction": "",
+    "correct_payload_schema": {}
+  }
+]

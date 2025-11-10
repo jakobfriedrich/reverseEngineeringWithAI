@@ -1,0 +1,26 @@
+@startuml
+actor User
+participant Page
+participant "Content Script" as CS
+participant "Service Worker" as SW
+database "chrome.storage" as Storage
+participant "Remote API" as Remote
+
+User -> Page: Visits page
+Page -> CS: Inject content script
+CS -> SW: sendMessage("momentum:getUserId")
+CS -> SW: sendMessage("momentum:oneTimeLogin")
+CS -> SW: sendMessage("momentum:authState")
+CS -> SW: sendMessage("momentum:checkUserId")
+CS -> SW: sendMessage("momentum:openNew")
+SW -> Storage: IndexedDB/localStorage ops
+SW -> Remote: POST /v1/input (Datadog)
+SW -> Remote: POST /e/ (Posthog)
+SW -> CS: sendMessage("notificationClick")
+SW -> CS: sendMessage("flashMessage")
+CS -> Page: window.postMessage("momentum-intervention:show")
+CS -> Page: window.postMessage("momentum-intervention:dismiss")
+@enduml
+@startuml
+' Chrome Extension Component Flow Diagram (GPT4.1)
+@enduml

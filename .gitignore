@@ -1,0 +1,3 @@
+*.beautified.*
+.DS_Store
+.vscode/

@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "name": "JSON Formatter",
+    "version": "0.8.0",
+    "manifest_version": 3,
+    "description": "Makes JSON easy to read. Open source.",
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 38}]
+  },
+  "permissions": {
+    "api_permissions": ["storage"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "optional_permissions": [],
+    "evidence": [{"file": "manifest.json", "start": 1, "end": 38}]
+  },
+  "components": {
+    "background": {
+      "files": [],
+      "apis": [],
+      "listeners": [],
+      "evidence": []
+    },
+    "content_scripts": [
+      {
+        "files": ["content.js", "set-json-global.js"],
+        "apis": [],
+        "listeners": ["addEventListener"],
+        "evidence": [
+          {"file": "manifest.json", "start": 1, "end": 38},
+          {"file": "content.js", "start": 1, "end": 296},
+          {"file": "set-json-global.js", "start": 1, "end": 29}
+        ]
+      }
+    ],
+    "injected_scripts": [],
+    "ui": [
+      {
+        "files": ["options/options.js"],
+        "apis": [],
+        "listeners": ["addEventListener"],
+        "evidence": [{"file": "options/options.js", "start": 1, "end": 38}]
+      }
+    ],
+    "web_accessible_resources": []
+  },
+  "network": {
+    "endpoints": []
+  },
+  "messaging": {
+    "channels": []
+  },
+  "storage": {
+    "keys": []
+  },
+  "workflows": [
+    {
+      "name": "Theme Selection Flow",
+      "triggers": ["User opens options page"],
+      "steps": [
+        "User selects theme radio button",
+        "UI updates selection state",
+        "No messaging or storage operations"
+      ],
+      "apis": [],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [{"file": "options/options.js", "start": 1, "end": 38}]
+    },
+    {
+      "name": "JSON Formatting Flow",
+      "triggers": ["User loads a page with JSON"],
+      "steps": [
+        "Content script parses and formats JSON",
+        "UI renders formatted JSON",
+        "No messaging or storage operations"
+      ],
+      "apis": [],
+      "messages": [],
+      "endpoints": [],
+      "storage_keys": [],
+      "evidence": [{"file": "content.js", "start": 1, "end": 296}]
+    }
+  ],
+  "privacy": {
+    "data_categories": [],
+    "purposes": ["Local formatting and UI only"],
+    "minimization": "No data collection",
+    "consent": "Not applicable (no data collection)",
+    "retention": "Not applicable",
+    "third_parties": [],
+    "policy_compliance": "No privacy or security risks detected",
+    "evidence": [
+      {"file": "content.js", "start": 1, "end": 296},
+      {"file": "set-json-global.js", "start": 1, "end": 29},
+      {"file": "options/options.js", "start": 1, "end": 38}
+    ]
+  },
+  "risks": [],
+  "code_signals": {
+    "chrome_api_calls": [],
+    "event_listeners": ["addEventListener", "addListener"],
+    "dynamic_code": [],
+    "wasm_modules": [],
+    "third_party_libs": []
+  }
+}

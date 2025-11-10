@@ -1,0 +1,642 @@
+[
+  {
+    "level": 0,
+    "category": "Metadata",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 0,
+    "category": "Permissions",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 0,
+    "category": "Components",
+    "mean_recall": 0.7333333333333334,
+    "std_dev": 0.047140452079103216,
+    "coefficient_of_variation": 0.06428243465332256,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0.7,
+      "Claude-Sonnet-4": 0.8,
+      "Gemini-2.5-Pro": 0.7
+    }
+  },
+  {
+    "level": 0,
+    "category": "Endpoints",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 0,
+    "category": "Channels",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 0,
+    "category": "Storage Keys",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 0,
+    "category": "Workflows",
+    "mean_recall": 0.5,
+    "std_dev": 0.13608276348795434,
+    "coefficient_of_variation": 0.2721655269759087,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.3333333333333333,
+      "Claude-Sonnet-4": 0.5,
+      "Gemini-2.5-Pro": 0.6666666666666666
+    }
+  },
+  {
+    "level": 0,
+    "category": "Privacy",
+    "mean_recall": 0.4761904761904761,
+    "std_dev": 0.06734350297014738,
+    "coefficient_of_variation": 0.14142135623730953,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.42857142857142855,
+      "Claude-Sonnet-4": 0.42857142857142855,
+      "Gemini-2.5-Pro": 0.5714285714285714
+    }
+  },
+  {
+    "level": 0,
+    "category": "Risks",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 0,
+    "category": "Code Signals",
+    "mean_recall": 0.5833333333333334,
+    "std_dev": 0.05892556509887896,
+    "coefficient_of_variation": 0.10101525445522107,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.5,
+      "Claude-Sonnet-4": 0.625,
+      "Gemini-2.5-Pro": 0.625
+    }
+  },
+  {
+    "level": 1,
+    "category": "Metadata",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 1,
+    "category": "Permissions",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 1,
+    "category": "Components",
+    "mean_recall": 0.5,
+    "std_dev": 0.14142135623730948,
+    "coefficient_of_variation": 0.28284271247461895,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.4,
+      "Claude-Sonnet-4": 0.7,
+      "Gemini-2.5-Pro": 0.4
+    }
+  },
+  {
+    "level": 1,
+    "category": "Endpoints",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 1,
+    "category": "Channels",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 1,
+    "category": "Storage Keys",
+    "mean_recall": 0.6666666666666666,
+    "std_dev": 0.4714045207910317,
+    "coefficient_of_variation": 0.7071067811865476,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 1,
+    "category": "Workflows",
+    "mean_recall": 0.4444444444444445,
+    "std_dev": 0.3424674446093876,
+    "coefficient_of_variation": 0.7705517503711221,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0.5,
+      "Gemini-2.5-Pro": 0.8333333333333334
+    }
+  },
+  {
+    "level": 1,
+    "category": "Privacy",
+    "mean_recall": 0.2857142857142857,
+    "std_dev": 0.20203050891044214,
+    "coefficient_of_variation": 0.7071067811865475,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0.42857142857142855,
+      "Gemini-2.5-Pro": 0.42857142857142855
+    }
+  },
+  {
+    "level": 1,
+    "category": "Risks",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 1,
+    "category": "Code Signals",
+    "mean_recall": 0.375,
+    "std_dev": 0.2041241452319315,
+    "coefficient_of_variation": 0.5443310539518174,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.125,
+      "Claude-Sonnet-4": 0.375,
+      "Gemini-2.5-Pro": 0.625
+    }
+  },
+  {
+    "level": 2,
+    "category": "Metadata",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1
+    }
+  },
+  {
+    "level": 2,
+    "category": "Permissions",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1
+    }
+  },
+  {
+    "level": 2,
+    "category": "Components",
+    "mean_recall": 0.7,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0.7,
+      "Claude-Sonnet-4": 0.7
+    }
+  },
+  {
+    "level": 2,
+    "category": "Endpoints",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0
+    }
+  },
+  {
+    "level": 2,
+    "category": "Channels",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0
+    }
+  },
+  {
+    "level": 2,
+    "category": "Storage Keys",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1
+    }
+  },
+  {
+    "level": 2,
+    "category": "Workflows",
+    "mean_recall": 0.41666666666666663,
+    "std_dev": 0.08333333333333334,
+    "coefficient_of_variation": 0.20000000000000004,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.3333333333333333,
+      "Claude-Sonnet-4": 0.5
+    }
+  },
+  {
+    "level": 2,
+    "category": "Privacy",
+    "mean_recall": 0.2857142857142857,
+    "std_dev": 0.14285714285714285,
+    "coefficient_of_variation": 0.5,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.14285714285714285,
+      "Claude-Sonnet-4": 0.42857142857142855
+    }
+  },
+  {
+    "level": 2,
+    "category": "Risks",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0
+    }
+  },
+  {
+    "level": 2,
+    "category": "Code Signals",
+    "mean_recall": 0.5,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0.5,
+      "Claude-Sonnet-4": 0.5
+    }
+  },
+  {
+    "level": 3,
+    "category": "Metadata",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 3,
+    "category": "Permissions",
+    "mean_recall": 0.8888888888888888,
+    "std_dev": 0.15713484026367724,
+    "coefficient_of_variation": 0.17677669529663692,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 0.6666666666666666
+    }
+  },
+  {
+    "level": 3,
+    "category": "Components",
+    "mean_recall": 0.7000000000000001,
+    "std_dev": 0.14142135623730953,
+    "coefficient_of_variation": 0.20203050891044216,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.8,
+      "Claude-Sonnet-4": 0.8,
+      "Gemini-2.5-Pro": 0.5
+    }
+  },
+  {
+    "level": 3,
+    "category": "Endpoints",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 3,
+    "category": "Channels",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 3,
+    "category": "Storage Keys",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 3,
+    "category": "Workflows",
+    "mean_recall": 0.27777777777777773,
+    "std_dev": 0.20786985482077452,
+    "coefficient_of_variation": 0.7483314773547884,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.3333333333333333,
+      "Claude-Sonnet-4": 0.5,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 3,
+    "category": "Privacy",
+    "mean_recall": 0.3333333333333333,
+    "std_dev": 0.06734350297014738,
+    "coefficient_of_variation": 0.20203050891044214,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.2857142857142857,
+      "Claude-Sonnet-4": 0.2857142857142857,
+      "Gemini-2.5-Pro": 0.42857142857142855
+    }
+  },
+  {
+    "level": 3,
+    "category": "Risks",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 3,
+    "category": "Code Signals",
+    "mean_recall": 0.4166666666666667,
+    "std_dev": 0.21245914639969937,
+    "coefficient_of_variation": 0.5099019513592785,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.5,
+      "Claude-Sonnet-4": 0.625,
+      "Gemini-2.5-Pro": 0.125
+    }
+  },
+  {
+    "level": 4,
+    "category": "Metadata",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 4,
+    "category": "Permissions",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 4,
+    "category": "Components",
+    "mean_recall": 0.6999999999999998,
+    "std_dev": 1.1102230246251565e-16,
+    "coefficient_of_variation": 1.5860328923216525e-16,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0.7,
+      "Claude-Sonnet-4": 0.7,
+      "Gemini-2.5-Pro": 0.7
+    }
+  },
+  {
+    "level": 4,
+    "category": "Endpoints",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 4,
+    "category": "Channels",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 4,
+    "category": "Storage Keys",
+    "mean_recall": 1,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 1,
+      "Claude-Sonnet-4": 1,
+      "Gemini-2.5-Pro": 1
+    }
+  },
+  {
+    "level": 4,
+    "category": "Workflows",
+    "mean_recall": 0.4444444444444444,
+    "std_dev": 0.07856742013183862,
+    "coefficient_of_variation": 0.17677669529663692,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.3333333333333333,
+      "Claude-Sonnet-4": 0.5,
+      "Gemini-2.5-Pro": 0.5
+    }
+  },
+  {
+    "level": 4,
+    "category": "Privacy",
+    "mean_recall": 0.42857142857142855,
+    "std_dev": 0.20203050891044214,
+    "coefficient_of_variation": 0.4714045207910317,
+    "convergent": false,
+    "model_recalls": {
+      "GPT-4.1": 0.14285714285714285,
+      "Claude-Sonnet-4": 0.5714285714285714,
+      "Gemini-2.5-Pro": 0.5714285714285714
+    }
+  },
+  {
+    "level": 4,
+    "category": "Risks",
+    "mean_recall": 0,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0,
+      "Claude-Sonnet-4": 0,
+      "Gemini-2.5-Pro": 0
+    }
+  },
+  {
+    "level": 4,
+    "category": "Code Signals",
+    "mean_recall": 0.5,
+    "std_dev": 0,
+    "coefficient_of_variation": 0,
+    "convergent": true,
+    "model_recalls": {
+      "GPT-4.1": 0.5,
+      "Claude-Sonnet-4": 0.5,
+      "Gemini-2.5-Pro": 0.5
+    }
+  }
+]

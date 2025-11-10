@@ -1,0 +1,35 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "content.js" as Content
+participant "set-json-global.js" as JsonGlobal  
+participant "options.js" as Options
+database "chrome.storage.local" as Storage
+
+User -> Page: Visits webpage with JSON
+Page -> Content: Inject content script
+Content -> Content: Parse and format JSON
+Content -> Page: Inject formatting UI
+Content -> Page: Add CSS styles and event listeners
+
+User -> JsonGlobal: (Automatic injection)
+JsonGlobal -> Page: Set global.json property
+JsonGlobal -> Page: Log debug message
+
+User -> Options: Open extension options
+Options -> Storage: chrome.storage.local.get("themeOverride")
+Storage --> Options: Current theme setting
+Options -> User: Display theme radio buttons
+
+User -> Options: Change theme preference  
+Options -> Storage: chrome.storage.local.set({themeOverride: newValue})
+Storage -> Options: chrome.storage.onChanged event
+Options -> Options: Update radio button selection
+
+note right of Content
+  No direct communication between
+  content scripts and options page
+  - Theme changes handled via storage
+  - No background script required
+end note
+@enduml

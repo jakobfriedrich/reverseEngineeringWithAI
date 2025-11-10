@@ -1,0 +1,7 @@
+url,method,file,line_start,line_endhttps://api.momentumdash.com/,GET,serviceWorker.js,161,166
+https://browser-http-intake.logs.datadoghq.com/v1/input/,POST,serviceWorker.js,175,180
+https://account.momentumdash.com/,GET,serviceWorker.js,5300,5300
+https://www.momentumdash.com/,GET,serviceWorker.js,5301,5301
+https://modash.blob.core.windows.net/,GET,serviceWorker.js,4950,4960
+posthog.momentumdash.com/e/,POST,serviceWorker.js,4600,4620
+.posthog.com,POST,serviceWorker.js,4600,4620

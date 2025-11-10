@@ -1,0 +1,44 @@
+Chrome Extension Reverse Engineering - Scan Log
+================================================
+
+Run ID: 004
+Model: Gemini-2.5-Pro
+Timestamp: 2025-11-06T00:00:00Z
+Output Directory: ./out_004_Gemini-2.5-Pro
+
+Tools/Packages Used:
+- js-beautify (assumed, from beautified files)
+- ajv-cli
+
+File Counts:
+- Original JS files: 3
+- Beautified files: 3 (100% success rate)
+- Total chunks analyzed: 3
+- Service worker: 0 files
+- Content scripts: 2 files (content.js, set-json-global.js)
+- UI files: 1 file (options/options.js)
+
+Analysis Results:
+- Chrome API calls found: 3 unique calls
+- Event listeners: 3
+- Message channels: 0
+- Storage keys: 1
+- Network endpoints: 0
+- Workflows identified: 2
+- Privacy risks: 0
+
+Beautification:
+- Success: 3 files
+- Errors: 0 files
+- Files excluded: none
+
+Validation:
+- honey_summary.json: PASSED schema validation
+- outline.jsonl: 3 entries (all chunks covered)
+- analysis_notes.md: Complete, all chunks documented
+- CSV files: endpoints.csv (0 rows), messages.csv (0 rows), storage_keys.csv (2 rows)
+
+Known Gaps/Unknowns:
+- The code is heavily obfuscated, making it difficult to trace the exact logic without deobfuscation.
+
+Completion Status: SUCCESS

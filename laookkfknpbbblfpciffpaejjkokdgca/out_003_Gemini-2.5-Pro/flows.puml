@@ -1,0 +1,41 @@
+@startuml
+actor User
+participant "Web Page" as Page
+participant "siteBlocker.js" as Blocker
+participant "momoSiteInterop.js" as Interop
+participant "Service Worker" as SW
+database "chrome.storage" as Storage
+database "IndexedDB" as IDB
+participant "Momentum API" as MomentumAPI
+participant "DataDog" as DataDog
+participant "PostHog" as PostHog
+participant "Azure Blob" as AzureBlob
+
+group "Site Blocking"
+    User -> Page: Visits a blocked site
+    Page -> Blocker: Injects site blocker
+    Blocker -> Page: Overlays iframe with site-blocker.html
+    Page -> Blocker: "momentum-intervention:dismiss"
+    Blocker -> Page: Removes overlay
+end
+
+group "Momentum Dashboard Interaction"
+    User -> Page: Interacts with Momentum dashboard
+    Page -> Interop: window.postMessage
+    Interop -> SW: chrome.runtime.sendMessage
+    SW -> MomentumAPI: fetch()
+    MomentumAPI --> SW: API response
+    SW -> IDB: Caches data
+    SW --> Interop: Response
+    Interop --> Page: window.postMessage
+end
+
+group "Background Operations"
+    SW -> MomentumAPI: fetch config
+    SW -> DataDog: Log events
+    SW -> PostHog: Track analytics
+    SW -> AzureBlob: Fetch assets
+    SW -> Storage: Read/write settings
+    SW -> IDB: Read/write data
+end
+@enduml

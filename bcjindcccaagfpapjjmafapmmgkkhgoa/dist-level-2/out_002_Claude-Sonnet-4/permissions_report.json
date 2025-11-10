@@ -1,0 +1,6 @@
+{
+  "api_permissions": ["storage"],
+  "host_permissions": ["*://*/*", "<all_urls>"],
+  "optional_permissions": [],
+  "evidence": [{"file": "manifest.json", "start": 17, "end": 18}]
+}

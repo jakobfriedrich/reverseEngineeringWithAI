@@ -1,0 +1,14 @@
+@startuml
+' Chrome Extension Component Flow
+@enduml
+@startuml
+actor User
+participant "Content Script" as CS
+participant "Options UI" as UI
+participant "chrome.storage" as Storage
+
+User -> UI: Selects theme
+UI -> Storage: chrome.storage.local.set("themeOverride")
+UI -> Storage: chrome.storage.local.get("themeOverride")
+CS -> Storage: chrome.storage.local.get("themeOverride")
+@enduml
